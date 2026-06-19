@@ -1,0 +1,3319 @@
+{
+  "color_map": {
+    "Red": [
+      "#af003f",
+      "#f25f94"
+    ],
+    "Dark Blue": [
+      "#3d7ef2",
+      "#78b0ff"
+    ],
+    "Green": [
+      "#51b848",
+      "#b9f2b3"
+    ],
+    "Lavender": [
+      "#8551c8",
+      "#a27cef"
+    ],
+    "Light Blue": [
+      "#00e5ff",
+      "#8ff0f5"
+    ],
+    "Orange": [
+      "#ff7300",
+      "#ff9959"
+    ],
+    "Pink": [
+      "#dd3ac6",
+      "#f599ec"
+    ],
+    "sleeproom": [
+      "#288699",
+      "#ffffff"
+    ],
+    "void use": [
+      "#8e8e8e",
+      "#cfcfcf"
+    ]
+  },
+  "shapes": {
+    "1": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sl980-20260522000000",
+      "csv": {
+        "building_label": "Dream Tent",
+        "floor_code": "L1",
+        "shape name": "1",
+        "booth_name": "Booth 1",
+        "booth_type": "STD10TENT",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible path near tent",
+        "Color Code": "Light Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_1",
+        "tag": "g",
+        "attributes": {}
+      }
+    },
+    "103": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "103",
+        "booth_name": "Room 103",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "void use",
+        "Published Status": "No Listing",
+        "Notes": "not visible",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_103",
+        "tag": "rect",
+        "attributes": {
+          "x": "420.46",
+          "y": "166.76",
+          "width": "26.3",
+          "height": "17.34"
+        }
+      }
+    },
+    "104": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "104",
+        "booth_name": "Room 104",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "ADA accessible",
+        "Color Code": "void use",
+        "Published Status": "No Listing",
+        "Notes": "not visible",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_104",
+        "tag": "rect",
+        "attributes": {
+          "x": "420.46",
+          "y": "149.43",
+          "width": "26.3",
+          "height": "17.34"
+        }
+      }
+    },
+    "105": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "105",
+        "booth_name": "Room 105",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "void use",
+        "Published Status": "No Listing",
+        "Notes": "not visible",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_105",
+        "tag": "rect",
+        "attributes": {
+          "x": "420.46",
+          "y": "132.09",
+          "width": "26.3",
+          "height": "17.34"
+        }
+      }
+    },
+    "106": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "106",
+        "booth_name": "Room 106",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "ADA accessible",
+        "Color Code": "void use",
+        "Published Status": "No Listing",
+        "Notes": "not visible",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_106",
+        "tag": "rect",
+        "attributes": {
+          "x": "420.46",
+          "y": "114.76",
+          "width": "26.3",
+          "height": "17.34"
+        }
+      }
+    },
+    "107": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "107",
+        "booth_name": "Room 107",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "void use",
+        "Published Status": "No Listing",
+        "Notes": "not visible",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_107",
+        "tag": "rect",
+        "attributes": {
+          "x": "420.46",
+          "y": "97.42",
+          "width": "26.3",
+          "height": "17.34"
+        }
+      }
+    },
+    "108": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s2tk6-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "108",
+        "booth_name": "Room 108",
+        "booth_type": "XLDL",
+        "capacity_1_to_4": "8",
+        "ada_note": "ADA accessible",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "XL",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_108",
+        "tag": "rect",
+        "attributes": {
+          "x": "420.46",
+          "y": "63.21",
+          "width": "26.3",
+          "height": "34.09"
+        }
+      }
+    },
+    "112": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-srtlw-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "112",
+        "booth_name": "Room 112",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "ADA accessible",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_112",
+        "tag": "rect",
+        "attributes": {
+          "x": "472.34",
+          "y": "63.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(962.1 152.72) rotate(-180)"
+        }
+      }
+    },
+    "113": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s37cv-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "113",
+        "booth_name": "Room 113",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Green",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_113-3",
+        "tag": "text",
+        "attributes": {
+          "transform": "translate(491.1 339.04)"
+        }
+      }
+    },
+    "114": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sgc6c-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "114",
+        "booth_name": "Room 114",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "ADA accessible",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_114",
+        "tag": "rect",
+        "attributes": {
+          "x": "507.19",
+          "y": "63.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1031.8 152.72) rotate(-180)"
+        }
+      }
+    },
+    "115": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s20sf-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "115",
+        "booth_name": "Room 115",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Green",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_115",
+        "tag": "rect",
+        "attributes": {
+          "x": "524.61",
+          "y": "63.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1066.65 152.72) rotate(-180)"
+        }
+      }
+    },
+    "116": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sz1n1-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "116",
+        "booth_name": "Room 116",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "ADA accessible",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_116",
+        "tag": "rect",
+        "attributes": {
+          "x": "542.04",
+          "y": "63.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1101.5 152.72) rotate(-180)"
+        }
+      }
+    },
+    "117": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "117",
+        "booth_name": "Room 117",
+        "booth_type": "XSDL",
+        "capacity_1_to_4": "",
+        "ada_note": "ADA accessible",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_117",
+        "tag": "rect",
+        "attributes": {
+          "x": "559.46",
+          "y": "63.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1136.35 152.72) rotate(-180)"
+        }
+      }
+    },
+    "118": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sk33q-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "118",
+        "booth_name": "Room 118",
+        "booth_type": "sdl",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_118",
+        "tag": "rect",
+        "attributes": {
+          "x": "576.89",
+          "y": "63.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1171.2 152.72) rotate(-180)"
+        }
+      }
+    },
+    "119": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-swhph-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "119",
+        "booth_name": "Room 119",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "ADA accessible",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_119",
+        "tag": "rect",
+        "attributes": {
+          "x": "594.31",
+          "y": "63.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1206.05 152.72) rotate(-180)"
+        }
+      }
+    },
+    "120": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sle5z-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "120",
+        "booth_name": "Room 120",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "ADA accessible",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_120",
+        "tag": "rect",
+        "attributes": {
+          "x": "626.79",
+          "y": "63.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1271.01 152.72) rotate(-180)"
+        }
+      }
+    },
+    "121": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s5o4x-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "121",
+        "booth_name": "Room 121",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "ADA accessible",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_121",
+        "tag": "rect",
+        "attributes": {
+          "x": "644.22",
+          "y": "63.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1305.86 152.72) rotate(-180)"
+        }
+      }
+    },
+    "122": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sdgh0-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "122",
+        "booth_name": "Room 122",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "ADA accessible",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_122",
+        "tag": "rect",
+        "attributes": {
+          "x": "676.7",
+          "y": "63.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1370.82 152.72) rotate(-180)"
+        }
+      }
+    },
+    "123": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s1hs9-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "123",
+        "booth_name": "Room 123",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "ADA accessible",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_123",
+        "tag": "rect",
+        "attributes": {
+          "x": "694.12",
+          "y": "63.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1405.67 152.72) rotate(-180)"
+        }
+      }
+    },
+    "124": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sh00r-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "124",
+        "booth_name": "Room 124",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "ADA accessible",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_124",
+        "tag": "rect",
+        "attributes": {
+          "x": "726.6",
+          "y": "63.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1470.62 152.72) rotate(-180)"
+        }
+      }
+    },
+    "126": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-szf9q-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "126",
+        "booth_name": "Room 126",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "ADA accessible",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_126",
+        "tag": "rect",
+        "attributes": {
+          "x": "560.99",
+          "y": "120.54",
+          "width": "16.22",
+          "height": "26.28",
+          "transform": "translate(702.78 -435.43) rotate(90)"
+        }
+      }
+    },
+    "127": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-szf9q-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "127",
+        "booth_name": "Room 127",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "ADA accessible",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_127",
+        "tag": "rect",
+        "attributes": {
+          "x": "560.99",
+          "y": "136.76",
+          "width": "16.22",
+          "height": "26.28",
+          "transform": "translate(719 -419.21) rotate(90)"
+        }
+      }
+    },
+    "128": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-swc3i-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "128",
+        "booth_name": "Room 128",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "ADA accessible",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_128",
+        "tag": "rect",
+        "attributes": {
+          "x": "560.99",
+          "y": "152.98",
+          "width": "16.22",
+          "height": "26.28",
+          "transform": "translate(735.22 -402.99) rotate(90)"
+        }
+      }
+    },
+    "129": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s6p3e-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "129",
+        "booth_name": "Room 129",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "ADA accessible",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_129",
+        "tag": "rect",
+        "attributes": {
+          "x": "560.99",
+          "y": "169.2",
+          "width": "16.22",
+          "height": "26.28",
+          "transform": "translate(751.44 -386.76) rotate(90)"
+        }
+      }
+    },
+    "131": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s9dbf-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "131",
+        "booth_name": "Room 131",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Green",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_131",
+        "tag": "rect",
+        "attributes": {
+          "x": "557.53",
+          "y": "188.89",
+          "width": "23.15",
+          "height": "26.28",
+          "transform": "translate(771.13 -367.08) rotate(90)"
+        }
+      }
+    },
+    "132": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sx2ce-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "132",
+        "booth_name": "Room 132",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "ADA accessible",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_132",
+        "tag": "rect",
+        "attributes": {
+          "x": "582.24",
+          "y": "186.53",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "133": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-spvj8-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "133",
+        "booth_name": "Room 133",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Green",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_133",
+        "tag": "rect",
+        "attributes": {
+          "x": "600.1",
+          "y": "186.53",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "134": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s2aq1-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "134",
+        "booth_name": "Room 134",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "ADA accessible",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_134",
+        "tag": "rect",
+        "attributes": {
+          "x": "618.05",
+          "y": "186.53",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "135": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s514w-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "135",
+        "booth_name": "Room 135",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Green",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_135",
+        "tag": "rect",
+        "attributes": {
+          "x": "636",
+          "y": "186.53",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "136": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-swzrc-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "136",
+        "booth_name": "Room 136",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "ADA accessible",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_136",
+        "tag": "rect",
+        "attributes": {
+          "x": "654.06",
+          "y": "186.53",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "137": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s0ywg-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "137",
+        "booth_name": "Room 137",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Green",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_137",
+        "tag": "rect",
+        "attributes": {
+          "x": "672.11",
+          "y": "186.53",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "138": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sxs6o-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "138",
+        "booth_name": "Room 138",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "ADA accessible",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_138-2",
+        "tag": "text",
+        "attributes": {
+          "transform": "translate(692.26 203.06)"
+        }
+      }
+    },
+    "139": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "139",
+        "booth_name": "Room 139",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "0",
+        "ada_note": "ADA accessible",
+        "Color Code": "void use",
+        "Published Status": "No Listing",
+        "Notes": "Green Room",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_139-2",
+        "tag": "text",
+        "attributes": {
+          "transform": "translate(710.26 203.06)"
+        }
+      }
+    },
+    "140": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "140",
+        "booth_name": "Room 140",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "0",
+        "ada_note": "ADA accessible",
+        "Color Code": "void use",
+        "Published Status": "No Listing",
+        "Notes": "Storage",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_140-2",
+        "tag": "text",
+        "attributes": {
+          "transform": "translate(728.26 203.06)"
+        }
+      }
+    },
+    "2": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sboxn-20260522000000",
+      "csv": {
+        "building_label": "Dream Tent",
+        "floor_code": "L1",
+        "shape name": "2",
+        "booth_name": "Booth 2",
+        "booth_type": "STD10TENT",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible path near tent",
+        "Color Code": "Light Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_2",
+        "tag": "g",
+        "attributes": {}
+      }
+    },
+    "202": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s6y6g-20260521000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "202",
+        "booth_name": "Room 202",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Published",
+        "Notes": "Entourage Double",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_202",
+        "tag": "rect",
+        "attributes": {
+          "x": "420.46",
+          "y": "443.8",
+          "width": "26.3",
+          "height": "17.34"
+        }
+      }
+    },
+    "203": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-smbun-20260521000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "203",
+        "booth_name": "Room 203",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Published",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_203",
+        "tag": "rect",
+        "attributes": {
+          "x": "420.46",
+          "y": "426.47",
+          "width": "26.3",
+          "height": "17.34"
+        }
+      }
+    },
+    "204": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "204",
+        "booth_name": "Room 204",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Entourage Double",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_204-2",
+        "tag": "text",
+        "attributes": {
+          "transform": "translate(426.91 420.45)"
+        }
+      }
+    },
+    "205": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "205",
+        "booth_name": "Room 205",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_205",
+        "tag": "rect",
+        "attributes": {
+          "x": "420.46",
+          "y": "391.8",
+          "width": "26.3",
+          "height": "17.34"
+        }
+      }
+    },
+    "206": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "206",
+        "booth_name": "Room 206",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Entourage Double",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_206",
+        "tag": "rect",
+        "attributes": {
+          "x": "420.46",
+          "y": "374.46",
+          "width": "26.3",
+          "height": "17.34"
+        }
+      }
+    },
+    "207": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "207",
+        "booth_name": "Room 207",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_207",
+        "tag": "rect",
+        "attributes": {
+          "x": "420.46",
+          "y": "357.47",
+          "width": "26.3",
+          "height": "17.34"
+        }
+      }
+    },
+    "208": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "208",
+        "booth_name": "Room 208",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Entourage Double",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_208",
+        "tag": "rect",
+        "attributes": {
+          "x": "420.46",
+          "y": "340.13",
+          "width": "26.3",
+          "height": "17.34"
+        }
+      }
+    },
+    "210": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sn5yn-20260521000000",
+      "csv": {
+        "building_label": "",
+        "floor_code": "L2",
+        "shape name": "210",
+        "booth_name": "Room 210",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Published",
+        "Notes": "Encore King",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_210",
+        "tag": "rect",
+        "attributes": {
+          "x": "420.46",
+          "y": "323.26",
+          "width": "26.3",
+          "height": "17.34"
+        }
+      }
+    },
+    "212": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "",
+        "floor_code": "L2",
+        "shape name": "212",
+        "booth_name": "Room 212",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Entourage Double",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_212",
+        "tag": "rect",
+        "attributes": {
+          "x": "472.34",
+          "y": "323.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(962.1 672.72) rotate(-180)"
+        }
+      }
+    },
+    "213": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "",
+        "floor_code": "L2",
+        "shape name": "213",
+        "booth_name": "Room 213",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_213",
+        "tag": "rect",
+        "attributes": {
+          "x": "489.76",
+          "y": "323.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(996.95 672.72) rotate(-180)"
+        }
+      }
+    },
+    "214": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "214",
+        "booth_name": "Room 214",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Entourage Double",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_214",
+        "tag": "rect",
+        "attributes": {
+          "x": "507.19",
+          "y": "323.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1031.8 672.72) rotate(-180)"
+        }
+      }
+    },
+    "215": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "215",
+        "booth_name": "Room 215",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_215",
+        "tag": "rect",
+        "attributes": {
+          "x": "524.61",
+          "y": "323.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1066.65 672.72) rotate(-180)"
+        }
+      }
+    },
+    "216": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "216",
+        "booth_name": "Room 216",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Entourage Double",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_216",
+        "tag": "rect",
+        "attributes": {
+          "x": "542.04",
+          "y": "323.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1101.5 672.72) rotate(-180)"
+        }
+      }
+    },
+    "217": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "217",
+        "booth_name": "Room 217",
+        "booth_type": "XSDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_217",
+        "tag": "rect",
+        "attributes": {
+          "x": "559.46",
+          "y": "323.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1136.35 672.72) rotate(-180)"
+        }
+      }
+    },
+    "218": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "218",
+        "booth_name": "Room 218",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_218",
+        "tag": "rect",
+        "attributes": {
+          "x": "576.89",
+          "y": "323.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1171.2 672.72) rotate(-180)"
+        }
+      }
+    },
+    "219": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sj1xa-20260521000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "219",
+        "booth_name": "Room 219",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Published",
+        "Notes": "Headliner King",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_219",
+        "tag": "rect",
+        "attributes": {
+          "x": "594.31",
+          "y": "323.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1206.05 672.72) rotate(-180)"
+        }
+      }
+    },
+    "220": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "220",
+        "booth_name": "Room 220",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Encore King",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_220",
+        "tag": "rect",
+        "attributes": {
+          "x": "626.79",
+          "y": "323.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1271.01 672.72) rotate(-180)"
+        }
+      }
+    },
+    "221": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "221",
+        "booth_name": "Room 221",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Headliner King",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_221",
+        "tag": "rect",
+        "attributes": {
+          "x": "644.22",
+          "y": "323.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1305.86 672.72) rotate(-180)"
+        }
+      }
+    },
+    "222": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "",
+        "floor_code": "L2",
+        "shape name": "222",
+        "booth_name": "Room 222",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Encore King",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_222",
+        "tag": "rect",
+        "attributes": {
+          "x": "676.7",
+          "y": "323.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1370.82 672.72) rotate(-180)"
+        }
+      }
+    },
+    "223": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "",
+        "floor_code": "L2",
+        "shape name": "223",
+        "booth_name": "Room 223",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Encore King",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_223",
+        "tag": "rect",
+        "attributes": {
+          "x": "694.12",
+          "y": "323.27",
+          "width": "17.43",
+          "height": "26.19",
+          "transform": "translate(1405.67 672.72) rotate(-180)"
+        }
+      }
+    },
+    "224": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "",
+        "floor_code": "L2",
+        "shape name": "224",
+        "booth_name": "Room 224",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Headliner King",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_224-2",
+        "tag": "text",
+        "attributes": {
+          "transform": "translate(728.38 339.73)"
+        }
+      }
+    },
+    "226": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sgn0x-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "226",
+        "booth_name": "Room 226",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "Not ADA",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_226",
+        "tag": "rect",
+        "attributes": {
+          "x": "560.99",
+          "y": "380.54",
+          "width": "16.22",
+          "height": "26.28",
+          "transform": "translate(962.78 -175.43) rotate(90)"
+        }
+      }
+    },
+    "227": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-scfom-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "227",
+        "booth_name": "Room 227",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "Not ADA",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_227",
+        "tag": "rect",
+        "attributes": {
+          "x": "560.99",
+          "y": "396.76",
+          "width": "16.22",
+          "height": "26.28",
+          "transform": "translate(979 -159.21) rotate(90)"
+        }
+      }
+    },
+    "228": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-slryf-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "228",
+        "booth_name": "Room 228",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "Not ADA",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_228",
+        "tag": "rect",
+        "attributes": {
+          "x": "560.99",
+          "y": "412.98",
+          "width": "16.22",
+          "height": "26.28",
+          "transform": "translate(995.22 -142.99) rotate(90)"
+        }
+      }
+    },
+    "229": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sllez-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "229",
+        "booth_name": "Room 229",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "Not ADA",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_229",
+        "tag": "rect",
+        "attributes": {
+          "x": "560.99",
+          "y": "429.2",
+          "width": "16.22",
+          "height": "26.28",
+          "transform": "translate(1011.44 -126.76) rotate(90)"
+        }
+      }
+    },
+    "231": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "231",
+        "booth_name": "Room 231",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_231",
+        "tag": "rect",
+        "attributes": {
+          "x": "557.53",
+          "y": "448.89",
+          "width": "23.15",
+          "height": "26.28",
+          "transform": "translate(1031.13 -107.08) rotate(90)"
+        }
+      }
+    },
+    "232": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sr1z3-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "232",
+        "booth_name": "Room 232",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "Not ADA",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_232",
+        "tag": "rect",
+        "attributes": {
+          "x": "582.24",
+          "y": "446.53",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "233": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "233",
+        "booth_name": "Room 233",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_233",
+        "tag": "rect",
+        "attributes": {
+          "x": "600.1",
+          "y": "446.53",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "234": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sjobw-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "234",
+        "booth_name": "Room 234",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "Not ADA",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_234",
+        "tag": "rect",
+        "attributes": {
+          "x": "618.05",
+          "y": "446.53",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "235": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "235",
+        "booth_name": "Room 235",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_235",
+        "tag": "rect",
+        "attributes": {
+          "x": "636",
+          "y": "446.53",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "236": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-svbxu-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "236",
+        "booth_name": "Room 236",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "Not ADA",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_236",
+        "tag": "rect",
+        "attributes": {
+          "x": "654.06",
+          "y": "446.53",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "237": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s7jzs-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "237",
+        "booth_name": "Room 237",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "2",
+        "ada_note": "Not ADA",
+        "Color Code": "green",
+        "Published Status": "Published",
+        "Notes": "sharky",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_237",
+        "tag": "rect",
+        "attributes": {
+          "x": "672.11",
+          "y": "446.53",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "238": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sc7yy-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "238",
+        "booth_name": "Room 238",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "Not ADA",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_238",
+        "tag": "rect",
+        "attributes": {
+          "x": "690.06",
+          "y": "446.53",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "239": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "239",
+        "booth_name": "Room 239",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_239",
+        "tag": "rect",
+        "attributes": {
+          "x": "708.02",
+          "y": "446.53",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "240": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sr5uj-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "240",
+        "booth_name": "Room 240",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "Not ADA",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_240",
+        "tag": "rect",
+        "attributes": {
+          "x": "726.07",
+          "y": "446.53",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "242": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s6ds4-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "242",
+        "booth_name": "Room 242",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "Not ADA",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_242",
+        "tag": "rect",
+        "attributes": {
+          "x": "721.56",
+          "y": "478.22",
+          "width": "17.86",
+          "height": "27.07",
+          "transform": "translate(238.73 1222.24) rotate(-90)"
+        }
+      }
+    },
+    "243": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-swy53-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "243",
+        "booth_name": "Room 243",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "Not ADA",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_243",
+        "tag": "rect",
+        "attributes": {
+          "x": "721.56",
+          "y": "496.07",
+          "width": "17.86",
+          "height": "27.07",
+          "transform": "translate(220.88 1240.1) rotate(-90)"
+        }
+      }
+    },
+    "244": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "244",
+        "booth_name": "Room 244",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Encore King",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_244",
+        "tag": "rect",
+        "attributes": {
+          "x": "726.07",
+          "y": "527.76",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "245": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-stf22-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "245",
+        "booth_name": "Room 245",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "Not ADA",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_245",
+        "tag": "rect",
+        "attributes": {
+          "x": "708.02",
+          "y": "527.76",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "246": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-szl0b-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "246",
+        "booth_name": "Room 246",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "Not ADA",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_246",
+        "tag": "rect",
+        "attributes": {
+          "x": "690.16",
+          "y": "527.76",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "247": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "247",
+        "booth_name": "Room 247",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_247",
+        "tag": "rect",
+        "attributes": {
+          "x": "672.11",
+          "y": "527.76",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "248": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-slryf-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "248",
+        "booth_name": "Room 248",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "Not ADA",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_248",
+        "tag": "rect",
+        "attributes": {
+          "x": "654.2",
+          "y": "527.76",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "249": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "249",
+        "booth_name": "Room 249",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_249",
+        "tag": "rect",
+        "attributes": {
+          "x": "636.35",
+          "y": "527.76",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "250": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sgz1q-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "250",
+        "booth_name": "Room 250",
+        "booth_type": "LDL",
+        "capacity_1_to_4": "4",
+        "ada_note": "Not ADA",
+        "Color Code": "Lavender",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_250",
+        "tag": "rect",
+        "attributes": {
+          "x": "618.49",
+          "y": "527.76",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "251": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "251",
+        "booth_name": "Room 251",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_251",
+        "tag": "rect",
+        "attributes": {
+          "x": "600.64",
+          "y": "527.76",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "252": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s0npu-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "252",
+        "booth_name": "Room 252",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "Not ADA",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_252",
+        "tag": "rect",
+        "attributes": {
+          "x": "582.78",
+          "y": "527.76",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "253": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "253",
+        "booth_name": "Room 253",
+        "booth_type": "SDL",
+        "capacity_1_to_4": "",
+        "ada_note": "Not ADA",
+        "Color Code": "sleeproom",
+        "Published Status": "Unpublished",
+        "Notes": "Opener Queen",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_253",
+        "tag": "rect",
+        "attributes": {
+          "x": "564.93",
+          "y": "527.76",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "254": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-scm86-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L2",
+        "shape name": "254",
+        "booth_name": "Room 254",
+        "booth_type": "MDL",
+        "capacity_1_to_4": "3",
+        "ada_note": "Not ADA",
+        "Color Code": "Pink",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_254",
+        "tag": "rect",
+        "attributes": {
+          "x": "547.04",
+          "y": "527.76",
+          "width": "17.86",
+          "height": "27.07"
+        }
+      }
+    },
+    "3": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sdvk7-20260522000000",
+      "csv": {
+        "building_label": "Dream Tent",
+        "floor_code": "L1",
+        "shape name": "3",
+        "booth_name": "Booth 3",
+        "booth_type": "STD10TENT",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible path near tent",
+        "Color Code": "Light Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_3",
+        "tag": "g",
+        "attributes": {}
+      }
+    },
+    "4": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sqvvl-20260522000000",
+      "csv": {
+        "building_label": "Dream Tent",
+        "floor_code": "L1",
+        "shape name": "4",
+        "booth_name": "Booth 4",
+        "booth_type": "STD10TENT",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible path near tent",
+        "Color Code": "Light Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_4",
+        "tag": "g",
+        "attributes": {}
+      }
+    },
+    "5": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sijqu-20260522000000",
+      "csv": {
+        "building_label": "Dream Tent",
+        "floor_code": "L1",
+        "shape name": "5",
+        "booth_name": "Booth 5",
+        "booth_type": "STD10TENT",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible path near tent",
+        "Color Code": "Light Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_5",
+        "tag": "g",
+        "attributes": {}
+      }
+    },
+    "6": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s7ddc-20260522000000",
+      "csv": {
+        "building_label": "Dream Tent",
+        "floor_code": "L1",
+        "shape name": "6",
+        "booth_name": "Booth 6",
+        "booth_type": "STD10TENT",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible path near tent",
+        "Color Code": "Light Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "_6",
+        "tag": "g",
+        "attributes": {}
+      }
+    },
+    "a": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-se21i-20260522000000",
+      "csv": {
+        "building_label": "Dream Tent",
+        "floor_code": "L1",
+        "shape name": "a",
+        "booth_name": "Vendor A",
+        "booth_type": "VND10TENT",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible under tent",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "A",
+        "tag": "rect",
+        "attributes": {
+          "x": "659.29",
+          "y": "217.83",
+          "width": "10",
+          "height": "15.89",
+          "transform": "translate(890.07 -438.51) rotate(90)"
+        }
+      }
+    },
+    "a1": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sdooy-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "a1",
+        "booth_name": "Booth A1",
+        "booth_type": "STD10IN",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Dark Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "A1",
+        "tag": "rect",
+        "attributes": {
+          "x": "216.47",
+          "y": "384.42",
+          "width": "21.43",
+          "height": "20.98",
+          "transform": "translate(-167.72 622.09) rotate(-90)"
+        }
+      }
+    },
+    "a10": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sbxzh-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "a10",
+        "booth_name": "Booth A10",
+        "booth_type": "STD10IN",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Dark Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "A10",
+        "tag": "rect",
+        "attributes": {
+          "x": "87.67",
+          "y": "430.28",
+          "width": "22.69",
+          "height": "22.55",
+          "transform": "translate(-342.54 540.57) rotate(-90)"
+        }
+      }
+    },
+    "a11": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sq5ng-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "a11",
+        "booth_name": "Booth A11",
+        "booth_type": "STD10IN",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Dark Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "A11",
+        "tag": "rect",
+        "attributes": {
+          "x": "87.67",
+          "y": "452.97",
+          "width": "22.69",
+          "height": "22.55",
+          "transform": "translate(-365.23 563.26) rotate(-90)"
+        }
+      }
+    },
+    "a12": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sorx6-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "a12",
+        "booth_name": "Booth A12",
+        "booth_type": "STD10IN",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Dark Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "A12",
+        "tag": "rect",
+        "attributes": {
+          "x": "87.67",
+          "y": "475.66",
+          "width": "22.69",
+          "height": "22.55",
+          "transform": "translate(-387.92 585.95) rotate(-90)"
+        }
+      }
+    },
+    "a13": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sh0kz-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "a13",
+        "booth_name": "Booth A13",
+        "booth_type": "STD10IN",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Dark Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "A13",
+        "tag": "rect",
+        "attributes": {
+          "x": "110.31",
+          "y": "475.58",
+          "width": "22.69",
+          "height": "22.72",
+          "transform": "translate(-365.28 608.59) rotate(-90)"
+        }
+      }
+    },
+    "a2": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sfn8v-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "a2",
+        "booth_name": "Booth A2",
+        "booth_type": "STD10IN",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Dark Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "A2",
+        "tag": "rect",
+        "attributes": {
+          "x": "237.44",
+          "y": "384.42",
+          "width": "21.43",
+          "height": "20.98",
+          "transform": "translate(-146.75 643.06) rotate(-90)"
+        }
+      }
+    },
+    "a3": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-ss44y-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "a3",
+        "booth_name": "Booth A3",
+        "booth_type": "STD10IN",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Dark Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "A3",
+        "tag": "rect",
+        "attributes": {
+          "x": "110.43",
+          "y": "532.35",
+          "width": "22.69",
+          "height": "22.55",
+          "transform": "translate(-421.86 665.4) rotate(-90)"
+        }
+      }
+    },
+    "a4": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-shu2u-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "a4",
+        "booth_name": "Booth A4",
+        "booth_type": "STD10IN",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Dark Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "A4",
+        "tag": "rect",
+        "attributes": {
+          "x": "87.88",
+          "y": "532.35",
+          "width": "22.69",
+          "height": "22.55",
+          "transform": "translate(-444.41 642.85) rotate(-90)"
+        }
+      }
+    },
+    "a5": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sfop7-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "a5",
+        "booth_name": "Booth A5",
+        "booth_type": "STD10IN",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Dark Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "A5",
+        "tag": "polygon",
+        "attributes": {
+          "points": "51.89 509.56 29.46 509.56 29.46 531.15 66.92 554.83 87.92 554.83 87.92 532.2 51.89 509.56"
+        }
+      }
+    },
+    "a6": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sowqg-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "a6",
+        "booth_name": "Booth A6",
+        "booth_type": "STD10IN",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Dark Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "A6",
+        "tag": "rect",
+        "attributes": {
+          "x": "29.42",
+          "y": "486.98",
+          "width": "22.69",
+          "height": "22.55",
+          "transform": "translate(-457.49 539.02) rotate(-90)"
+        }
+      }
+    },
+    "a7": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-syi48-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "a7",
+        "booth_name": "Booth A7",
+        "booth_type": "STD10IN",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Dark Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "A7",
+        "tag": "rect",
+        "attributes": {
+          "x": "29.42",
+          "y": "464.29",
+          "width": "22.69",
+          "height": "22.55",
+          "transform": "translate(-434.8 516.33) rotate(-90)"
+        }
+      }
+    },
+    "a8": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-srojz-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "a8",
+        "booth_name": "Booth A8",
+        "booth_type": "STD10IN",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Dark Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "A8",
+        "tag": "rect",
+        "attributes": {
+          "x": "29.42",
+          "y": "441.6",
+          "width": "22.69",
+          "height": "22.55",
+          "transform": "translate(-412.11 493.64) rotate(-90)"
+        }
+      }
+    },
+    "a9": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-syavx-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "a9",
+        "booth_name": "Booth A9",
+        "booth_type": "STD10IN",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Dark Blue",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "A9",
+        "tag": "rect",
+        "attributes": {
+          "x": "29.42",
+          "y": "418.91",
+          "width": "22.69",
+          "height": "22.55",
+          "transform": "translate(-389.42 470.95) rotate(-90)"
+        }
+      }
+    },
+    "aa": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sxxhy-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "aa",
+        "booth_name": "Vendor AA",
+        "booth_type": "VND10IN",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "AA",
+        "tag": "rect",
+        "attributes": {
+          "x": "202.04",
+          "y": "421.36",
+          "width": "9.72",
+          "height": "15.42"
+        }
+      }
+    },
+    "b": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s4fzp-20260522000000",
+      "csv": {
+        "building_label": "Dream Tent",
+        "floor_code": "L1",
+        "shape name": "b",
+        "booth_name": "Vendor B",
+        "booth_type": "VND10TENT",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible under tent",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "B",
+        "tag": "rect",
+        "attributes": {
+          "x": "643.4",
+          "y": "217.83",
+          "width": "10",
+          "height": "15.89",
+          "transform": "translate(874.17 -422.62) rotate(90)"
+        }
+      }
+    },
+    "bb": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-ssnh1-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "bb",
+        "booth_name": "Vendor BB",
+        "booth_type": "VND10IN",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "BB",
+        "tag": "rect",
+        "attributes": {
+          "x": "202.04",
+          "y": "436.77",
+          "width": "9.72",
+          "height": "15.42"
+        }
+      }
+    },
+    "c": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sqrej-20260522000000",
+      "csv": {
+        "building_label": "Dream Tent",
+        "floor_code": "L1",
+        "shape name": "c",
+        "booth_name": "Vendor C",
+        "booth_type": "VND10TENT",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible under tent",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "C",
+        "tag": "rect",
+        "attributes": {
+          "x": "627.51",
+          "y": "217.83",
+          "width": "10",
+          "height": "15.89",
+          "transform": "translate(858.28 -406.73) rotate(90)"
+        }
+      }
+    },
+    "cc": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sz5h5-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "cc",
+        "booth_name": "Vendor CC",
+        "booth_type": "VND10IN",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "CC",
+        "tag": "rect",
+        "attributes": {
+          "x": "202.04",
+          "y": "452.19",
+          "width": "9.72",
+          "height": "15.42"
+        }
+      }
+    },
+    "d": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sx3im-20260522000000",
+      "csv": {
+        "building_label": "Dream Tent",
+        "floor_code": "L1",
+        "shape name": "d",
+        "booth_name": "Vendor D",
+        "booth_type": "VND10TENT",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible under tent",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "D",
+        "tag": "rect",
+        "attributes": {
+          "x": "611.61",
+          "y": "217.83",
+          "width": "10",
+          "height": "15.89",
+          "transform": "translate(842.39 -390.84) rotate(90)"
+        }
+      }
+    },
+    "dd": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s97d4-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "dd",
+        "booth_name": "Vendor DD",
+        "booth_type": "VND10IN",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "DD",
+        "tag": "rect",
+        "attributes": {
+          "x": "219.54",
+          "y": "421.36",
+          "width": "9.72",
+          "height": "15.42"
+        }
+      }
+    },
+    "e": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sv81j-20260522000000",
+      "csv": {
+        "building_label": "Dream Tent",
+        "floor_code": "L1",
+        "shape name": "e",
+        "booth_name": "Vendor E",
+        "booth_type": "VND10TENT",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible under tent",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "E",
+        "tag": "rect",
+        "attributes": {
+          "x": "595.72",
+          "y": "217.83",
+          "width": "10",
+          "height": "15.89",
+          "transform": "translate(826.5 -374.95) rotate(90)"
+        }
+      }
+    },
+    "ee": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-ssywk-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "ee",
+        "booth_name": "Vendor EE",
+        "booth_type": "VND10IN",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "EE",
+        "tag": "rect",
+        "attributes": {
+          "x": "219.54",
+          "y": "436.77",
+          "width": "9.72",
+          "height": "15.42"
+        }
+      }
+    },
+    "f": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sg71n-20260522000000",
+      "csv": {
+        "building_label": "Dream Tent",
+        "floor_code": "L1",
+        "shape name": "f",
+        "booth_name": "Vendor F",
+        "booth_type": "VND10TENT",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible under tent",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "F",
+        "tag": "rect",
+        "attributes": {
+          "x": "579.83",
+          "y": "217.83",
+          "width": "10",
+          "height": "15.89",
+          "transform": "translate(810.61 -359.06) rotate(90)"
+        }
+      }
+    },
+    "ff": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sthmy-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "ff",
+        "booth_name": "Vendor FF",
+        "booth_type": "VND10IN",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "FF",
+        "tag": "rect",
+        "attributes": {
+          "x": "219.54",
+          "y": "452.19",
+          "width": "9.72",
+          "height": "15.42"
+        }
+      }
+    },
+    "g": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s1zh4-20260522000000",
+      "csv": {
+        "building_label": "Dream Tent",
+        "floor_code": "L1",
+        "shape name": "g",
+        "booth_name": "Vendor G",
+        "booth_type": "VND10TENT",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible under tent",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "G",
+        "tag": "rect",
+        "attributes": {
+          "x": "563.94",
+          "y": "217.83",
+          "width": "10",
+          "height": "15.89",
+          "transform": "translate(794.72 -343.17) rotate(90)"
+        }
+      }
+    },
+    "gg": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sbw97-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "gg",
+        "booth_name": "Vendor GG",
+        "booth_type": "VND10IN",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "GG",
+        "tag": "rect",
+        "attributes": {
+          "x": "237.03",
+          "y": "421.36",
+          "width": "9.72",
+          "height": "15.42"
+        }
+      }
+    },
+    "h": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-stb9b-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "h",
+        "booth_name": "Vendor H",
+        "booth_type": "VND10OUT",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "H",
+        "tag": "rect",
+        "attributes": {
+          "x": "537.07",
+          "y": "194.66",
+          "width": "14.75",
+          "height": "22.99",
+          "transform": "translate(750.6 -338.3) rotate(90)"
+        }
+      }
+    },
+    "hh": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s91lq-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "hh",
+        "booth_name": "Vendor HH",
+        "booth_type": "VND10IN",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "HH",
+        "tag": "rect",
+        "attributes": {
+          "x": "237.03",
+          "y": "436.77",
+          "width": "9.72",
+          "height": "15.42"
+        }
+      }
+    },
+    "i": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sy0w9-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "i",
+        "booth_name": "Vendor I",
+        "booth_type": "VND10OUT",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "I",
+        "tag": "g",
+        "attributes": {}
+      }
+    },
+    "ii": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-scwfc-20260522000000",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "ii",
+        "booth_name": "Vendor II",
+        "booth_type": "VND10IN",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "II",
+        "tag": "rect",
+        "attributes": {
+          "x": "237.03",
+          "y": "452.19",
+          "width": "9.72",
+          "height": "15.42"
+        }
+      }
+    },
+    "ij": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "ij",
+        "booth_name": "Vendor IJ",
+        "booth_type": "VND10OUT",
+        "capacity_1_to_4": "2",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "combined I + J vendor spot; split into halves in app logic if needed",
+        "Review Status": "combined_vendor_split_required"
+      },
+      "svg": {
+        "id": "IJ",
+        "tag": "rect",
+        "attributes": {
+          "x": "516",
+          "y": "135.98",
+          "width": "36.04",
+          "height": "46.69"
+        }
+      }
+    },
+    "j": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sr086-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "j",
+        "booth_name": "Vendor J",
+        "booth_type": "VND10OUT",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "J",
+        "tag": "g",
+        "attributes": {}
+      }
+    },
+    "jj": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "jj",
+        "booth_name": "Vendor JJ",
+        "booth_type": "VND10IN",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "JJ",
+        "tag": "rect",
+        "attributes": {
+          "x": "195.64",
+          "y": "487.42",
+          "width": "10",
+          "height": "15.89",
+          "transform": "translate(50.08 1008.17) rotate(-141.59)"
+        }
+      }
+    },
+    "k": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-sktik-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "k",
+        "booth_name": "Vendor K",
+        "booth_type": "VND10OUT",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "K",
+        "tag": "rect",
+        "attributes": {
+          "x": "502.22",
+          "y": "87.39",
+          "width": "10",
+          "height": "15.89",
+          "transform": "translate(602.56 -411.89) rotate(90)"
+        }
+      }
+    },
+    "kk": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "kk",
+        "booth_name": "Vendor KK",
+        "booth_type": "VND10IN",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "KK",
+        "tag": "rect",
+        "attributes": {
+          "x": "205.86",
+          "y": "533.47",
+          "width": "10",
+          "height": "15.89",
+          "transform": "translate(-330.22 753.11) rotate(-90.09)"
+        }
+      }
+    },
+    "l": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-s236t-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "l",
+        "booth_name": "Vendor L",
+        "booth_type": "VND10OUT",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "L",
+        "tag": "rect",
+        "attributes": {
+          "x": "576.22",
+          "y": "90.63",
+          "width": "10",
+          "height": "15.89",
+          "transform": "translate(239.94 -382.11) rotate(45)"
+        }
+      }
+    },
+    "ll": {
+      "bookwhen_url": "",
+      "csv": {
+        "building_label": "Jupiter NEXT",
+        "floor_code": "L2",
+        "shape name": "ll",
+        "booth_name": "Vendor LL",
+        "booth_type": "VND10IN",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Published",
+        "Notes": "",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "LL",
+        "tag": "rect",
+        "attributes": {
+          "x": "237.64",
+          "y": "533.42",
+          "width": "10",
+          "height": "15.89",
+          "transform": "translate(-298.34 784.85) rotate(-90.09)"
+        }
+      }
+    },
+    "m": {
+      "bookwhen_url": "https://bookwhen.com/voidtattoofest/e/ev-std51-20260522000000",
+      "csv": {
+        "building_label": "Jupiter Original",
+        "floor_code": "L1",
+        "shape name": "m",
+        "booth_name": "Vendor M",
+        "booth_type": "VND10OUT",
+        "capacity_1_to_4": "1",
+        "ada_note": "ADA accessible",
+        "Color Code": "Orange",
+        "Published Status": "Unpublished",
+        "Notes": "slope",
+        "Review Status": "matched"
+      },
+      "svg": {
+        "id": "M",
+        "tag": "rect",
+        "attributes": {
+          "x": "590.22",
+          "y": "90.77",
+          "width": "10",
+          "height": "15.89",
+          "transform": "translate(244.14 -391.97) rotate(45)"
+        }
+      }
+    }
+  }
+}

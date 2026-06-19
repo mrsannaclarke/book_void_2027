@@ -1,0 +1,127 @@
+space_key,svg_present,svg_id,svg_tag,svg_data_name,building_label,floor_code,display_label,published_status,bookwhen_url,space_type,capacity,color_code,ada_note,legacy_notes,review_status
+1,yes,_1,g,1,Dream Tent,L1,Booth 1,Published,https://bookwhen.com/voidtattoofest/e/ev-sl980-20260522000000,STD10TENT,2,Light Blue,ADA accessible path near tent,,matched
+103,yes,_103,rect,103,Jupiter Original,L1,Room 103,No Listing,,SDL,2,void use,ADA accessible,not visible,matched
+104,yes,_104,rect,104,Jupiter Original,L1,Room 104,No Listing,,LDL,4,void use,ADA accessible,not visible,matched
+105,yes,_105,rect,105,Jupiter Original,L1,Room 105,No Listing,,SDL,2,void use,ADA accessible,not visible,matched
+106,yes,_106,rect,106,Jupiter Original,L1,Room 106,No Listing,,LDL,4,void use,ADA accessible,not visible,matched
+107,yes,_107,rect,107,Jupiter Original,L1,Room 107,No Listing,,SDL,2,void use,ADA accessible,not visible,matched
+108,yes,_108,rect,108,Jupiter Original,L1,Room 108,Published,https://bookwhen.com/voidtattoofest/e/ev-s2tk6-20260522000000,XLDL,8,Lavender,ADA accessible,XL,matched
+112,yes,_112,rect,112,Jupiter Original,L1,Room 112,Published,https://bookwhen.com/voidtattoofest/e/ev-srtlw-20260522000000,LDL,4,Lavender,ADA accessible,,matched
+113,yes,_113,rect,113,Jupiter Original,L1,Room 113,Published,https://bookwhen.com/voidtattoofest/e/ev-s37cv-20260522000000,SDL,2,Green,ADA accessible,,matched
+114,yes,_114,rect,114,Jupiter Original,L1,Room 114,Published,https://bookwhen.com/voidtattoofest/e/ev-sgc6c-20260522000000,LDL,4,Lavender,ADA accessible,,matched
+115,yes,_115,rect,115,Jupiter Original,L1,Room 115,Published,https://bookwhen.com/voidtattoofest/e/ev-s20sf-20260522000000,SDL,2,Green,ADA accessible,,matched
+116,yes,_116,rect,116,Jupiter Original,L1,Room 116,Published,https://bookwhen.com/voidtattoofest/e/ev-sz1n1-20260522000000,LDL,4,Lavender,ADA accessible,,matched
+117,yes,_117,rect,117,Jupiter Original,L1,Room 117,Unpublished,,XSDL,,sleeproom,ADA accessible,Opener Queen,matched
+118,yes,_118,rect,118,Jupiter Original,L1,Room 118,Published,https://bookwhen.com/voidtattoofest/e/ev-sk33q-20260522000000,sdl,2,Pink,ADA accessible,,matched
+119,yes,_119,rect,119,Jupiter Original,L1,Room 119,Published,https://bookwhen.com/voidtattoofest/e/ev-swhph-20260522000000,MDL,3,Pink,ADA accessible,,matched
+120,yes,_120,rect,120,Jupiter Original,L1,Room 120,Published,https://bookwhen.com/voidtattoofest/e/ev-sle5z-20260522000000,LDL,4,Lavender,ADA accessible,,matched
+121,yes,_121,rect,121,Jupiter Original,L1,Room 121,Published,https://bookwhen.com/voidtattoofest/e/ev-s5o4x-20260522000000,MDL,3,Pink,ADA accessible,,matched
+122,yes,_122,rect,122,Jupiter Original,L1,Room 122,Published,https://bookwhen.com/voidtattoofest/e/ev-sdgh0-20260522000000,MDL,3,Pink,ADA accessible,,matched
+123,yes,_123,rect,123,Jupiter Original,L1,Room 123,Published,https://bookwhen.com/voidtattoofest/e/ev-s1hs9-20260522000000,MDL,3,Pink,ADA accessible,,matched
+124,yes,_124,rect,124,Jupiter Original,L1,Room 124,Published,https://bookwhen.com/voidtattoofest/e/ev-sh00r-20260522000000,MDL,3,Pink,ADA accessible,,matched
+126,yes,_126,rect,126,Jupiter Original,L1,Room 126,Published,https://bookwhen.com/voidtattoofest/e/ev-szf9q-20260522000000,MDL,3,Pink,ADA accessible,,matched
+127,yes,_127,rect,127,Jupiter Original,L1,Room 127,Published,https://bookwhen.com/voidtattoofest/e/ev-szf9q-20260522000000,MDL,3,Pink,ADA accessible,,matched
+128,yes,_128,rect,128,Jupiter Original,L1,Room 128,Published,https://bookwhen.com/voidtattoofest/e/ev-swc3i-20260522000000,MDL,3,Pink,ADA accessible,,matched
+129,yes,_129,rect,129,Jupiter Original,L1,Room 129,Published,https://bookwhen.com/voidtattoofest/e/ev-s6p3e-20260522000000,MDL,3,Pink,ADA accessible,,matched
+131,yes,_131,rect,131,Jupiter Original,L1,Room 131,Published,https://bookwhen.com/voidtattoofest/e/ev-s9dbf-20260522000000,SDL,2,Green,ADA accessible,,matched
+132,yes,_132,rect,132,Jupiter Original,L1,Room 132,Published,https://bookwhen.com/voidtattoofest/e/ev-sx2ce-20260522000000,MDL,3,Pink,ADA accessible,,matched
+133,yes,_133,rect,133,Jupiter Original,L1,Room 133,Published,https://bookwhen.com/voidtattoofest/e/ev-spvj8-20260522000000,SDL,2,Green,ADA accessible,,matched
+134,yes,_134,rect,134,Jupiter Original,L1,Room 134,Published,https://bookwhen.com/voidtattoofest/e/ev-s2aq1-20260522000000,LDL,4,Lavender,ADA accessible,,matched
+135,yes,_135,rect,135,Jupiter Original,L1,Room 135,Published,https://bookwhen.com/voidtattoofest/e/ev-s514w-20260522000000,SDL,2,Green,ADA accessible,,matched
+136,yes,_136,rect,136,Jupiter Original,L1,Room 136,Published,https://bookwhen.com/voidtattoofest/e/ev-swzrc-20260522000000,LDL,4,Lavender,ADA accessible,,matched
+137,yes,_137,rect,137,Jupiter Original,L1,Room 137,Published,https://bookwhen.com/voidtattoofest/e/ev-s0ywg-20260522000000,SDL,2,Green,ADA accessible,,matched
+138,yes,_138,rect,138,Jupiter Original,L1,Room 138,Published,https://bookwhen.com/voidtattoofest/e/ev-sxs6o-20260522000000,LDL,4,Lavender,ADA accessible,,matched
+139,yes,_139,rect,139,Jupiter Original,L1,Room 139,No Listing,,SDL,0,void use,ADA accessible,Green Room,matched
+140,yes,_140,rect,140,Jupiter Original,L1,Room 140,No Listing,,LDL,0,void use,ADA accessible,Storage,matched
+2,yes,_2,g,2,Dream Tent,L1,Booth 2,Published,https://bookwhen.com/voidtattoofest/e/ev-sboxn-20260522000000,STD10TENT,2,Light Blue,ADA accessible path near tent,,matched
+202,yes,_202,rect,202,Jupiter Original,L2,Room 202,Published,https://bookwhen.com/voidtattoofest/e/ev-s6y6g-20260521000000,LDL,,sleeproom,Not ADA,Entourage Double,matched
+203,yes,_203,rect,203,Jupiter Original,L2,Room 203,Published,https://bookwhen.com/voidtattoofest/e/ev-smbun-20260521000000,SDL,,sleeproom,Not ADA,Opener Queen,matched
+204,yes,_204,rect,204,Jupiter Original,L2,Room 204,Unpublished,,LDL,,sleeproom,Not ADA,Entourage Double,matched
+205,yes,_205,rect,205,Jupiter Original,L2,Room 205,Unpublished,,SDL,,sleeproom,Not ADA,Opener Queen,matched
+206,yes,_206,rect,206,Jupiter Original,L2,Room 206,Unpublished,,LDL,,sleeproom,Not ADA,Entourage Double,matched
+207,yes,_207,rect,207,Jupiter Original,L2,Room 207,Unpublished,,SDL,,sleeproom,Not ADA,Opener Queen,matched
+208,yes,_208,rect,208,Jupiter Original,L2,Room 208,Unpublished,,LDL,,sleeproom,Not ADA,Entourage Double,matched
+210,yes,_210,rect,210,,L2,Room 210,Published,https://bookwhen.com/voidtattoofest/e/ev-sn5yn-20260521000000,LDL,,sleeproom,Not ADA,Encore King,matched
+212,yes,_212,rect,212,,L2,Room 212,Unpublished,,LDL,,sleeproom,Not ADA,Entourage Double,matched
+213,yes,_213,rect,213,,L2,Room 213,Unpublished,,SDL,,sleeproom,Not ADA,Opener Queen,matched
+214,yes,_214,rect,214,Jupiter Original,L2,Room 214,Unpublished,,LDL,,sleeproom,Not ADA,Entourage Double,matched
+215,yes,_215,rect,215,Jupiter Original,L2,Room 215,Unpublished,,SDL,,sleeproom,Not ADA,Opener Queen,matched
+216,yes,_216,rect,216,Jupiter Original,L2,Room 216,Unpublished,,LDL,,sleeproom,Not ADA,Entourage Double,matched
+217,yes,_217,rect,217,Jupiter Original,L2,Room 217,Unpublished,,XSDL,,sleeproom,Not ADA,Opener Queen,matched
+218,yes,_218,rect,218,Jupiter Original,L2,Room 218,Unpublished,,SDL,,sleeproom,Not ADA,Opener Queen,matched
+219,yes,_219,rect,219,Jupiter Original,L2,Room 219,Published,https://bookwhen.com/voidtattoofest/e/ev-sj1xa-20260521000000,MDL,,sleeproom,Not ADA,Headliner King,matched
+220,yes,_220,rect,220,Jupiter Original,L2,Room 220,Unpublished,,LDL,,sleeproom,Not ADA,Encore King,matched
+221,yes,_221,rect,221,Jupiter Original,L2,Room 221,Unpublished,,MDL,,sleeproom,Not ADA,Headliner King,matched
+222,yes,_222,rect,222,,L2,Room 222,Unpublished,,MDL,,sleeproom,Not ADA,Encore King,matched
+223,yes,_223,rect,223,,L2,Room 223,Unpublished,,MDL,,sleeproom,Not ADA,Encore King,matched
+224,yes,_224,rect,224,,L2,Room 224,Unpublished,,MDL,,sleeproom,Not ADA,Headliner King,matched
+226,yes,_226,rect,226,Jupiter Original,L2,Room 226,Published,https://bookwhen.com/voidtattoofest/e/ev-sgn0x-20260522000000,MDL,3,Pink,Not ADA,,matched
+227,yes,_227,rect,227,Jupiter Original,L2,Room 227,Published,https://bookwhen.com/voidtattoofest/e/ev-scfom-20260522000000,MDL,3,Pink,Not ADA,,matched
+228,yes,_228,rect,228,Jupiter Original,L2,Room 228,Published,https://bookwhen.com/voidtattoofest/e/ev-slryf-20260522000000,MDL,3,Pink,Not ADA,,matched
+229,yes,_229,rect,229,Jupiter Original,L2,Room 229,Published,https://bookwhen.com/voidtattoofest/e/ev-sllez-20260522000000,MDL,3,Pink,Not ADA,,matched
+231,yes,_231,rect,231,Jupiter Original,L2,Room 231,Unpublished,,SDL,,sleeproom,Not ADA,Opener Queen,matched
+232,yes,_232,rect,232,Jupiter Original,L2,Room 232,Published,https://bookwhen.com/voidtattoofest/e/ev-sr1z3-20260522000000,MDL,3,Pink,Not ADA,,matched
+233,yes,_233,rect,233,Jupiter Original,L2,Room 233,Unpublished,,SDL,,sleeproom,Not ADA,Opener Queen,matched
+234,yes,_234,rect,234,Jupiter Original,L2,Room 234,Published,https://bookwhen.com/voidtattoofest/e/ev-sjobw-20260522000000,LDL,4,Lavender,Not ADA,,matched
+235,yes,_235,rect,235,Jupiter Original,L2,Room 235,Unpublished,,SDL,,sleeproom,Not ADA,Opener Queen,matched
+236,yes,_236,rect,236,Jupiter Original,L2,Room 236,Published,https://bookwhen.com/voidtattoofest/e/ev-svbxu-20260522000000,LDL,4,Lavender,Not ADA,,matched
+237,yes,_237,rect,237,Jupiter Original,L2,Room 237,Published,https://bookwhen.com/voidtattoofest/e/ev-s7jzs-20260522000000,SDL,2,green,Not ADA,sharky,matched
+238,yes,_238,rect,238,Jupiter Original,L2,Room 238,Published,https://bookwhen.com/voidtattoofest/e/ev-sc7yy-20260522000000,LDL,4,Lavender,Not ADA,,matched
+239,yes,_239,rect,239,Jupiter Original,L2,Room 239,Unpublished,,SDL,,sleeproom,Not ADA,Opener Queen,matched
+240,yes,_240,rect,240,Jupiter Original,L2,Room 240,Published,https://bookwhen.com/voidtattoofest/e/ev-sr5uj-20260522000000,LDL,4,Lavender,Not ADA,,matched
+242,yes,_242,rect,242,Jupiter Original,L2,Room 242,Published,https://bookwhen.com/voidtattoofest/e/ev-s6ds4-20260522000000,MDL,3,Pink,Not ADA,,matched
+243,yes,_243,rect,243,Jupiter Original,L2,Room 243,Published,https://bookwhen.com/voidtattoofest/e/ev-swy53-20260522000000,MDL,3,Pink,Not ADA,,matched
+244,yes,_244,rect,244,Jupiter Original,L2,Room 244,Unpublished,,LDL,,sleeproom,Not ADA,Encore King,matched
+245,yes,_245,rect,245,Jupiter Original,L2,Room 245,Published,https://bookwhen.com/voidtattoofest/e/ev-stf22-20260522000000,LDL,4,Lavender,Not ADA,,matched
+246,yes,_246,rect,246,Jupiter Original,L2,Room 246,Published,https://bookwhen.com/voidtattoofest/e/ev-szl0b-20260522000000,LDL,4,Lavender,Not ADA,,matched
+247,yes,_247,rect,247,Jupiter Original,L2,Room 247,Unpublished,,SDL,,sleeproom,Not ADA,Opener Queen,matched
+248,yes,_248,rect,248,Jupiter Original,L2,Room 248,Published,https://bookwhen.com/voidtattoofest/e/ev-slryf-20260522000000,LDL,4,Lavender,Not ADA,,matched
+249,yes,_249,rect,249,Jupiter Original,L2,Room 249,Unpublished,,SDL,,sleeproom,Not ADA,Opener Queen,matched
+250,yes,_250,rect,250,Jupiter Original,L2,Room 250,Published,https://bookwhen.com/voidtattoofest/e/ev-sgz1q-20260522000000,LDL,4,Lavender,Not ADA,,matched
+251,yes,_251,rect,251,Jupiter Original,L2,Room 251,Unpublished,,SDL,,sleeproom,Not ADA,Opener Queen,matched
+252,yes,_252,rect,252,Jupiter Original,L2,Room 252,Published,https://bookwhen.com/voidtattoofest/e/ev-s0npu-20260522000000,MDL,3,Pink,Not ADA,,matched
+253,yes,_253,rect,253,Jupiter Original,L2,Room 253,Unpublished,,SDL,,sleeproom,Not ADA,Opener Queen,matched
+254,yes,_254,rect,254,Jupiter Original,L2,Room 254,Published,https://bookwhen.com/voidtattoofest/e/ev-scm86-20260522000000,MDL,3,Pink,Not ADA,,matched
+3,yes,_3,g,3,Dream Tent,L1,Booth 3,Published,https://bookwhen.com/voidtattoofest/e/ev-sdvk7-20260522000000,STD10TENT,2,Light Blue,ADA accessible path near tent,,matched
+4,yes,_4,g,4,Dream Tent,L1,Booth 4,Published,https://bookwhen.com/voidtattoofest/e/ev-sqvvl-20260522000000,STD10TENT,2,Light Blue,ADA accessible path near tent,,matched
+5,yes,_5,g,5,Dream Tent,L1,Booth 5,Published,https://bookwhen.com/voidtattoofest/e/ev-sijqu-20260522000000,STD10TENT,2,Light Blue,ADA accessible path near tent,,matched
+6,yes,_6,g,6,Dream Tent,L1,Booth 6,Published,https://bookwhen.com/voidtattoofest/e/ev-s7ddc-20260522000000,STD10TENT,2,Light Blue,ADA accessible path near tent,,matched
+a,yes,A,rect,,Dream Tent,L1,Vendor A,Published,https://bookwhen.com/voidtattoofest/e/ev-se21i-20260522000000,VND10TENT,1,Orange,ADA accessible under tent,,matched
+a1,yes,A1,rect,,Jupiter NEXT,L2,Booth A1,Published,https://bookwhen.com/voidtattoofest/e/ev-sdooy-20260522000000,STD10IN,2,Dark Blue,ADA accessible,,matched
+a10,yes,A10,rect,,Jupiter NEXT,L2,Booth A10,Published,https://bookwhen.com/voidtattoofest/e/ev-sbxzh-20260522000000,STD10IN,2,Dark Blue,ADA accessible,,matched
+a11,yes,A11,rect,,Jupiter NEXT,L2,Booth A11,Published,https://bookwhen.com/voidtattoofest/e/ev-sq5ng-20260522000000,STD10IN,2,Dark Blue,ADA accessible,,matched
+a12,yes,A12,rect,,Jupiter NEXT,L2,Booth A12,Published,https://bookwhen.com/voidtattoofest/e/ev-sorx6-20260522000000,STD10IN,2,Dark Blue,ADA accessible,,matched
+a13,yes,A13,rect,,Jupiter NEXT,L2,Booth A13,Published,https://bookwhen.com/voidtattoofest/e/ev-sh0kz-20260522000000,STD10IN,2,Dark Blue,ADA accessible,,matched
+a2,yes,A2,rect,,Jupiter NEXT,L2,Booth A2,Published,https://bookwhen.com/voidtattoofest/e/ev-sfn8v-20260522000000,STD10IN,2,Dark Blue,ADA accessible,,matched
+a3,yes,A3,rect,,Jupiter NEXT,L2,Booth A3,Published,https://bookwhen.com/voidtattoofest/e/ev-ss44y-20260522000000,STD10IN,2,Dark Blue,ADA accessible,,matched
+a4,yes,A4,rect,,Jupiter NEXT,L2,Booth A4,Published,https://bookwhen.com/voidtattoofest/e/ev-shu2u-20260522000000,STD10IN,2,Dark Blue,ADA accessible,,matched
+a5,yes,A5,polygon,,Jupiter NEXT,L2,Booth A5,Published,https://bookwhen.com/voidtattoofest/e/ev-sfop7-20260522000000,STD10IN,2,Dark Blue,ADA accessible,,matched
+a6,yes,A6,rect,,Jupiter NEXT,L2,Booth A6,Published,https://bookwhen.com/voidtattoofest/e/ev-sowqg-20260522000000,STD10IN,2,Dark Blue,ADA accessible,,matched
+a7,yes,A7,rect,,Jupiter NEXT,L2,Booth A7,Published,https://bookwhen.com/voidtattoofest/e/ev-syi48-20260522000000,STD10IN,2,Dark Blue,ADA accessible,,matched
+a8,yes,A8,rect,,Jupiter NEXT,L2,Booth A8,Published,https://bookwhen.com/voidtattoofest/e/ev-srojz-20260522000000,STD10IN,2,Dark Blue,ADA accessible,,matched
+a9,yes,A9,rect,,Jupiter NEXT,L2,Booth A9,Published,https://bookwhen.com/voidtattoofest/e/ev-syavx-20260522000000,STD10IN,2,Dark Blue,ADA accessible,,matched
+aa,yes,AA,rect,,Jupiter NEXT,L2,Vendor AA,Published,https://bookwhen.com/voidtattoofest/e/ev-sxxhy-20260522000000,VND10IN,1,Orange,ADA accessible,,matched
+b,yes,B,rect,,Dream Tent,L1,Vendor B,Published,https://bookwhen.com/voidtattoofest/e/ev-s4fzp-20260522000000,VND10TENT,1,Orange,ADA accessible under tent,,matched
+bb,yes,BB,rect,,Jupiter NEXT,L2,Vendor BB,Published,https://bookwhen.com/voidtattoofest/e/ev-ssnh1-20260522000000,VND10IN,1,Orange,ADA accessible,,matched
+c,yes,C,rect,,Dream Tent,L1,Vendor C,Published,https://bookwhen.com/voidtattoofest/e/ev-sqrej-20260522000000,VND10TENT,1,Orange,ADA accessible under tent,,matched
+cc,yes,CC,rect,,Jupiter NEXT,L2,Vendor CC,Published,https://bookwhen.com/voidtattoofest/e/ev-sz5h5-20260522000000,VND10IN,1,Orange,ADA accessible,,matched
+d,yes,D,rect,,Dream Tent,L1,Vendor D,Published,https://bookwhen.com/voidtattoofest/e/ev-sx3im-20260522000000,VND10TENT,1,Orange,ADA accessible under tent,,matched
+dd,yes,DD,rect,,Jupiter NEXT,L2,Vendor DD,Published,https://bookwhen.com/voidtattoofest/e/ev-s97d4-20260522000000,VND10IN,1,Orange,ADA accessible,,matched
+e,yes,E,rect,,Dream Tent,L1,Vendor E,Published,https://bookwhen.com/voidtattoofest/e/ev-sv81j-20260522000000,VND10TENT,1,Orange,ADA accessible under tent,,matched
+ee,yes,EE,rect,,Jupiter NEXT,L2,Vendor EE,Published,https://bookwhen.com/voidtattoofest/e/ev-ssywk-20260522000000,VND10IN,1,Orange,ADA accessible,,matched
+f,yes,F,rect,,Dream Tent,L1,Vendor F,Published,https://bookwhen.com/voidtattoofest/e/ev-sg71n-20260522000000,VND10TENT,1,Orange,ADA accessible under tent,,matched
+ff,yes,FF,rect,,Jupiter NEXT,L2,Vendor FF,Published,https://bookwhen.com/voidtattoofest/e/ev-sthmy-20260522000000,VND10IN,1,Orange,ADA accessible,,matched
+g,yes,G,rect,,Dream Tent,L1,Vendor G,Published,https://bookwhen.com/voidtattoofest/e/ev-s1zh4-20260522000000,VND10TENT,1,Orange,ADA accessible under tent,,matched
+gg,yes,GG,rect,,Jupiter NEXT,L2,Vendor GG,Published,https://bookwhen.com/voidtattoofest/e/ev-sbw97-20260522000000,VND10IN,1,Orange,ADA accessible,,matched
+h,yes,H,rect,,Jupiter Original,L1,Vendor H,Published,https://bookwhen.com/voidtattoofest/e/ev-stb9b-20260522000000,VND10OUT,1,Orange,ADA accessible,,matched
+hh,yes,HH,rect,,Jupiter NEXT,L2,Vendor HH,Published,https://bookwhen.com/voidtattoofest/e/ev-s91lq-20260522000000,VND10IN,1,Orange,ADA accessible,,matched
+i,yes,I,g,,Jupiter Original,L1,Vendor I,Published,https://bookwhen.com/voidtattoofest/e/ev-sy0w9-20260522000000,VND10OUT,1,Orange,ADA accessible,,matched
+ii,yes,II,rect,,Jupiter NEXT,L2,Vendor II,Published,https://bookwhen.com/voidtattoofest/e/ev-scwfc-20260522000000,VND10IN,1,Orange,ADA accessible,,matched
+ij,yes,IJ,rect,,Jupiter Original,L1,Vendor IJ,Published,,VND10OUT,2,Orange,ADA accessible,"combined I + J vendor spot; split into halves in app logic if needed",combined_vendor_split_required
+j,yes,J,g,,Jupiter Original,L1,Vendor J,Published,https://bookwhen.com/voidtattoofest/e/ev-sr086-20260522000000,VND10OUT,1,Orange,ADA accessible,,matched
+jj,yes,JJ,rect,,Jupiter NEXT,L2,Vendor JJ,Published,,VND10IN,1,Orange,ADA accessible,,matched
+k,yes,K,rect,,Jupiter Original,L1,Vendor K,Published,https://bookwhen.com/voidtattoofest/e/ev-sktik-20260522000000,VND10OUT,1,Orange,ADA accessible,,matched
+kk,yes,KK,rect,,Jupiter NEXT,L2,Vendor KK,Published,,VND10IN,1,Orange,ADA accessible,,matched
+l,yes,L,rect,,Jupiter Original,L1,Vendor L,Published,https://bookwhen.com/voidtattoofest/e/ev-s236t-20260522000000,VND10OUT,1,Orange,ADA accessible,,matched
+ll,yes,LL,rect,,Jupiter NEXT,L2,Vendor LL,Published,,VND10IN,1,Orange,ADA accessible,,matched
+m,yes,M,rect,,Jupiter Original,L1,Vendor M,Unpublished,https://bookwhen.com/voidtattoofest/e/ev-std51-20260522000000,VND10OUT,1,Orange,ADA accessible,slope,matched
