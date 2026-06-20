@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 758.31 612">
+  <metadata id="working_color_palette">{"Small Deluxe":"#e84040","Medium Deluxe":"#30b8d4","Large Deluxe":"#e840a0","Extra Large":"#e840a0","Sleep Rooms":"#6878e8","Arium/Flex":"#7bc629","Dream Tent":"#ffe033","Vendors":"#ff6020","Void Activations":"#e49212","Exits":"#00cc88","Labels/Icon fill":"#ffffff","Labels/Icon stroke":"#000000","Map/key stroke":"#ffffff"}</metadata>
   <defs>
     <style>
       .cls-1 {
@@ -138,7 +139,7 @@
         letter-spacing: 0em;
       }
       #Map_Key {
-        stroke: rgba(120,80,255,.5);
+        stroke:#ffffff;
         stroke-width: 0.5;
       }
     </style>
@@ -150,54 +151,54 @@
         <rect id="dream_tent_footprint" data-name="dream tent footprint" class="cls-11" x="555.96" y="473.6" width="188.06" height="54.16"/>
         <rect id="dream_tent_roof" data-name="dream tent roof" class="cls-9" x="555.96" y="482.48" width="151.41" height="36.22"/>
         <g id="og_2nd_floor_rooms" data-name="og 2nd floor rooms">
-          <rect id="_202" data-name="202" class="cls-12" x="420.46" y="443.8" width="26.3" height="17.34"/>
-          <rect id="_203" data-name="203" class="cls-12" x="420.46" y="426.47" width="26.3" height="17.34"/>
-          <rect id="_204" data-name="204" class="cls-12" x="420.46" y="409.13" width="26.3" height="17.34"/>
-          <rect id="_205" data-name="205" class="cls-12" x="420.46" y="391.8" width="26.3" height="17.34"/>
-          <rect id="_206" data-name="206" class="cls-12" x="420.46" y="374.46" width="26.3" height="17.34"/>
-          <rect id="_207" data-name="207" class="cls-12" x="420.46" y="357.47" width="26.3" height="17.34"/>
-          <rect id="_208" data-name="208" class="cls-12" x="420.46" y="340.13" width="26.3" height="17.34"/>
-          <rect id="_210" data-name="210" class="cls-12" x="420.46" y="323.26" width="26.3" height="17.34"/>
-          <rect id="_212" data-name="212" class="cls-12" x="472.34" y="323.27" width="17.43" height="26.19" transform="translate(962.1 672.72) rotate(-180)"/>
-          <rect id="_213" data-name="213" class="cls-12" x="489.76" y="323.27" width="17.43" height="26.19" transform="translate(996.95 672.72) rotate(-180)"/>
-          <rect id="_214" data-name="214" class="cls-12" x="507.19" y="323.27" width="17.43" height="26.19" transform="translate(1031.8 672.72) rotate(-180)"/>
-          <rect id="_215" data-name="215" class="cls-12" x="524.61" y="323.27" width="17.43" height="26.19" transform="translate(1066.65 672.72) rotate(-180)"/>
-          <rect id="_216" data-name="216" class="cls-12" x="542.04" y="323.27" width="17.43" height="26.19" transform="translate(1101.5 672.72) rotate(-180)"/>
-          <rect id="_217" data-name="217" class="cls-12" x="559.46" y="323.27" width="17.43" height="26.19" transform="translate(1136.35 672.72) rotate(-180)"/>
-          <rect id="_218" data-name="218" class="cls-12" x="576.89" y="323.27" width="17.43" height="26.19" transform="translate(1171.2 672.72) rotate(-180)"/>
-          <rect id="_219" data-name="219" class="cls-12" x="594.31" y="323.27" width="17.43" height="26.19" transform="translate(1206.05 672.72) rotate(-180)"/>
-          <rect id="_220" data-name="220" class="cls-12" x="626.79" y="323.27" width="17.43" height="26.19" transform="translate(1271.01 672.72) rotate(-180)"/>
-          <rect id="_221" data-name="221" class="cls-12" x="644.22" y="323.27" width="17.43" height="26.19" transform="translate(1305.86 672.72) rotate(-180)"/>
-          <rect id="_222" data-name="222" class="cls-12" x="676.7" y="323.27" width="17.43" height="26.19" transform="translate(1370.82 672.72) rotate(-180)"/>
-          <rect id="_223" data-name="223" class="cls-12" x="694.12" y="323.27" width="17.43" height="26.19" transform="translate(1405.67 672.72) rotate(-180)"/>
-          <rect id="_224" data-name="224" class="cls-12" x="726.6" y="323.27" width="17.43" height="26.19" transform="translate(1470.62 672.72) rotate(-180)"/>
-          <rect id="_226" data-name="226" class="cls-12" x="560.99" y="380.54" width="16.22" height="26.28" transform="translate(962.78 -175.43) rotate(90)"/>
-          <rect id="_227" data-name="227" class="cls-12" x="560.99" y="396.76" width="16.22" height="26.28" transform="translate(979 -159.21) rotate(90)"/>
-          <rect id="_228" data-name="228" class="cls-12" x="560.99" y="412.98" width="16.22" height="26.28" transform="translate(995.22 -142.99) rotate(90)"/>
-          <rect id="_229" data-name="229" class="cls-12" x="560.99" y="429.2" width="16.22" height="26.28" transform="translate(1011.44 -126.76) rotate(90)"/>
-          <rect id="_231" data-name="231" class="cls-12" x="557.53" y="448.89" width="23.15" height="26.28" transform="translate(1031.13 -107.08) rotate(90)"/>
-          <rect id="_232" data-name="232" class="cls-12" x="582.24" y="446.53" width="17.86" height="27.07"/>
-          <rect id="_233" data-name="233" class="cls-12" x="600.1" y="446.53" width="17.86" height="27.07"/>
-          <rect id="_234" data-name="234" class="cls-12" x="618.05" y="446.53" width="17.86" height="27.07"/>
-          <rect id="_235" data-name="235" class="cls-12" x="636" y="446.53" width="17.86" height="27.07"/>
-          <rect id="_236" data-name="236" class="cls-12" x="654.06" y="446.53" width="17.86" height="27.07"/>
-          <rect id="_237" data-name="237" class="cls-12" x="672.11" y="446.53" width="17.86" height="27.07"/>
-          <rect id="_238" data-name="238" class="cls-12" x="690.06" y="446.53" width="17.86" height="27.07"/>
-          <rect id="_239" data-name="239" class="cls-12" x="708.02" y="446.53" width="17.86" height="27.07"/>
-          <rect id="_240" data-name="240" class="cls-12" x="726.07" y="446.53" width="17.86" height="27.07"/>
-          <rect id="_242" data-name="242" class="cls-12" x="721.56" y="478.22" width="17.86" height="27.07" transform="translate(238.73 1222.24) rotate(-90)"/>
-          <rect id="_243" data-name="243" class="cls-12" x="721.56" y="496.07" width="17.86" height="27.07" transform="translate(220.88 1240.1) rotate(-90)"/>
-          <rect id="_244" data-name="244" class="cls-12" x="726.07" y="527.76" width="17.86" height="27.07"/>
-          <rect id="_245" data-name="245" class="cls-12" x="708.02" y="527.76" width="17.86" height="27.07"/>
-          <rect id="_246" data-name="246" class="cls-12" x="690.16" y="527.76" width="17.86" height="27.07"/>
-          <rect id="_247" data-name="247" class="cls-12" x="672.11" y="527.76" width="17.86" height="27.07"/>
-          <rect id="_248" data-name="248" class="cls-12" x="654.2" y="527.76" width="17.86" height="27.07"/>
-          <rect id="_249" data-name="249" class="cls-12" x="636.35" y="527.76" width="17.86" height="27.07"/>
-          <rect id="_250" data-name="250" class="cls-12" x="618.49" y="527.76" width="17.86" height="27.07"/>
-          <rect id="_251" data-name="251" class="cls-12" x="600.64" y="527.76" width="17.86" height="27.07"/>
-          <rect id="_252" data-name="252" class="cls-12" x="582.78" y="527.76" width="17.86" height="27.07"/>
-          <rect id="_253" data-name="253" class="cls-12" x="564.93" y="527.76" width="17.86" height="27.07"/>
-          <rect id="_254" data-name="254" class="cls-12" x="547.04" y="527.76" width="17.86" height="27.07"/>
+          <rect id="_202" data-name="202" class="cls-12" x="420.46" y="443.8" width="26.3" height="17.34" style="fill:#6878e8"/>
+          <rect id="_203" data-name="203" class="cls-12" x="420.46" y="426.47" width="26.3" height="17.34" style="fill:#6878e8"/>
+          <rect id="_204" data-name="204" class="cls-12" x="420.46" y="409.13" width="26.3" height="17.34" style="fill:#6878e8"/>
+          <rect id="_205" data-name="205" class="cls-12" x="420.46" y="391.8" width="26.3" height="17.34" style="fill:#6878e8"/>
+          <rect id="_206" data-name="206" class="cls-12" x="420.46" y="374.46" width="26.3" height="17.34" style="fill:#6878e8"/>
+          <rect id="_207" data-name="207" class="cls-12" x="420.46" y="357.47" width="26.3" height="17.34" style="fill:#6878e8"/>
+          <rect id="_208" data-name="208" class="cls-12" x="420.46" y="340.13" width="26.3" height="17.34" style="fill:#6878e8"/>
+          <rect id="_210" data-name="210" class="cls-12" x="420.46" y="323.26" width="26.3" height="17.34" style="fill:#6878e8"/>
+          <rect id="_212" data-name="212" class="cls-12" x="472.34" y="323.27" width="17.43" height="26.19" transform="translate(962.1 672.72) rotate(-180)" style="fill:#6878e8"/>
+          <rect id="_213" data-name="213" class="cls-12" x="489.76" y="323.27" width="17.43" height="26.19" transform="translate(996.95 672.72) rotate(-180)" style="fill:#6878e8"/>
+          <rect id="_214" data-name="214" class="cls-12" x="507.19" y="323.27" width="17.43" height="26.19" transform="translate(1031.8 672.72) rotate(-180)" style="fill:#6878e8"/>
+          <rect id="_215" data-name="215" class="cls-12" x="524.61" y="323.27" width="17.43" height="26.19" transform="translate(1066.65 672.72) rotate(-180)" style="fill:#6878e8"/>
+          <rect id="_216" data-name="216" class="cls-12" x="542.04" y="323.27" width="17.43" height="26.19" transform="translate(1101.5 672.72) rotate(-180)" style="fill:#6878e8"/>
+          <rect id="_217" data-name="217" class="cls-12" x="559.46" y="323.27" width="17.43" height="26.19" transform="translate(1136.35 672.72) rotate(-180)" style="fill:#6878e8"/>
+          <rect id="_218" data-name="218" class="cls-12" x="576.89" y="323.27" width="17.43" height="26.19" transform="translate(1171.2 672.72) rotate(-180)" style="fill:#6878e8"/>
+          <rect id="_219" data-name="219" class="cls-12" x="594.31" y="323.27" width="17.43" height="26.19" transform="translate(1206.05 672.72) rotate(-180)" style="fill:#6878e8"/>
+          <rect id="_220" data-name="220" class="cls-12" x="626.79" y="323.27" width="17.43" height="26.19" transform="translate(1271.01 672.72) rotate(-180)" style="fill:#6878e8"/>
+          <rect id="_221" data-name="221" class="cls-12" x="644.22" y="323.27" width="17.43" height="26.19" transform="translate(1305.86 672.72) rotate(-180)" style="fill:#6878e8"/>
+          <rect id="_222" data-name="222" class="cls-12" x="676.7" y="323.27" width="17.43" height="26.19" transform="translate(1370.82 672.72) rotate(-180)" style="fill:#6878e8"/>
+          <rect id="_223" data-name="223" class="cls-12" x="694.12" y="323.27" width="17.43" height="26.19" transform="translate(1405.67 672.72) rotate(-180)" style="fill:#6878e8"/>
+          <rect id="_224" data-name="224" class="cls-12" x="726.6" y="323.27" width="17.43" height="26.19" transform="translate(1470.62 672.72) rotate(-180)" style="fill:#6878e8"/>
+          <rect id="_226" data-name="226" class="cls-12" x="560.99" y="380.54" width="16.22" height="26.28" transform="translate(962.78 -175.43) rotate(90)" style="fill:#30b8d4"/>
+          <rect id="_227" data-name="227" class="cls-12" x="560.99" y="396.76" width="16.22" height="26.28" transform="translate(979 -159.21) rotate(90)" style="fill:#30b8d4"/>
+          <rect id="_228" data-name="228" class="cls-12" x="560.99" y="412.98" width="16.22" height="26.28" transform="translate(995.22 -142.99) rotate(90)" style="fill:#30b8d4"/>
+          <rect id="_229" data-name="229" class="cls-12" x="560.99" y="429.2" width="16.22" height="26.28" transform="translate(1011.44 -126.76) rotate(90)" style="fill:#30b8d4"/>
+          <rect id="_231" data-name="231" class="cls-12" x="557.53" y="448.89" width="23.15" height="26.28" transform="translate(1031.13 -107.08) rotate(90)" style="fill:#6878e8"/>
+          <rect id="_232" data-name="232" class="cls-12" x="582.24" y="446.53" width="17.86" height="27.07" style="fill:#30b8d4"/>
+          <rect id="_233" data-name="233" class="cls-12" x="600.1" y="446.53" width="17.86" height="27.07" style="fill:#6878e8"/>
+          <rect id="_234" data-name="234" class="cls-12" x="618.05" y="446.53" width="17.86" height="27.07" style="fill:#e840a0"/>
+          <rect id="_235" data-name="235" class="cls-12" x="636" y="446.53" width="17.86" height="27.07" style="fill:#6878e8"/>
+          <rect id="_236" data-name="236" class="cls-12" x="654.06" y="446.53" width="17.86" height="27.07" style="fill:#e840a0"/>
+          <rect id="_237" data-name="237" class="cls-12" x="672.11" y="446.53" width="17.86" height="27.07" style="fill:#e84040"/>
+          <rect id="_238" data-name="238" class="cls-12" x="690.06" y="446.53" width="17.86" height="27.07" style="fill:#e840a0"/>
+          <rect id="_239" data-name="239" class="cls-12" x="708.02" y="446.53" width="17.86" height="27.07" style="fill:#6878e8"/>
+          <rect id="_240" data-name="240" class="cls-12" x="726.07" y="446.53" width="17.86" height="27.07" style="fill:#e840a0"/>
+          <rect id="_242" data-name="242" class="cls-12" x="721.56" y="478.22" width="17.86" height="27.07" transform="translate(238.73 1222.24) rotate(-90)" style="fill:#30b8d4"/>
+          <rect id="_243" data-name="243" class="cls-12" x="721.56" y="496.07" width="17.86" height="27.07" transform="translate(220.88 1240.1) rotate(-90)" style="fill:#30b8d4"/>
+          <rect id="_244" data-name="244" class="cls-12" x="726.07" y="527.76" width="17.86" height="27.07" style="fill:#e49212"/>
+          <rect id="_245" data-name="245" class="cls-12" x="708.02" y="527.76" width="17.86" height="27.07" style="fill:#e840a0"/>
+          <rect id="_246" data-name="246" class="cls-12" x="690.16" y="527.76" width="17.86" height="27.07" style="fill:#e840a0"/>
+          <rect id="_247" data-name="247" class="cls-12" x="672.11" y="527.76" width="17.86" height="27.07" style="fill:#6878e8"/>
+          <rect id="_248" data-name="248" class="cls-12" x="654.2" y="527.76" width="17.86" height="27.07" style="fill:#e840a0"/>
+          <rect id="_249" data-name="249" class="cls-12" x="636.35" y="527.76" width="17.86" height="27.07" style="fill:#6878e8"/>
+          <rect id="_250" data-name="250" class="cls-12" x="618.49" y="527.76" width="17.86" height="27.07" style="fill:#e840a0"/>
+          <rect id="_251" data-name="251" class="cls-12" x="600.64" y="527.76" width="17.86" height="27.07" style="fill:#6878e8"/>
+          <rect id="_252" data-name="252" class="cls-12" x="582.78" y="527.76" width="17.86" height="27.07" style="fill:#30b8d4"/>
+          <rect id="_253" data-name="253" class="cls-12" x="564.93" y="527.76" width="17.86" height="27.07" style="fill:#6878e8"/>
+          <rect id="_254" data-name="254" class="cls-12" x="547.04" y="527.76" width="17.86" height="27.07" style="fill:#30b8d4"/>
         </g>
         <rect id="_2nd_floor_foot_print" data-name="2nd floor foot print" class="cls-10" x="420.46" y="323.21" width="323.57" height="231.88"/>
         <rect id="kboo_roof" data-name="kboo roof" class="cls-9" x="582.24" y="385.56" width="161.78" height="60.96"/>
@@ -259,58 +260,58 @@
         <rect id="og_groundfloor_footprint" data-name="og groundfloor footprint" class="cls-10" x="420.46" y="63.21" width="323.57" height="231.88"/>
         <rect id="dream_tent" data-name="dream tent" class="cls-10" x="555.96" y="213.6" width="188.06" height="55.24"/>
         <g id="og_ground_floor_rooms" data-name="og ground floor rooms">
-          <rect id="_140" data-name="140" class="cls-12" x="726.07" y="186.53" width="17.86" height="27.07"/>
-          <rect id="_139" data-name="139" class="cls-12" x="708.02" y="186.53" width="17.86" height="27.07"/>
-          <rect id="_138" data-name="138" class="cls-12" x="690.06" y="186.53" width="17.86" height="27.07"/>
-          <rect id="_137" data-name="137" class="cls-12" x="672.11" y="186.53" width="17.86" height="27.07"/>
-          <rect id="_136" data-name="136" class="cls-12" x="654.06" y="186.53" width="17.86" height="27.07"/>
-          <rect id="_135" data-name="135" class="cls-12" x="636" y="186.53" width="17.86" height="27.07"/>
-          <rect id="_134" data-name="134" class="cls-12" x="618.05" y="186.53" width="17.86" height="27.07"/>
-          <rect id="_133" data-name="133" class="cls-12" x="600.1" y="186.53" width="17.86" height="27.07"/>
-          <rect id="_132" data-name="132" class="cls-12" x="582.24" y="186.53" width="17.86" height="27.07"/>
-          <rect id="_131" data-name="131" class="cls-12" x="557.53" y="188.89" width="23.15" height="26.28" transform="translate(771.13 -367.08) rotate(90)"/>
-          <rect id="_129" data-name="129" class="cls-12" x="560.99" y="169.2" width="16.22" height="26.28" transform="translate(751.44 -386.76) rotate(90)"/>
-          <rect id="_128" data-name="128" class="cls-12" x="560.99" y="152.98" width="16.22" height="26.28" transform="translate(735.22 -402.99) rotate(90)"/>
-          <rect id="_127" data-name="127" class="cls-12" x="560.99" y="136.76" width="16.22" height="26.28" transform="translate(719 -419.21) rotate(90)"/>
-          <rect id="_126" data-name="126" class="cls-12" x="560.99" y="120.54" width="16.22" height="26.28" transform="translate(702.78 -435.43) rotate(90)"/>
-          <rect id="_124" data-name="124" class="cls-12" x="726.6" y="63.27" width="17.43" height="26.19" transform="translate(1470.62 152.72) rotate(-180)"/>
-          <rect id="_123" data-name="123" class="cls-12" x="694.12" y="63.27" width="17.43" height="26.19" transform="translate(1405.67 152.72) rotate(-180)"/>
-          <rect id="_122" data-name="122" class="cls-12" x="676.7" y="63.27" width="17.43" height="26.19" transform="translate(1370.82 152.72) rotate(-180)"/>
-          <rect id="_121" data-name="121" class="cls-12" x="644.22" y="63.27" width="17.43" height="26.19" transform="translate(1305.86 152.72) rotate(-180)"/>
-          <rect id="_120" data-name="120" class="cls-12" x="626.79" y="63.27" width="17.43" height="26.19" transform="translate(1271.01 152.72) rotate(-180)"/>
-          <rect id="_119" data-name="119" class="cls-12" x="594.31" y="63.27" width="17.43" height="26.19" transform="translate(1206.05 152.72) rotate(-180)"/>
-          <rect id="_118" data-name="118" class="cls-12" x="576.89" y="63.27" width="17.43" height="26.19" transform="translate(1171.2 152.72) rotate(-180)"/>
-          <rect id="_117" data-name="117" class="cls-12" x="559.46" y="63.27" width="17.43" height="26.19" transform="translate(1136.35 152.72) rotate(-180)"/>
-          <rect id="_116" data-name="116" class="cls-12" x="542.04" y="63.27" width="17.43" height="26.19" transform="translate(1101.5 152.72) rotate(-180)"/>
-          <rect id="_115" data-name="115" class="cls-12" x="524.61" y="63.27" width="17.43" height="26.19" transform="translate(1066.65 152.72) rotate(-180)"/>
-          <rect id="_114" data-name="114" class="cls-12" x="507.19" y="63.27" width="17.43" height="26.19" transform="translate(1031.8 152.72) rotate(-180)"/>
-          <rect id="_113" data-name="113" class="cls-12" x="489.76" y="63.27" width="17.43" height="26.19" transform="translate(996.95 152.72) rotate(-180)"/>
-          <rect id="_112" data-name="112" class="cls-12" x="472.34" y="63.27" width="17.43" height="26.19" transform="translate(962.1 152.72) rotate(-180)"/>
-          <rect id="_108" data-name="108" class="cls-12" x="420.46" y="63.21" width="26.3" height="34.09"/>
-          <rect id="_107" data-name="107" class="cls-12" x="420.46" y="97.42" width="26.3" height="17.34"/>
-          <rect id="_106" data-name="106" class="cls-12" x="420.46" y="114.76" width="26.3" height="17.34"/>
-          <rect id="_105" data-name="105" class="cls-12" x="420.46" y="132.09" width="26.3" height="17.34"/>
-          <rect id="_104" data-name="104" class="cls-12" x="420.46" y="149.43" width="26.3" height="17.34"/>
-          <rect id="_103" data-name="103" class="cls-12" x="420.46" y="166.76" width="26.3" height="17.34"/>
+          <rect id="_140" data-name="140" class="cls-12" x="726.07" y="186.53" width="17.86" height="27.07" style="fill:#e49212"/>
+          <rect id="_139" data-name="139" class="cls-12" x="708.02" y="186.53" width="17.86" height="27.07" style="fill:#e49212"/>
+          <rect id="_138" data-name="138" class="cls-12" x="690.06" y="186.53" width="17.86" height="27.07" style="fill:#e840a0"/>
+          <rect id="_137" data-name="137" class="cls-12" x="672.11" y="186.53" width="17.86" height="27.07" style="fill:#e84040"/>
+          <rect id="_136" data-name="136" class="cls-12" x="654.06" y="186.53" width="17.86" height="27.07" style="fill:#e840a0"/>
+          <rect id="_135" data-name="135" class="cls-12" x="636" y="186.53" width="17.86" height="27.07" style="fill:#e84040"/>
+          <rect id="_134" data-name="134" class="cls-12" x="618.05" y="186.53" width="17.86" height="27.07" style="fill:#e840a0"/>
+          <rect id="_133" data-name="133" class="cls-12" x="600.1" y="186.53" width="17.86" height="27.07" style="fill:#e84040"/>
+          <rect id="_132" data-name="132" class="cls-12" x="582.24" y="186.53" width="17.86" height="27.07" style="fill:#30b8d4"/>
+          <rect id="_131" data-name="131" class="cls-12" x="557.53" y="188.89" width="23.15" height="26.28" transform="translate(771.13 -367.08) rotate(90)" style="fill:#e84040"/>
+          <rect id="_129" data-name="129" class="cls-12" x="560.99" y="169.2" width="16.22" height="26.28" transform="translate(751.44 -386.76) rotate(90)" style="fill:#30b8d4"/>
+          <rect id="_128" data-name="128" class="cls-12" x="560.99" y="152.98" width="16.22" height="26.28" transform="translate(735.22 -402.99) rotate(90)" style="fill:#30b8d4"/>
+          <rect id="_127" data-name="127" class="cls-12" x="560.99" y="136.76" width="16.22" height="26.28" transform="translate(719 -419.21) rotate(90)" style="fill:#30b8d4"/>
+          <rect id="_126" data-name="126" class="cls-12" x="560.99" y="120.54" width="16.22" height="26.28" transform="translate(702.78 -435.43) rotate(90)" style="fill:#30b8d4"/>
+          <rect id="_124" data-name="124" class="cls-12" x="726.6" y="63.27" width="17.43" height="26.19" transform="translate(1470.62 152.72) rotate(-180)" style="fill:#30b8d4"/>
+          <rect id="_123" data-name="123" class="cls-12" x="694.12" y="63.27" width="17.43" height="26.19" transform="translate(1405.67 152.72) rotate(-180)" style="fill:#30b8d4"/>
+          <rect id="_122" data-name="122" class="cls-12" x="676.7" y="63.27" width="17.43" height="26.19" transform="translate(1370.82 152.72) rotate(-180)" style="fill:#30b8d4"/>
+          <rect id="_121" data-name="121" class="cls-12" x="644.22" y="63.27" width="17.43" height="26.19" transform="translate(1305.86 152.72) rotate(-180)" style="fill:#30b8d4"/>
+          <rect id="_120" data-name="120" class="cls-12" x="626.79" y="63.27" width="17.43" height="26.19" transform="translate(1271.01 152.72) rotate(-180)" style="fill:#e840a0"/>
+          <rect id="_119" data-name="119" class="cls-12" x="594.31" y="63.27" width="17.43" height="26.19" transform="translate(1206.05 152.72) rotate(-180)" style="fill:#30b8d4"/>
+          <rect id="_118" data-name="118" class="cls-12" x="576.89" y="63.27" width="17.43" height="26.19" transform="translate(1171.2 152.72) rotate(-180)" style="fill:#e84040"/>
+          <rect id="_117" data-name="117" class="cls-12" x="559.46" y="63.27" width="17.43" height="26.19" transform="translate(1136.35 152.72) rotate(-180)" style="fill:#6878e8"/>
+          <rect id="_116" data-name="116" class="cls-12" x="542.04" y="63.27" width="17.43" height="26.19" transform="translate(1101.5 152.72) rotate(-180)" style="fill:#e840a0"/>
+          <rect id="_115" data-name="115" class="cls-12" x="524.61" y="63.27" width="17.43" height="26.19" transform="translate(1066.65 152.72) rotate(-180)" style="fill:#e84040"/>
+          <rect id="_114" data-name="114" class="cls-12" x="507.19" y="63.27" width="17.43" height="26.19" transform="translate(1031.8 152.72) rotate(-180)" style="fill:#e840a0"/>
+          <rect id="_113" data-name="113" class="cls-12" x="489.76" y="63.27" width="17.43" height="26.19" transform="translate(996.95 152.72) rotate(-180)" style="fill:#e84040"/>
+          <rect id="_112" data-name="112" class="cls-12" x="472.34" y="63.27" width="17.43" height="26.19" transform="translate(962.1 152.72) rotate(-180)" style="fill:#e840a0"/>
+          <rect id="_108" data-name="108" class="cls-12" x="420.46" y="63.21" width="26.3" height="34.09" style="fill:#e840a0"/>
+          <rect id="_107" data-name="107" class="cls-12" x="420.46" y="97.42" width="26.3" height="17.34" style="fill:#e84040"/>
+          <rect id="_106" data-name="106" class="cls-12" x="420.46" y="114.76" width="26.3" height="17.34" style="fill:#e840a0"/>
+          <rect id="_105" data-name="105" class="cls-12" x="420.46" y="132.09" width="26.3" height="17.34" style="fill:#e49212"/>
+          <rect id="_104" data-name="104" class="cls-12" x="420.46" y="149.43" width="26.3" height="17.34" style="fill:#e49212"/>
+          <rect id="_103" data-name="103" class="cls-12" x="420.46" y="166.76" width="26.3" height="17.34" style="fill:#e49212"/>
         </g>
         <g id="dream_tent_artist_booths" data-name="dream tent artist booths">
-          <g id="_6" data-name="6">
-            <rect class="cls-12" x="562.55" y="243.64" width="15.75" height="18.85" transform="translate(823.49 -317.36) rotate(90)"/>
+          <g id="_6" data-name="6" style="fill:#ffe033">
+            <rect class="cls-12" x="562.55" y="243.64" width="15.75" height="18.85" transform="translate(823.49 -317.36) rotate(90)" style="fill:#ffe033"/>
           </g>
-          <g id="_5" data-name="5">
-            <rect class="cls-12" x="581.4" y="243.64" width="15.75" height="18.85" transform="translate(842.34 -336.21) rotate(90)"/>
+          <g id="_5" data-name="5" style="fill:#ffe033">
+            <rect class="cls-12" x="581.4" y="243.64" width="15.75" height="18.85" transform="translate(842.34 -336.21) rotate(90)" style="fill:#ffe033"/>
           </g>
-          <g id="_4" data-name="4">
-            <rect class="cls-12" x="599.74" y="243.64" width="15.75" height="18.85" transform="translate(860.67 -354.55) rotate(90)"/>
+          <g id="_4" data-name="4" style="fill:#ffe033">
+            <rect class="cls-12" x="599.74" y="243.64" width="15.75" height="18.85" transform="translate(860.67 -354.55) rotate(90)" style="fill:#ffe033"/>
           </g>
-          <g id="_3" data-name="3">
-            <rect class="cls-12" x="617.23" y="243.64" width="15.75" height="18.85" transform="translate(878.17 -372.04) rotate(90)"/>
+          <g id="_3" data-name="3" style="fill:#ffe033">
+            <rect class="cls-12" x="617.23" y="243.64" width="15.75" height="18.85" transform="translate(878.17 -372.04) rotate(90)" style="fill:#ffe033"/>
           </g>
-          <g id="_2" data-name="2">
-            <rect class="cls-12" x="636.08" y="243.64" width="15.75" height="18.85" transform="translate(897.02 -390.89) rotate(90)"/>
+          <g id="_2" data-name="2" style="fill:#ffe033">
+            <rect class="cls-12" x="636.08" y="243.64" width="15.75" height="18.85" transform="translate(897.02 -390.89) rotate(90)" style="fill:#ffe033"/>
           </g>
-          <g id="_1" data-name="1">
-            <rect class="cls-12" x="654.93" y="243.64" width="15.75" height="18.85" transform="translate(915.87 -409.74) rotate(90)"/>
+          <g id="_1" data-name="1" style="fill:#ffe033">
+            <rect class="cls-12" x="654.93" y="243.64" width="15.75" height="18.85" transform="translate(915.87 -409.74) rotate(90)" style="fill:#ffe033"/>
           </g>
         </g>
         <rect id="dougfir_patio" data-name="dougfir patio" class="cls-10" x="452.6" y="129.36" width="36.04" height="71.68"/>
@@ -453,22 +454,22 @@
         <rect id="next_2nd_floor_restroom" data-name="next 2nd floor restroom" class="cls-10" x="196.05" y="323.26" width="63.19" height="60.93"/>
         <polyline id="arium" class="cls-10" points="133.02 520.32 133.02 554.97 15.49 554.97 15.49 407.5 133.02 407.5 133.02 498.28"/>
         <g id="flex_lounge_artist_booths" data-name="flex lounge artist booths">
-          <rect id="A1" class="cls-12" style="fill:#748404" x="216.47" y="384.42" width="21.43" height="20.98" transform="translate(-167.72 622.09) rotate(-90)"/>
-          <rect id="A2" class="cls-12" style="fill:#748404" x="237.44" y="384.42" width="21.43" height="20.98" transform="translate(-146.75 643.06) rotate(-90)"/>
+          <rect id="A1" class="cls-12" style="fill:#7bc629" x="216.47" y="384.42" width="21.43" height="20.98" transform="translate(-167.72 622.09) rotate(-90)"/>
+          <rect id="A2" class="cls-12" style="fill:#7bc629" x="237.44" y="384.42" width="21.43" height="20.98" transform="translate(-146.75 643.06) rotate(-90)"/>
         </g>
         <g id="arium_booths" data-name="arium booths">
           <rect id="stencil_booth_arium" data-name="stencil booth arium" class="cls-17" x="87.67" y="407.56" width="22.69" height="22.55" transform="translate(-319.82 517.86) rotate(-90)"/>
-          <rect id="A13" class="cls-12" style="fill:#748404" x="110.31" y="475.58" width="22.69" height="22.72" transform="translate(-365.28 608.59) rotate(-90)"/>
-          <rect id="A12" class="cls-12" style="fill:#748404" x="87.67" y="475.66" width="22.69" height="22.55" transform="translate(-387.92 585.95) rotate(-90)"/>
-          <rect id="A11" class="cls-12" style="fill:#748404" x="87.67" y="452.97" width="22.69" height="22.55" transform="translate(-365.23 563.26) rotate(-90)"/>
-          <rect id="A10" class="cls-12" style="fill:#748404" x="87.67" y="430.28" width="22.69" height="22.55" transform="translate(-342.54 540.57) rotate(-90)"/>
-          <rect id="A9" class="cls-12" style="fill:#748404" x="29.42" y="418.91" width="22.69" height="22.55" transform="translate(-389.42 470.95) rotate(-90)"/>
-          <rect id="A8" class="cls-12" style="fill:#748404" x="29.42" y="441.6" width="22.69" height="22.55" transform="translate(-412.11 493.64) rotate(-90)"/>
-          <rect id="A7" class="cls-12" style="fill:#748404" x="29.42" y="464.29" width="22.69" height="22.55" transform="translate(-434.8 516.33) rotate(-90)"/>
-          <rect id="A6" class="cls-12" style="fill:#748404" x="29.42" y="486.98" width="22.69" height="22.55" transform="translate(-457.49 539.02) rotate(-90)"/>
-          <rect id="A4" class="cls-12" style="fill:#748404" x="87.88" y="532.35" width="22.69" height="22.55" transform="translate(-444.41 642.85) rotate(-90)"/>
-          <rect id="A3" class="cls-12" style="fill:#748404" x="110.43" y="532.35" width="22.69" height="22.55" transform="translate(-421.86 665.4) rotate(-90)"/>
-          <polygon id="A5" class="cls-12" style="fill:#748404" points="51.89 509.56 29.46 509.56 29.46 531.15 66.92 554.83 87.92 554.83 87.92 532.2 51.89 509.56"/>
+          <rect id="A13" class="cls-12" style="fill:#7bc629" x="110.31" y="475.58" width="22.69" height="22.72" transform="translate(-365.28 608.59) rotate(-90)"/>
+          <rect id="A12" class="cls-12" style="fill:#7bc629" x="87.67" y="475.66" width="22.69" height="22.55" transform="translate(-387.92 585.95) rotate(-90)"/>
+          <rect id="A11" class="cls-12" style="fill:#7bc629" x="87.67" y="452.97" width="22.69" height="22.55" transform="translate(-365.23 563.26) rotate(-90)"/>
+          <rect id="A10" class="cls-12" style="fill:#7bc629" x="87.67" y="430.28" width="22.69" height="22.55" transform="translate(-342.54 540.57) rotate(-90)"/>
+          <rect id="A9" class="cls-12" style="fill:#7bc629" x="29.42" y="418.91" width="22.69" height="22.55" transform="translate(-389.42 470.95) rotate(-90)"/>
+          <rect id="A8" class="cls-12" style="fill:#7bc629" x="29.42" y="441.6" width="22.69" height="22.55" transform="translate(-412.11 493.64) rotate(-90)"/>
+          <rect id="A7" class="cls-12" style="fill:#7bc629" x="29.42" y="464.29" width="22.69" height="22.55" transform="translate(-434.8 516.33) rotate(-90)"/>
+          <rect id="A6" class="cls-12" style="fill:#7bc629" x="29.42" y="486.98" width="22.69" height="22.55" transform="translate(-457.49 539.02) rotate(-90)"/>
+          <rect id="A4" class="cls-12" style="fill:#7bc629" x="87.88" y="532.35" width="22.69" height="22.55" transform="translate(-444.41 642.85) rotate(-90)"/>
+          <rect id="A3" class="cls-12" style="fill:#7bc629" x="110.43" y="532.35" width="22.69" height="22.55" transform="translate(-421.86 665.4) rotate(-90)"/>
+          <polygon id="A5" class="cls-12" style="fill:#7bc629" points="51.89 509.56 29.46 509.56 29.46 531.15 66.92 554.83 87.92 554.83 87.92 532.2 51.89 509.56"/>
         </g>
         <rect id="seminar_bunker" data-name="seminar bunker" class="cls-17" x="133.02" y="519.87" width="55.04" height="35.1"/>
         <rect id="elevator" class="cls-10" x="132.93" y="407.5" width="36.76" height="45.89"/>

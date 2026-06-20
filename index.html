@@ -268,17 +268,19 @@
     .mobile-map-key svg #_106, .mobile-map-key svg #_108, .mobile-map-key svg #_112, .mobile-map-key svg #_114, .mobile-map-key svg #_116, .mobile-map-key svg #_120, .mobile-map-key svg #_134, .mobile-map-key svg #_136, .mobile-map-key svg #_138, .mobile-map-key svg #_234, .mobile-map-key svg #_236, .mobile-map-key svg #_238, .mobile-map-key svg #_240, .mobile-map-key svg #_245, .mobile-map-key svg #_246, .mobile-map-key svg #_248, .mobile-map-key svg #_250 { fill:#e840a0 }
     #svg-root svg #_117, #svg-root svg #_202, #svg-root svg #_203, #svg-root svg #_204, #svg-root svg #_205, #svg-root svg #_206, #svg-root svg #_207, #svg-root svg #_208, #svg-root svg #_210, #svg-root svg #_212, #svg-root svg #_213, #svg-root svg #_214, #svg-root svg #_215, #svg-root svg #_216, #svg-root svg #_217, #svg-root svg #_218, #svg-root svg #_219, #svg-root svg #_220, #svg-root svg #_221, #svg-root svg #_222, #svg-root svg #_223, #svg-root svg #_224, #svg-root svg #_231, #svg-root svg #_233, #svg-root svg #_235, #svg-root svg #_239, #svg-root svg #_247, #svg-root svg #_249, #svg-root svg #_251, #svg-root svg #_253 { fill:#6878e8 }
     .mobile-map-key svg #_117, .mobile-map-key svg #_202, .mobile-map-key svg #_203, .mobile-map-key svg #_204, .mobile-map-key svg #_205, .mobile-map-key svg #_206, .mobile-map-key svg #_207, .mobile-map-key svg #_208, .mobile-map-key svg #_210, .mobile-map-key svg #_212, .mobile-map-key svg #_213, .mobile-map-key svg #_214, .mobile-map-key svg #_215, .mobile-map-key svg #_216, .mobile-map-key svg #_217, .mobile-map-key svg #_218, .mobile-map-key svg #_219, .mobile-map-key svg #_220, .mobile-map-key svg #_221, .mobile-map-key svg #_222, .mobile-map-key svg #_223, .mobile-map-key svg #_224, .mobile-map-key svg #_231, .mobile-map-key svg #_233, .mobile-map-key svg #_235, .mobile-map-key svg #_239, .mobile-map-key svg #_247, .mobile-map-key svg #_249, .mobile-map-key svg #_251, .mobile-map-key svg #_253 { fill:#6878e8 }
-    #svg-root svg #Map_Key { stroke:rgba(163,229,115,.5) !important; stroke-width:0.5px !important }
-    #svg-root svg #key *, #svg-root svg #key-2 * { stroke:rgba(163,229,115,.5) !important; }
+    #svg-root svg #Map_Key { stroke:#ffffff !important; stroke-width:0.5px !important }
+    #svg-root svg #key *, #svg-root svg #key-2 * { stroke:#ffffff !important; }
 
     .mobile-map-key {
       display:none;
       border:1px solid var(--panel-border);
       border-radius:10px; box-shadow:var(--card-shadow); overflow:hidden; background:transparent;
+      padding:12px clamp(16px, 10vw, 56px);
     }
+    #mobile-key-root { width:min(100%, 260px); margin:0 auto }
     .mobile-map-key svg { display:block; width:100%; height:auto; pointer-events:none }
-    .mobile-map-key svg #Map_Key { stroke:rgba(163,229,115,.5); stroke-width:0.5px }
-    .mobile-map-key svg #key *, .mobile-map-key svg #key-2 * { stroke:rgba(163,229,115,.5) !important; }
+    .mobile-map-key svg #Map_Key { stroke:#ffffff; stroke-width:0.5px }
+    .mobile-map-key svg #key *, .mobile-map-key svg #key-2 * { stroke:#ffffff !important; }
 
     /* Label typography */
     .shape-label, .label-text {
@@ -294,7 +296,7 @@
       filter:drop-shadow(0 1.15px 1.45px rgba(0,0,0,.28)); pointer-events:none;
     }
     .shape-icon-overlay.merch-native { stroke:none; filter:drop-shadow(0 1.15px 1.45px rgba(0,0,0,.28)) }
-    .shape-icon-overlay.bunker-native { stroke:#000; stroke-width:1.5px; filter:drop-shadow(0 1.15px 1.45px rgba(0,0,0,.28)) }
+    .shape-icon-overlay.bunker-native { stroke:#000000; stroke-width:1.5px; filter:drop-shadow(0 1.15px 1.45px rgba(0,0,0,.28)) }
 
     /* Interaction */
     .shape-interactive { cursor:pointer; transition:filter 180ms ease, opacity 180ms ease }
@@ -315,6 +317,7 @@
       .layout-root { grid-template-columns:1fr }
       .mobile-map-switcher { display:grid }
       .mobile-map-key { display:block }
+      #mobile-key-root { width:min(70vw, 240px) }
       body { padding:8px 6px }
       .booking-label { font-size:17px }
       .booking-subhead { font-size:12px }
@@ -482,8 +485,8 @@
       // Public-safe occupants feed (Google Apps Script Web App)
       const FEED_URL = "";
       // Colors for booked/available overrides (Small Deluxe example)
-      const BOOKED_FILL = "#460d4c";     // legacy fallback, pre-inverted for native map colors
-      const AVAILABLE_FILL = "#ae47b7";  // legacy fallback, pre-inverted for native map colors
+      const BOOKED_FILL = "#e84040";     // fallback map color
+      const AVAILABLE_FILL = "#e84040";  // fallback map color
       // Full (booked) colors by booth_type (match legend)
       // Per-booth-type "full" gradient settings (how quickly the gradient fades to white).
       // Smaller % = more white across the shape.
@@ -1417,7 +1420,7 @@ groupResolver: ({ booth, csv }) => {
               const baseColor =
                 (AVAILABLE_FILL_BY_TYPE && AVAILABLE_FILL_BY_TYPE.SLEEP)
                   ? AVAILABLE_FILL_BY_TYPE.SLEEP
-                  : '#288699';
+                  : '#6878e8';
               try {
                 node.removeAttribute('fill');
                 node.style.fill = baseColor;
@@ -2030,7 +2033,7 @@ groupResolver: ({ booth, csv }) => {
           width: 16.44,
           height: 14.97,
           markup: `
-            <path d="M13,7.52l.26,5.96c.03.61-3.34,1.31-4.45,1.45-1.4.18-3.81-.48-5.23-1.02-.21-.08-.44-.3-.43-.52l.27-5.91c-.2.14-.35.25-.47.28-.13.03-.41-.09-.52-.2L.2,5.33c-.33-.33-.21-.64.02-.96l1.9-2.68c.3-.42.7-.84,1.11-1.14L5.97.01c.26-.05.46.05.68.17,1,.5,2.12.5,3.11.01.22-.11.42-.23.66-.18l2.4.45c.37.07.66.26.91.54.87,1,1.58,2.08,2.33,3.19.14.21.4.44.37.71-.05.38-.39.59-.62.83l-1.34,1.35-.48.48c-.09.09-.31.21-.43.21-.14,0-.33-.11-.56-.24Z" fill="#000" stroke="none"></path>
+            <path d="M13,7.52l.26,5.96c.03.61-3.34,1.31-4.45,1.45-1.4.18-3.81-.48-5.23-1.02-.21-.08-.44-.3-.43-.52l.27-5.91c-.2.14-.35.25-.47.28-.13.03-.41-.09-.52-.2L.2,5.33c-.33-.33-.21-.64.02-.96l1.9-2.68c.3-.42.7-.84,1.11-1.14L5.97.01c.26-.05.46.05.68.17,1,.5,2.12.5,3.11.01.22-.11.42-.23.66-.18l2.4.45c.37.07.66.26.91.54.87,1,1.58,2.08,2.33,3.19.14.21.4.44.37.71-.05.38-.39.59-.62.83l-1.34,1.35-.48.48c-.09.09-.31.21-.43.21-.14,0-.33-.11-.56-.24Z" fill="#000000" stroke="none"></path>
             <path d="M12.8,5.94l.7.64.75-.81,1.05-1-1.75-2.43-.8-.87-1.78-.29c-.26,1.3-1.1,2.27-2.34,2.69h-.88c-1.23-.43-2.06-1.43-2.32-2.7l-1.85.32c-.91,1.06-1.74,2.14-2.44,3.28l1.78,1.78c.41-.5,1.01-.89,1.33-.62.09.08.16.27.22.43l-.09,2.55-.21,4.12c1.33.44,2.65.77,4.05.92,1.4-.17,2.72-.48,4.02-.93l-.3-6.57c0-.2.13-.45.25-.53s.49-.08.61.03Z" fill="#fff" stroke="none"></path>
             <path d="M9.66,1.83l.18-.51c-1.13.36-2.17.35-3.28,0l.2.51c.47.11.96.31,1.46.3s.94-.19,1.43-.3Z" fill="#fff" stroke="none"></path>
           `
@@ -2073,8 +2076,8 @@ groupResolver: ({ booth, csv }) => {
           width: 22.5,
           height: 20.42,
           markup: `
-            <path d="M11.25,20.1c-.8-.63-1.67-1.13-2.6-1.48s-1.9-.53-2.9-.53c-.7,0-1.39.09-2.06.28s-1.32.44-1.94.78c-.35.18-.69.18-1.01-.03s-.49-.49-.49-.88V6.2c0-.18.05-.36.14-.53s.23-.29.41-.38c.77-.4,1.57-.7,2.4-.9.83-.2,1.68-.3,2.55-.3.97,0,1.91.13,2.84.38s1.81.63,2.66,1.13v12.1c.85-.53,1.74-.93,2.68-1.2s1.88-.4,2.83-.4c.6,0,1.19.05,1.76.15s1.15.25,1.74.45V4.7c.25.08.5.17.74.26s.48.2.71.34c.18.08.32.21.41.38s.14.34.14.53v12.05c0,.38-.16.68-.49.88s-.66.21-1.01.03c-.62-.33-1.26-.59-1.94-.78s-1.36-.28-2.06-.28c-1,0-1.97.18-2.9.53s-1.8.84-2.6,1.48Z" fill="#fff" stroke="#000" stroke-width="1.7" stroke-linejoin="round"></path>
-            <polygon points="13.25 15.1 13.25 5.6 18.25 .6 18.25 10.6 13.25 15.1" fill="#fff" stroke="#000" stroke-width="1.7" stroke-linejoin="round"></polygon>
+            <path d="M11.25,20.1c-.8-.63-1.67-1.13-2.6-1.48s-1.9-.53-2.9-.53c-.7,0-1.39.09-2.06.28s-1.32.44-1.94.78c-.35.18-.69.18-1.01-.03s-.49-.49-.49-.88V6.2c0-.18.05-.36.14-.53s.23-.29.41-.38c.77-.4,1.57-.7,2.4-.9.83-.2,1.68-.3,2.55-.3.97,0,1.91.13,2.84.38s1.81.63,2.66,1.13v12.1c.85-.53,1.74-.93,2.68-1.2s1.88-.4,2.83-.4c.6,0,1.19.05,1.76.15s1.15.25,1.74.45V4.7c.25.08.5.17.74.26s.48.2.71.34c.18.08.32.21.41.38s.14.34.14.53v12.05c0,.38-.16.68-.49.88s-.66.21-1.01.03c-.62-.33-1.26-.59-1.94-.78s-1.36-.28-2.06-.28c-1,0-1.97.18-2.9.53s-1.8.84-2.6,1.48Z" fill="#fff" stroke="#000000" stroke-width="1.7" stroke-linejoin="round"></path>
+            <polygon points="13.25 15.1 13.25 5.6 18.25 .6 18.25 10.6 13.25 15.1" fill="#fff" stroke="#000000" stroke-width="1.7" stroke-linejoin="round"></polygon>
             <path d="M9.25,16.73V6.83c-.55-.23-1.12-.41-1.71-.54s-1.19-.19-1.79-.19-1.22.06-1.8.18-1.15.29-1.7.53v9.93c.58-.22,1.16-.38,1.74-.48s1.16-.15,1.76-.15,1.19.05,1.76.15,1.15.26,1.74.48Z" fill="#fff" stroke="none"></path>
           `
         },
@@ -2106,9 +2109,9 @@ groupResolver: ({ booth, csv }) => {
             <path d="M18.52,0v.95l1.22,3.63,2.12.91v3.78h-1.81c-.17-3.02-4.42-3.01-4.58,0h-7.05c-.12-.05-.06-.3-.09-.43-.29-1.56-2.07-2.35-3.44-1.51-.64.39-1.12,1.17-1.05,1.94H0v-1.34c.19-.03.46.07.6-.07V0h17.92Z"></path>
             <polygon points="18.8 4.54 17.89 1.85 15.78 1.85 15.78 4.54 18.8 4.54"></polygon>
             <circle cx="17.76" cy="9.27" r="1.67"></circle>
-            <circle cx="17.76" cy="9.27" r=".91" fill="#000" stroke="none"></circle>
+            <circle cx="17.76" cy="9.27" r=".91" fill="#000000" stroke="none"></circle>
             <circle cx="6.11" cy="9.27" r="1.67"></circle>
-            <circle cx="6.1" cy="9.27" r=".91" fill="#000" stroke="none"></circle>
+            <circle cx="6.1" cy="9.27" r=".91" fill="#000000" stroke="none"></circle>
           `
         }
       };
