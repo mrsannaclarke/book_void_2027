@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.86 10.94">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="icon_layer" data-name="icon layer">
+    <g id="key">
+      <path class="cls-1" d="M18.52,0v.95l1.22,3.63,2.12.91v3.78h-1.81c-.17-3.02-4.42-3.01-4.58,0h-7.05c-.12-.05-.06-.3-.09-.43-.29-1.56-2.07-2.35-3.44-1.51-.64.39-1.12,1.17-1.05,1.94H0v-1.34c.19-.03.46.07.6-.07V0h17.92Z"/>
+      <polygon points="18.8 4.54 17.89 1.85 15.78 1.85 15.78 4.54 18.8 4.54"/>
+      <circle class="cls-1" cx="17.76" cy="9.27" r="1.67"/>
+      <circle cx="17.76" cy="9.27" r=".91"/>
+      <circle class="cls-1" cx="6.11" cy="9.27" r="1.67"/>
+      <circle cx="6.1" cy="9.27" r=".91"/>
+    </g>
+  </g>
+</svg>
