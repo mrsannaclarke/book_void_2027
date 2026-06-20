@@ -38,6 +38,7 @@ Clean project scaffold for the next iteration of the VOID Fest booking map.
 
 - `index.html`: copied app shell from the prior Jupiter map project, retargeted to the new assets
 - `voidfest-map.svg`: browser-stable SVG map with the desired colors baked in
+- `assets/`: standalone SVG icon assets used by the map and key
 - `voidfest-map.png`: raster base image rendered from the current `.ai` file for visual alignment
 - `voidfest-map-data.json`: generated data file in the old `jupitervoid.json` style
 - `void-space-inventory.csv`: working inventory scaffold for room/booth/vendor assignments

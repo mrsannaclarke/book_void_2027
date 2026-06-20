@@ -1,0 +1,23 @@
+{
+  "name": "void-fest-interactive-map-v2",
+  "version": "1.0.0",
+  "description": "Interactive map and assets for VOID Fest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node -e \"JSON.parse(require('fs').readFileSync('void_map_project_brief.json','utf8')); console.log('brief json ok')\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrsannaclarke/book_void_2027.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrsannaclarke/book_void_2027/issues"
+  },
+  "homepage": "https://github.com/mrsannaclarke/book_void_2027#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.0"
+  }
+}

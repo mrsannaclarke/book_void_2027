@@ -38,7 +38,7 @@
         "ij"
       ]
     },
-    "known_local_git_state_at_review": "git status showed an untracked SVG/ directory. No brief update depends on that directory."
+    "asset_folder_note": "The top-level assets/ directory contains the standalone SVG icon assets used by the map and its key."
   },
   "high_level_architecture": {
     "intended_live_flow": "Bookwhen confirmation emails in Gmail Inbox -> Google Apps Script parser -> connected Google Sheet as the publishing gate -> Apps Script Web App JSON feed -> static frontend on GitHub Pages.",
@@ -91,7 +91,7 @@
           "voidfest-map-data.json",
           "favicon.webp"
         ],
-        "visual_rendering_note": "The public page loads voidfest-map.svg without using CSS filter inversion. Map-layer fill colors in CSS, JS, SVG, and voidfest-map-data.json are normalized to the working palette. Overlay labels and SVG icon overlays remain direct white/black styling."
+        "visual_rendering_note": "The public page loads voidfest-map.svg without using CSS filter inversion. Map-layer fill colors in CSS, JS, SVG, and voidfest-map-data.json are normalized to the working palette. Overlay labels and SVG icon overlays remain direct white/black styling. The sidebar header uses a CSS-masked purple swirl asset at assets/swirlpurple-header.png. Booking Options and selected booking results panels can use optimized background photos with dark/purple overlays."
       }
     ]
   },

@@ -97,14 +97,35 @@
       border:1px solid var(--panel-border);
       box-shadow: var(--card-shadow);
     }
+    .header-brand {
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+    }
+    .header-mark {
+      width:100px;
+      height:100px;
+      flex:0 0 100px;
+      background:
+        radial-gradient(circle at 50% 50%, rgba(168,85,247,.92), rgba(92,26,140,.72));
+      -webkit-mask:url("assets/swirlpurple-header.png") center / contain no-repeat;
+      mask:url("assets/swirlpurple-header.png") center / contain no-repeat;
+      filter:drop-shadow(0 0 12px rgba(168,85,247,.25));
+    }
+    .header-title-block {
+      min-width:0;
+    }
     header.header-band h1 {
-      margin:0 0 3px; font-size:22px; font-weight:700;
+      margin:0 0 3px; font-size:18px; font-weight:700;
       letter-spacing:.08em; text-transform:uppercase; color:var(--text-primary);
+      line-height:1.05;
     }
     header.header-band p {
       margin:0; font-size:13px; color:var(--text-muted);
       letter-spacing:.06em; text-transform:uppercase;
     }
+    header.header-band p.void-gold { color:#e49212 }
 
     /* Panels */
     .panel {
@@ -120,6 +141,27 @@
 
     /* Legend */
     .booking-options { padding:12px }
+    .booking-options.panel {
+      position:relative;
+      overflow:hidden;
+      background:
+        linear-gradient(rgba(14,13,28,.76), rgba(14,13,28,.86)),
+        radial-gradient(circle at 50% 32%, rgba(92,26,140,.10), rgba(8,8,16,.72) 70%),
+        url("assets/photobooth-panel.jpg") center center / cover no-repeat;
+    }
+    .booking-options.panel::before {
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        radial-gradient(circle at 50% 42%, rgba(14,13,28,.16), rgba(8,8,16,.76) 82%),
+        linear-gradient(rgba(92,26,140,.18), rgba(92,26,140,.10));
+    }
+    .booking-options.panel > * {
+      position:relative;
+      z-index:1;
+    }
     .booking-options h2, .results-panel h2 {
       margin:0 0 8px; font-size:13px; font-weight:700;
       text-transform:uppercase; letter-spacing:.1em; color:var(--accent);
@@ -131,14 +173,21 @@
       font-size:11px; font-weight:700; color:var(--accent-strong);
       text-transform:uppercase; letter-spacing:.1em;
     }
+    .void-gold { color:#e49212 }
+    .booking-subhead.void-gold { color:#e49212 }
     .booking-grid > .booking-subhead:first-child { margin-top:0 }
     .booking-grid { display:grid; grid-template-columns:1fr; gap:2px }
     .booking-row {
+      position:relative;
       display:flex; align-items:center; justify-content:space-between; gap:6px;
       border:1px solid transparent; border-radius:6px; padding:5px 6px;
       background:transparent;
       transition:background .15s ease, border-color .15s ease;
       overflow:hidden; cursor:pointer;
+    }
+    .booking-row > * {
+      position:relative;
+      z-index:1;
     }
     .booking-row:hover {
       background: rgba(92,26,140,.1);
@@ -171,6 +220,27 @@
     }
     .results-panel.flash-notes { animation: notesFlash 800ms ease }
     .results-panel { padding:12px }
+    .results-panel.photo-results {
+      position:relative;
+      overflow:hidden;
+      background:
+        linear-gradient(rgba(14,13,28,.76), rgba(14,13,28,.88)),
+        radial-gradient(circle at 50% 20%, rgba(92,26,140,.08), rgba(8,8,16,.70) 78%),
+        var(--results-photo-image) center center / cover no-repeat;
+    }
+    .results-panel.photo-results::before {
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        radial-gradient(circle at 50% 38%, rgba(14,13,28,.08), rgba(8,8,16,.78) 84%),
+        linear-gradient(rgba(92,26,140,.16), rgba(92,26,140,.08));
+    }
+    .results-panel.photo-results > * {
+      position:relative;
+      z-index:1;
+    }
     .results-panel .results-list { display:block; margin:6px 0 0; padding:0 }
     .results-panel .results-group { margin:10px 0 14px }
     .results-panel .results-group h3 { margin:0 0 6px; font-size:16px; font-weight:700; letter-spacing:.02em; color:var(--accent-strong) }
@@ -180,15 +250,19 @@
     .results-panel .results-group .nolink {
       display:block; width:100%; padding:7px 10px;
       border-radius:6px; background:transparent;
-      border:1px solid var(--chip-border);
+      border:1px solid transparent;
       text-decoration:none; color:var(--text-primary);
       font-weight:500; font-size:15px;
+      transition:background .15s ease, border-color .15s ease;
+      overflow:hidden;
     }
     .results-panel .results-group .result-title {
       font-size:15px; font-weight:600; margin:0 0 3px; line-height:1.2;
     }
-    .results-panel .results-group a:hover {
-      border-color:rgba(92,26,140,.5); background:rgba(92,26,140,.08);
+    .results-panel .results-group a:hover,
+    .results-panel .results-group a:focus-visible {
+      border-color:rgba(92,26,140,.35); background:rgba(92,26,140,.1);
+      outline:none;
     }
     .results-panel .results-group a.no-url-link {
       opacity:0.45; cursor:default; pointer-events:none;
@@ -330,8 +404,18 @@
       .results-panel .results-group h3 { font-size:17px }
       .results-panel .results-group .result-title { font-size:16px }
       .mobile-map-switcher button { font-size:15px; min-height:48px }
+      .header-brand { justify-content:center }
       header.header-band h1 { font-size:26px }
       header.header-band p { font-size:15px }
+    }
+    @media (max-width:520px) {
+      .header-mark {
+        width:76px;
+        height:76px;
+        flex-basis:76px;
+      }
+      header.header-band h1 { font-size:20px }
+      header.header-band p { font-size:13px }
     }
     @media (prefers-reduced-motion:reduce) {
       .booking-row { transition:none }
@@ -354,24 +438,20 @@
   <div class="layout-root">
     <aside class="sidebar">
       <header class="header-band" role="banner">
-        <h1>Void Tattoo Fest</h1>
-        <p>Bookable Map 2027</p>
+        <div class="header-brand">
+          <div class="header-mark" aria-hidden="true"></div>
+          <div class="header-title-block">
+            <h1>VOID Tattoo Fest 2027</h1>
+            <p class="void-gold">The Portal Has Opened</p>
+          </div>
+        </div>
       </header>
 
       <div class="map-top">
         <section class="booking-options panel" aria-label="Booking options">
           <h2>Booking Options<a class="key-jump" href="#notes"> </a></h2>
           <div class="booking-grid">
-            <div class="booking-subhead" role="heading" aria-level="3">Hotel Rooms (for sleeping)</div>
-            <div class="booking-row" data-list-key="sleep" tabindex="0" role="button" aria-pressed="false">
-              <div class="booking-label">Overnight Hotel Rooms <span class="booking-count" data-count-key="sleep"></span></div>
-              <div class="booking-swatches">
-                <div class="booking-swatch"><span class="booking-chip sleep-available"></span>Available</div>
-                <div class="booking-swatch"><span class="booking-chip sleep-full"></span>Full</div>
-              </div>
-            </div>
-
-            <div class="booking-subhead" role="heading" aria-level="3">Artist Booths</div>
+            <div class="booking-subhead void-gold" role="heading" aria-level="3">Artist Booths</div>
             <div class="booking-row" data-list-key="small_deluxe" tabindex="0" role="button" aria-pressed="false">
               <div class="booking-label">Small Deluxe <span class="booking-count" data-count-key="small_deluxe"></span></div>
               <div class="booking-swatches">
@@ -407,16 +487,31 @@
                 <div class="booking-swatch"><span class="booking-chip" style="background:linear-gradient(45deg,#ffe033 var(--full-white-start-dreamtent),#ffffff)"></span>Full</div>
               </div>
             </div>
+
+            <div class="booking-subhead void-gold" role="heading" aria-level="3">Hotel Rooms (for sleeping)</div>
+            <div class="booking-row" data-list-key="sleep" tabindex="0" role="button" aria-pressed="false">
+              <div class="booking-label">Overnight Hotel Rooms <span class="booking-count" data-count-key="sleep"></span></div>
+              <div class="booking-swatches">
+                <div class="booking-swatch"><span class="booking-chip sleep-available"></span>Available</div>
+                <div class="booking-swatch"><span class="booking-chip sleep-full"></span>Full</div>
+              </div>
+            </div>
           </div>
         </section>
 
         <section class="results-panel panel" id="notes" aria-label="Info panel">
-          <h2>How it works</h2>
-          <p style="margin:0;color:var(--text-muted)">Tap any colored room or booth on the map to open its booking page. Or tap a row in Booking Options to browse all spaces in that category.</p>
-          <p style="margin:10px 0 0;color:var(--text-muted);font-size:12px;">Solid color = available. Fading to white = full. On mobile, use the floor buttons above the map to jump between sections of the venue. Sleeper room occupants are kept private.</p>
+          <h2>Venue</h2>
+          <p style="margin:0;color:var(--text-muted)">VOID Tattoo Fest takes over both buildings of the Jupiter Hotel campus.</p>
+          <p style="margin:10px 0 0;color:var(--text-muted)"><strong class="void-gold">Jupiter NEXT:</strong> A convention-style space with pipe-and-drape booths.</p>
+          <p style="margin:10px 0 0;color:var(--text-muted)"><strong class="void-gold">Jupiter Hotel OG:</strong> Two floors of a mid-century motor lodge, with many hotel rooms converted into mini tattoo studios for the weekend.</p>
+          <br>
+          <h2>How It Works</h2>
+          <p style="margin:0;color:var(--text-muted)">Tap any colored room or booth on the map to book it.</p>
+          <p style="margin:10px 0 0;color:var(--text-muted)">Tap a booking category to browse spaces by type.</p>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:12px;">Sleeper room occupants are kept private.</p>
           <br>
           <h2>Coupon Code</h2>
-          <p style="margin:0;color:var(--text-muted)">NEED LODGING? We reserved the WHOLE Jupiter Original Motel side! Book through us for a killer deal and stay on-site for a tattooer summer camp style weekend. You can literally buy a hotel room on this page too! At checkout, enter <strong style="color:#a2d5fa">GETAROOM</strong> to take <strong>$80</strong> off any overnight sleeping room. One use per purchaser; cannot be combined with other offers.</p>
+          <p style="margin:0;color:var(--text-muted)">NEED LODGING? We reserved the WHOLE Jupiter Original Motel side! Book through us for a killer deal and stay on-site for a tattooer summer camp style weekend. You can literally buy a hotel room on this page too! At checkout, enter <strong class="void-gold">GETAROOM</strong> to take <strong>$80</strong> off any overnight sleeping room. One use per purchaser; cannot be combined with other offers.</p>
         </section>
       </div>
     </aside>
@@ -2893,6 +2988,18 @@ groupResolver: ({ booth, csv }) => {
         const spec = LEGEND_FILTERS[key];
         if(!spec || !notesPanel) return;
         const { container, count } = buildListFromData(mapData, spec);
+        const resultsPhotos = {
+          dreamtent_artist: "url('assets/dreamtent-row.jpg')",
+          ariumflex: "url('assets/ariumflex-row.jpg')"
+        };
+        const photoImage = resultsPhotos[key];
+        const hasResultsPhoto = Boolean(photoImage);
+        notesPanel.classList.toggle('photo-results', hasResultsPhoto);
+        if (hasResultsPhoto) {
+          notesPanel.style.setProperty('--results-photo-image', photoImage);
+        } else {
+          notesPanel.style.removeProperty('--results-photo-image');
+        }
         notesPanel.innerHTML = '';
         const h2 = document.createElement('h2');
         h2.textContent = spec.title || 'Results';
