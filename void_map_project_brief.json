@@ -23,7 +23,7 @@
       "void-space-inventory.csv",
       "void-space-review.json",
       "email_parser_script.gs",
-      "favicon.webp",
+      "favicon.png",
       "README.md",
       "venue-orientation-notes.txt"
     ],
@@ -89,7 +89,7 @@
           "index.html",
           "voidfest-map.svg",
           "voidfest-map-data.json",
-          "favicon.webp"
+          "favicon.png"
         ],
         "visual_rendering_note": "The public page loads voidfest-map.svg without using CSS filter inversion. Map-layer fill colors in CSS, JS, SVG, and voidfest-map-data.json are normalized to the working palette. Overlay labels and SVG icon overlays remain direct white/black styling. The sidebar header uses a CSS-masked purple swirl asset at assets/swirlpurple-header.png. Booking Options and selected booking results panels can use optimized background photos with dark/purple overlays."
       }
@@ -616,6 +616,7 @@
             "Map frame with SVG overlay",
             "Mobile floor switcher and mobile map key"
           ],
+          "mobile_floor_switcher": "At the mobile/quadrant breakpoint, only NEXT 2F, OG 1F, and OG 2F are exposed as floor buttons. NEXT 1F remains visible only as part of the full desktop map.",
           "embedding": "The page is designed to work as an embeddable static page and as a direct GitHub Pages page."
         },
         "manual_debug": {

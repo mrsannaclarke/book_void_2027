@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <base target="_blank">
   <title>Void Tattoo Fest Interactive Map</title>
-  <link rel="icon" type="image/webp" href="favicon.webp">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet">
@@ -243,7 +243,11 @@
     }
     .results-panel .results-list { display:block; margin:6px 0 0; padding:0 }
     .results-panel .results-group { margin:10px 0 14px }
-    .results-panel .results-group h3 { margin:0 0 6px; font-size:16px; font-weight:700; letter-spacing:.02em; color:var(--accent-strong) }
+    .results-panel .results-group h3 {
+      margin:10px 0 4px;
+      font-size:11px; font-weight:700; color:#e49212;
+      text-transform:uppercase; letter-spacing:.1em;
+    }
     .results-panel .results-group ul { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr; gap:5px }
     .results-panel .results-group li { margin:0; padding:0 }
     .results-panel .results-group a,
@@ -272,8 +276,9 @@
     /* Mobile floor switcher */
     .mobile-map-switcher {
       display:none;
-      grid-template-columns:repeat(4, minmax(0,1fr));
+      grid-template-columns:repeat(3, minmax(0,1fr));
       gap:5px;
+      width:100%;
     }
     .mobile-map-switcher button {
       min-height:44px;
@@ -401,7 +406,7 @@
       .booking-row { padding:8px 8px }
       .results-panel .results-group a,
       .results-panel .results-group .nolink { font-size:16px; padding:10px 12px }
-      .results-panel .results-group h3 { font-size:17px }
+      .results-panel .results-group h3 { font-size:12px }
       .results-panel .results-group .result-title { font-size:16px }
       .mobile-map-switcher button { font-size:15px; min-height:48px }
       .header-brand { justify-content:center }
@@ -502,7 +507,7 @@
         <section class="results-panel panel" id="notes" aria-label="Info panel">
           <h2>Venue</h2>
           <p style="margin:0;color:var(--text-muted)">VOID Tattoo Fest takes over both buildings of the Jupiter Hotel campus.</p>
-          <p style="margin:10px 0 0;color:var(--text-muted)"><strong class="void-gold">Jupiter NEXT:</strong> A convention-style space with pipe-and-drape booths.</p>
+          <p style="margin:10px 0 0;color:var(--text-muted)"><strong class="void-gold">Jupiter NEXT:</strong> (2nd Floor) A convention-style space with pipe-and-drape booths.</p>
           <p style="margin:10px 0 0;color:var(--text-muted)"><strong class="void-gold">Jupiter Hotel OG:</strong> Two floors of a mid-century motor lodge, with many hotel rooms converted into mini tattoo studios for the weekend.</p>
           <br>
           <h2>How It Works</h2>
@@ -518,16 +523,13 @@
 
     <main class="map-main">
       <nav class="mobile-map-switcher" aria-label="Mobile map floor selector">
-        <button type="button" data-map-view="next1" aria-pressed="true">NEXT 1F</button>
-        <button type="button" data-map-view="next2" aria-pressed="false">NEXT 2F</button>
+        <button type="button" data-map-view="next2" aria-pressed="true">NEXT 2F</button>
         <button type="button" data-map-view="og1" aria-pressed="false">OG 1F</button>
         <button type="button" data-map-view="og2" aria-pressed="false">OG 2F</button>
       </nav>
 
       <button id="wtf-btn" type="button" aria-expanded="false">WTF?</button>
       <div id="wtf-panel" role="region" aria-label="Floor information">
-        <span data-wtf="next1"><strong>Jupiter NEXT — Ground Floor</strong><br>
-        [Add your NEXT 1F description here.]</span>
         <span data-wtf="next2"><strong>Jupiter NEXT — 2nd Floor</strong><br>
         [Add your NEXT 2F description here.]</span>
         <span data-wtf="og1"><strong>Jupiter Hotel Original — Ground Floor</strong><br>
@@ -1027,7 +1029,7 @@
         og1: { x: 405, y: 46, w: 353.31, h: 260 },
         og2: { x: 405, y: 306, w: 353.31, h: 260 }
       };
-      let activeMobileMapView = "next1";
+      let activeMobileMapView = "next2";
       window.__LAST_LIST_KEY = null; // remember last legend key rendered
       let pageLoaderHidden_ = false;
 
@@ -1036,7 +1038,7 @@
         if (!svg) return;
         const isMobile = mobileMapQuery.matches;
         const view = isMobile
-          ? (MOBILE_MAP_VIEWS[activeMobileMapView] || MOBILE_MAP_VIEWS.next1)
+          ? (MOBILE_MAP_VIEWS[activeMobileMapView] || MOBILE_MAP_VIEWS.next2)
           : FULL_MAP_VIEWBOX;
 
         svg.setAttribute("viewBox", `${view.x} ${view.y} ${view.w} ${view.h}`);
@@ -1063,7 +1065,7 @@
 
       mobileMapButtons.forEach((button) => {
         button.addEventListener("click", () => {
-          activeMobileMapView = button.dataset.mapView || "next1";
+          activeMobileMapView = button.dataset.mapView || "next2";
           applyMapView_();
         });
       });
@@ -2990,7 +2992,10 @@ groupResolver: ({ booth, csv }) => {
         const { container, count } = buildListFromData(mapData, spec);
         const resultsPhotos = {
           dreamtent_artist: "url('assets/dreamtent-row.jpg')",
-          ariumflex: "url('assets/ariumflex-row.jpg')"
+          ariumflex: "url('assets/ariumflex-row.jpg')",
+          large_deluxe: "url('assets/large-deluxe-row.jpg')",
+          small_deluxe: "url('assets/small-deluxe-row.jpg')",
+          medium_deluxe: "url('assets/medium-deluxe-row.jpg')"
         };
         const photoImage = resultsPhotos[key];
         const hasResultsPhoto = Boolean(photoImage);
@@ -3503,7 +3508,7 @@ groupResolver: ({ booth, csv }) => {
     var btn    = document.getElementById('wtf-btn');
     var panel  = document.getElementById('wtf-panel');
     var spans  = panel ? Array.from(panel.querySelectorAll('[data-wtf]')) : [];
-    var active = 'next1';
+    var active = 'next2';
 
     function showFloorContent() {
       spans.forEach(function (s) {
