@@ -4,289 +4,338 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <base target="_blank">
-  <title>VOID Fest Interactive Map</title>
+  <title>Void Tattoo Fest Interactive Map</title>
   <link rel="icon" type="image/webp" href="favicon.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet">
   <style>
-    :root{
-      --maxw: 1100px;
-      --bg-start:#f6efe2; --bg-mid:#efe6d6; --bg-end:#e4dccd;
-      --panel-bg: rgba(255,250,243,.84);
-      --panel-inner: rgba(250,243,232,.88);
-      --panel-border: rgba(91, 71, 39, .16);
-      --chip-border: rgba(91, 71, 39, .14);
-      --card-shadow: 0 20px 44px rgba(101,79,49,.14);
-      --text-primary:#2f2517; --text-muted: rgba(47,37,23,.68);
-      --accent:#9a4b2f; --accent-strong:#7a3521;
-      --sleep-available-start:#288699;
-      --sleep-available-end:#ffffff;
-      --sleep-full:#ffffff;
+    :root {
+      --maxw: 1800px;
+      --bg: #080810;
+      --panel-bg: #0e0d1c;
+      --panel-border: rgba(92,26,140,.22);
+      --chip-border: rgba(92,26,140,.22);
+      --card-shadow: 0 2px 20px rgba(0,0,0,.65);
+      --text-primary: #ece8ff;
+      --text-muted: #b1b1b1;
+      --accent: #a855f7;
+      --accent-strong: #c070ff;
+      --sleep-available-start: #6878e8;
+      --sleep-available-end: #ffffff;
+      --sleep-full: #ffffff;
       --full-white-start: 12%;
       --full-white-start-dreamtent: 35%;
     }
 
-    *,*::before,*::after{ box-sizing:border-box }
-    html,body{ min-height:100% }
+    *,*::before,*::after { box-sizing:border-box }
+    html,body { min-height:100% }
 
-    body{
-      margin:0; padding:10px 10px 10px; gap:8px;
-      display:flex; flex-direction:column; align-items:center;
+    body {
+      margin:0; padding:8px 4px;
+      display:flex; flex-direction:column; align-items:center; gap:8px;
       font-family:"Space Grotesk","Segoe UI",Helvetica,Arial,sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(255,255,255,.7), transparent 32%),
-        linear-gradient(135deg,var(--bg-start),var(--bg-mid) 52%,var(--bg-end));
+      background: var(--bg);
       color:var(--text-primary);
       -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
     }
 
-    /* Initial loading overlay (stays until map + data + occupancy render complete) */
-    #page-loader{
-      position:fixed;
-      inset:0;
-      z-index:9999;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:20px;
-      background:
-        radial-gradient(circle at 20% 20%, rgba(154,75,47,.12), transparent 45%),
-        radial-gradient(circle at 80% 75%, rgba(40,134,153,.12), transparent 50%),
-        rgba(244,236,223,.82);
-      backdrop-filter: blur(10px);
+
+
+    /* Loading overlay */
+    #page-loader {
+      position:fixed; inset:0; z-index:9999;
+      display:flex; align-items:center; justify-content:center; padding:20px;
+      background: rgba(8,8,16,.92);
+      backdrop-filter: blur(6px);
       transition: opacity .28s ease, visibility .28s ease;
     }
-    #page-loader.is-hidden{
-      opacity:0;
-      visibility:hidden;
-      pointer-events:none;
+    #page-loader.is-hidden { opacity:0; visibility:hidden; pointer-events:none }
+    .page-loader-card {
+      min-width:min(92vw,300px); padding:16px 20px;
+      border-radius:10px;
+      background: var(--panel-bg);
+      border:1px solid var(--panel-border);
+      box-shadow: var(--card-shadow);
+      display:grid; grid-template-columns:auto 1fr; align-items:center; gap:12px;
     }
-    .page-loader-card{
-      min-width:min(92vw, 340px);
-      padding:18px 20px;
-      border-radius:18px;
-      background:rgba(255,250,243,.95);
-      border:1px solid rgba(91,71,39,.14);
-      box-shadow:0 24px 48px rgba(101,79,49,.15);
-      display:grid;
-      grid-template-columns:auto 1fr;
-      align-items:center;
-      gap:12px;
+    .page-loader-spinner {
+      width:18px; height:18px; border-radius:50%;
+      border:2px solid rgba(255,255,255,.1); border-top-color:var(--accent);
+      animation:loaderSpin 900ms linear infinite; flex:0 0 auto;
     }
-    .page-loader-spinner{
-      width:20px;
-      height:20px;
-      border-radius:50%;
-      border:2px solid rgba(255,255,255,.25);
-      border-top-color:var(--accent);
-      animation:loaderSpin 900ms linear infinite;
-      flex:0 0 auto;
+    .page-loader-text strong {
+      display:block; font-size:11px; line-height:1.2;
+      letter-spacing:.12em; text-transform:uppercase; color:var(--accent-strong);
     }
-    .page-loader-text strong{
-      display:block;
-      font-size:13px;
-      line-height:1.2;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      color:var(--accent-strong);
+    .page-loader-text span {
+      display:block; margin-top:3px; font-size:12px; color:var(--text-muted);
     }
-    .page-loader-text span{
-      display:block;
-      margin-top:3px;
-      font-size:13px;
-      color:var(--text-muted);
-    }
-    @keyframes loaderSpin { to { transform: rotate(360deg); } }
+    @keyframes loaderSpin { to { transform:rotate(360deg) } }
 
-    /* Header band */
-    header.header-band{
-      width:min(100%,var(--maxw)); margin:0 auto; text-align:center;
-      padding:10px 10px 10px; border-radius:6px;
-      background:linear-gradient(160deg,rgba(255,249,240,.96),rgba(245,236,223,.88));
-      border:1px solid var(--panel-border); box-shadow:var(--card-shadow);
-      backdrop-filter:blur(14px);
-    }
-    /* Embed mode: hide page title band */
-    header.header-band{ display:none }
-    /* Embed mode: hide bottom tip/status */
-    #status{ display:none }
-    header.header-band h1{ margin:4px 0 6px; font-size:28px; font-weight:700; letter-spacing:.04em }
-    header.header-band p{ margin:0; font-size:15px; color:var(--text-muted) }
-
-    /* Row above map: legend + notes */
-    .map-top{
-      width:min(100%,var(--maxw));
+    /* Layout root: sidebar + map */
+    .layout-root {
       display:grid;
-      grid-template-columns:1fr;
+      grid-template-columns: 262px 1fr;
       gap:8px;
+      width:min(100%, var(--maxw));
       align-items:start;
-      margin:0 auto;
-      justify-items:stretch;
     }
-    .map-top > *{ min-width:0 }
-
-	    .panel{ background:var(--panel-bg); border:1px solid var(--panel-border); border-radius:24px; box-shadow:var(--card-shadow); backdrop-filter:blur(14px) }
-	    .legend{ padding:10px 10px }
-	    .legend h2,.results-panel h2{ margin:0 0 6px; font-size:20px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--accent) }
-	    .legend h2 a.key-jump{ color:var(--accent); text-decoration:none; outline:none }
-	    .legend h2 a.key-jump:focus{ text-decoration:underline }
-	    .legend-subhead{
-	      margin:10px 0 2px;
-	      padding:0 8px;
-	      font-size:13px;
-	      font-weight:800;
-	      color:var(--accent-strong);
-	      text-transform:uppercase;
-	      letter-spacing:.10em;
-	    }
-	    .legend-grid > .legend-subhead:first-child{ margin-top:0 }
-	    @keyframes notesFlash {
-	      0% { box-shadow:0 0 0 0 rgba(63,161,255,.0), inset 0 0 0 0 rgba(63,161,255,.0) }
-	      30% { box-shadow:0 0 0 4px rgba(63,161,255,.25), inset 0 0 0 2px rgba(63,161,255,.35) }
-	      100% { box-shadow:var(--card-shadow), inset 0 0 0 0 rgba(63,161,255,0) }
-	    }
-    .results-panel.flash-notes{ animation: notesFlash 900ms ease; }
-    .legend-grid{ display:grid; grid-template-columns:1fr; gap:6px }
-
-	    .legend-row{
-	      display:grid; grid-template-columns:1fr auto; align-items:center; gap:8px;
-	      border:1px solid var(--panel-border); border-radius:14px; padding:6px 8px;
-	      background:var(--panel-inner); transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
-	      overflow:hidden; cursor:pointer;
-	    }
-    .legend-row:hover{ transform:translateY(-2px); box-shadow:0 12px 24px rgba(101,79,49,.12); border-color:rgba(154,75,47,.28); background:rgba(255,247,237,.96) }
-    /* Sleep chips: available = solid teal, full = teal→white gradient (45deg) */
-    .legend-chip.sleep-available {
-      background: var(--sleep-available-start);
+    .sidebar {
+      display:flex; flex-direction:column; gap:8px; min-width:0;
     }
-    .legend-chip.sleep-full {
+    .map-main {
+      display:flex; flex-direction:column; gap:8px; min-width:0;
+    }
+
+    /* Header in sidebar */
+    header.header-band {
+      display:block;
+      padding:16px 14px 14px;
+      border-radius:10px;
+      background: var(--panel-bg);
+      border:1px solid var(--panel-border);
+      box-shadow: var(--card-shadow);
+    }
+    header.header-band h1 {
+      margin:0 0 3px; font-size:22px; font-weight:700;
+      letter-spacing:.08em; text-transform:uppercase; color:var(--text-primary);
+    }
+    header.header-band p {
+      margin:0; font-size:13px; color:var(--text-muted);
+      letter-spacing:.06em; text-transform:uppercase;
+    }
+
+    /* Panels */
+    .panel {
+      background: var(--panel-bg);
+      border:1px solid var(--panel-border);
+      border-radius:10px;
+      box-shadow: var(--card-shadow);
+    }
+
+    /* map-top stacks legend + results in sidebar */
+    .map-top { display:flex; flex-direction:column; gap:8px; }
+    .map-top > * { min-width:0 }
+
+    /* Legend */
+    .booking-options { padding:12px }
+    .booking-options h2, .results-panel h2 {
+      margin:0 0 8px; font-size:13px; font-weight:700;
+      text-transform:uppercase; letter-spacing:.1em; color:var(--accent);
+    }
+    .booking-options h2 a.key-jump { color:var(--accent); text-decoration:none; outline:none }
+    .booking-options h2 a.key-jump:focus { text-decoration:underline }
+    .booking-subhead {
+      margin:10px 0 4px;
+      font-size:11px; font-weight:700; color:var(--accent-strong);
+      text-transform:uppercase; letter-spacing:.1em;
+    }
+    .booking-grid > .booking-subhead:first-child { margin-top:0 }
+    .booking-grid { display:grid; grid-template-columns:1fr; gap:2px }
+    .booking-row {
+      display:flex; align-items:center; justify-content:space-between; gap:6px;
+      border:1px solid transparent; border-radius:6px; padding:5px 6px;
+      background:transparent;
+      transition:background .15s ease, border-color .15s ease;
+      overflow:hidden; cursor:pointer;
+    }
+    .booking-row:hover {
+      background: rgba(92,26,140,.1);
+      border-color: rgba(92,26,140,.35);
+    }
+    .booking-chip.sleep-available { background: var(--sleep-available-start) }
+    .booking-chip.sleep-full {
       background: linear-gradient(45deg, var(--sleep-available-start) var(--full-white-start), var(--sleep-available-end) 100%);
     }
-
-    /* Hide 'Wayfinding' label and center chips */
-    .legend-row.wayfinding .legend-label { display:none; }
-    .legend-row.wayfinding .legend-swatches { justify-content:center; }
-    .legend-label{ font-size:15px; font-weight:600; text-align:left; padding:0 }
-    .legend-count{ margin-left:8px; font-size:12px; font-weight:700; color:var(--text-muted); white-space:nowrap; }
-    /* Keep chips on a single line; allow horizontal scroll on very small screens */
-    .legend-swatches{
-      display:flex; flex-wrap:nowrap; gap:8px; justify-content:flex-end;
+    .booking-label { font-size:15px; font-weight:500; text-align:left; padding:0; color:var(--text-primary) }
+    .booking-count { display:none; margin-left:6px; font-size:12px; font-weight:700; color:var(--text-muted); white-space:nowrap }
+    .booking-swatches {
+      display:flex; flex-wrap:nowrap; gap:4px; justify-content:flex-end;
       white-space:nowrap; overflow-x:auto; -ms-overflow-style:none; scrollbar-width:none;
+      flex-shrink:0;
     }
-    .legend-swatches::-webkit-scrollbar{ display:none }
-    .legend-swatch{ display:flex; align-items:center; gap:8px; font-size:13px; font-weight:500; color:var(--text-primary); padding:6px 10px; border-radius:12px; background:rgba(255,255,255,.46); border:1px solid var(--chip-border); backdrop-filter:blur(10px); flex:0 0 auto }
-    .legend-chip{ width:22px; height:12px; border-radius:4px; border:1px solid rgba(47,37,23,.18) }
-    .results-panel{ padding:10px 10px 10px }
+    .booking-swatches::-webkit-scrollbar { display:none }
+    .booking-swatch {
+      display:flex; align-items:center; gap:4px; font-size:12px;
+      font-weight:500; color:var(--text-muted);
+      padding:3px 5px; border-radius:5px; background:transparent; flex:0 0 auto;
+    }
+    .booking-chip { width:16px; height:9px; border-radius:3px; border:1px solid rgba(255,255,255,.1) }
 
-    /* Results list styles */
-    .results-panel .results-list{display:block; margin:6px 0 0; padding:0}
-    .results-panel .results-group{margin:12px 0 16px}
-    .results-panel .results-group h3{margin:0 0 8px; font-size:16px; font-weight:700; letter-spacing:.02em; color:var(--text-primary)}
-    .results-panel .results-group h3{ color: var(--accent-strong); }
-    .results-panel .results-group ul{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr; gap:8px}
-    .results-panel .results-group li{margin:0; padding:0}
+    /* Results panel */
+    @keyframes notesFlash {
+      0%   { box-shadow: var(--card-shadow) }
+      30%  { box-shadow: 0 0 0 3px rgba(92,26,140,.45) }
+      100% { box-shadow: var(--card-shadow) }
+    }
+    .results-panel.flash-notes { animation: notesFlash 800ms ease }
+    .results-panel { padding:12px }
+    .results-panel .results-list { display:block; margin:6px 0 0; padding:0 }
+    .results-panel .results-group { margin:10px 0 14px }
+    .results-panel .results-group h3 { margin:0 0 6px; font-size:16px; font-weight:700; letter-spacing:.02em; color:var(--accent-strong) }
+    .results-panel .results-group ul { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr; gap:5px }
+    .results-panel .results-group li { margin:0; padding:0 }
     .results-panel .results-group a,
-    .results-panel .results-group .nolink{
-      display:block; width:100%;
-      padding:10px 12px;
-      border-radius:12px;
-      background:rgba(255,255,255,.5);
+    .results-panel .results-group .nolink {
+      display:block; width:100%; padding:7px 10px;
+      border-radius:6px; background:transparent;
       border:1px solid var(--chip-border);
-      text-decoration:none;
-      color:var(--text-primary);
-      font-weight:600; font-size:14px;
+      text-decoration:none; color:var(--text-primary);
+      font-weight:500; font-size:15px;
+    }
+    .results-panel .results-group .result-title {
+      font-size:15px; font-weight:600; margin:0 0 3px; line-height:1.2;
+    }
+    .results-panel .results-group a:hover {
+      border-color:rgba(92,26,140,.5); background:rgba(92,26,140,.08);
+    }
+    .results-panel .results-group a.no-url-link {
+      opacity:0.45; cursor:default; pointer-events:none;
+    }
+    .results-panel .muted { color:var(--text-muted); font-weight:500 }
+
+    /* Mobile floor switcher */
+    .mobile-map-switcher {
+      display:none;
+      grid-template-columns:repeat(4, minmax(0,1fr));
+      gap:5px;
+    }
+    .mobile-map-switcher button {
+      min-height:44px;
+      border:1px solid var(--panel-border); border-radius:6px;
+      background: var(--panel-bg); color:var(--text-muted);
+      font:700 14px/1.1 "Space Grotesk","Segoe UI",Helvetica,Arial,sans-serif;
+      letter-spacing:.04em; cursor:pointer;
+      transition:color .15s ease, border-color .15s ease;
+    }
+    .mobile-map-switcher button[aria-pressed="true"] {
+      border-color:var(--accent); color:var(--accent-strong);
     }
 
-    /* Normalize booked row title to match list item size */
-    .results-panel .results-group .result-title{
-      font-size:14px;
-      font-weight:600;
-      margin:0 0 4px;
-      line-height:1.2;
+    #wtf-btn {
+      display:none;
+      width:100%; min-height:44px;
+      border:1px solid var(--panel-border); border-radius:6px;
+      background:var(--panel-bg); color:var(--accent-strong);
+      font:700 14px/1.1 "Space Grotesk","Segoe UI",Helvetica,Arial,sans-serif;
+      letter-spacing:.08em; cursor:pointer;
+      transition:color .15s, border-color .15s, background .15s;
+      margin-top:5px;
     }
-    .results-panel .results-group a:hover{background:rgba(255,250,243,.98); border-color:rgba(154,75,47,.3)}
-    .results-panel .muted{color:var(--text-muted); font-weight:500}
+    #wtf-btn:hover { border-color:var(--accent); background:rgba(92,26,140,.08); }
+    #wtf-btn[aria-expanded="true"] {
+      border-color:var(--accent); color:var(--text-primary);
+      background:rgba(92,26,140,.12);
+    }
+    #wtf-panel {
+      display:none;
+      margin-top:5px; padding:14px 16px;
+      border:1px solid var(--panel-border); border-radius:6px;
+      background:var(--panel-bg);
+      font:400 14px/1.6 "Space Grotesk","Segoe UI",Helvetica,Arial,sans-serif;
+      color:var(--text-secondary);
+    }
+    #wtf-panel.open { display:block; }
 
-    /* Map table container */
-    .map-table-wrap{ width:min(100%,var(--maxw)); border-radius:24px; box-shadow:var(--card-shadow); overflow:hidden; border:1px solid var(--panel-border); background:rgba(255,252,247,.74) }
-    table.map-table{ width:100%; border-collapse:collapse; border-spacing:0; background:transparent }
-    table.map-table td{ padding:0 }
+    @media (max-width: 1280px) {
+      [data-static-label="jupiter_next_title"],
+      [data-static-label="jupiter_og_title"] { display: none; }
+    }
 
-    /* Map frame (inside table cell) */
-    .map-frame{ position:relative; width:100%; margin:0; padding:0; background:transparent; aspect-ratio: 758.31 / 612 }
-    .svg-layer{ position:absolute; inset:0; width:100%; height:100%; pointer-events:none }
-    #svg-root{ pointer-events:none }
-    #svg-root svg{ width:100%; height:100%; pointer-events:auto }
+    /* Map table */
+    .map-table-wrap {
+      border-radius:10px; box-shadow:var(--card-shadow);
+      overflow:hidden; border:1px solid var(--panel-border); background:transparent;
+    }
+    table.map-table { width:100%; border-collapse:collapse; border-spacing:0; background:transparent }
+    table.map-table td { padding:0 }
+    .map-frame { position:relative; width:100%; margin:0; padding:0; background:transparent; aspect-ratio: 758.31 / 612 }
+    .svg-layer { position:absolute; inset:0; width:100%; height:100%; pointer-events:none }
+    #svg-root { pointer-events:none }
+    #svg-root svg { width:100%; height:100%; pointer-events:auto }
+    #svg-root svg #map_layer { filter:invert(1) }
+    #svg-root svg #A1, #svg-root svg #A2, #svg-root svg #A3, #svg-root svg #A4, #svg-root svg #A5, #svg-root svg #A6, #svg-root svg #A7, #svg-root svg #A8, #svg-root svg #A9, #svg-root svg #A10, #svg-root svg #A11, #svg-root svg #A12, #svg-root svg #A13 { fill:#8439d6 }
+    .mobile-map-key svg #A1, .mobile-map-key svg #A2, .mobile-map-key svg #A3, .mobile-map-key svg #A4, .mobile-map-key svg #A5, .mobile-map-key svg #A6, .mobile-map-key svg #A7, .mobile-map-key svg #A8, .mobile-map-key svg #A9, .mobile-map-key svg #A10, .mobile-map-key svg #A11, .mobile-map-key svg #A12, .mobile-map-key svg #A13 { fill:#8439d6 }
+    #svg-root svg #_1 rect, #svg-root svg #_2 rect, #svg-root svg #_3 rect, #svg-root svg #_4 rect, #svg-root svg #_5 rect, #svg-root svg #_6 rect { fill:#001fcc }
+    .mobile-map-key svg #_1 rect, .mobile-map-key svg #_2 rect, .mobile-map-key svg #_3 rect, .mobile-map-key svg #_4 rect, .mobile-map-key svg #_5 rect, .mobile-map-key svg #_6 rect { fill:#001fcc }
+    #svg-root svg #_103, #svg-root svg #_104, #svg-root svg #_105, #svg-root svg #_139, #svg-root svg #_140, #svg-root svg #_244 { fill:#1b6ded }
+    .mobile-map-key svg #_103, .mobile-map-key svg #_104, .mobile-map-key svg #_105, .mobile-map-key svg #_139, .mobile-map-key svg #_140, .mobile-map-key svg #_244 { fill:#1b6ded }
+    #svg-root svg #_119, #svg-root svg #_121, #svg-root svg #_122, #svg-root svg #_123, #svg-root svg #_124, #svg-root svg #_126, #svg-root svg #_127, #svg-root svg #_128, #svg-root svg #_129, #svg-root svg #_132, #svg-root svg #_226, #svg-root svg #_227, #svg-root svg #_228, #svg-root svg #_229, #svg-root svg #_232, #svg-root svg #_242, #svg-root svg #_243, #svg-root svg #_252, #svg-root svg #_254 { fill:#cf472b }
+    .mobile-map-key svg #_119, .mobile-map-key svg #_121, .mobile-map-key svg #_122, .mobile-map-key svg #_123, .mobile-map-key svg #_124, .mobile-map-key svg #_126, .mobile-map-key svg #_127, .mobile-map-key svg #_128, .mobile-map-key svg #_129, .mobile-map-key svg #_132, .mobile-map-key svg #_226, .mobile-map-key svg #_227, .mobile-map-key svg #_228, .mobile-map-key svg #_229, .mobile-map-key svg #_232, .mobile-map-key svg #_242, .mobile-map-key svg #_243, .mobile-map-key svg #_252, .mobile-map-key svg #_254 { fill:#cf472b }
+    #svg-root svg #_107, #svg-root svg #_113, #svg-root svg #_115, #svg-root svg #_118, #svg-root svg #_131, #svg-root svg #_133, #svg-root svg #_135, #svg-root svg #_137, #svg-root svg #_237 { fill:#17bfbf }
+    .mobile-map-key svg #_107, .mobile-map-key svg #_113, .mobile-map-key svg #_115, .mobile-map-key svg #_118, .mobile-map-key svg #_131, .mobile-map-key svg #_133, .mobile-map-key svg #_135, .mobile-map-key svg #_137, .mobile-map-key svg #_237 { fill:#17bfbf }
+    #svg-root svg #_106, #svg-root svg #_108, #svg-root svg #_112, #svg-root svg #_114, #svg-root svg #_116, #svg-root svg #_120, #svg-root svg #_134, #svg-root svg #_136, #svg-root svg #_138, #svg-root svg #_234, #svg-root svg #_236, #svg-root svg #_238, #svg-root svg #_240, #svg-root svg #_245, #svg-root svg #_246, #svg-root svg #_248, #svg-root svg #_250 { fill:#17bf5f }
+    .mobile-map-key svg #_106, .mobile-map-key svg #_108, .mobile-map-key svg #_112, .mobile-map-key svg #_114, .mobile-map-key svg #_116, .mobile-map-key svg #_120, .mobile-map-key svg #_134, .mobile-map-key svg #_136, .mobile-map-key svg #_138, .mobile-map-key svg #_234, .mobile-map-key svg #_236, .mobile-map-key svg #_238, .mobile-map-key svg #_240, .mobile-map-key svg #_245, .mobile-map-key svg #_246, .mobile-map-key svg #_248, .mobile-map-key svg #_250 { fill:#17bf5f }
+    #svg-root svg #_117, #svg-root svg #_202, #svg-root svg #_203, #svg-root svg #_204, #svg-root svg #_205, #svg-root svg #_206, #svg-root svg #_207, #svg-root svg #_208, #svg-root svg #_210, #svg-root svg #_212, #svg-root svg #_213, #svg-root svg #_214, #svg-root svg #_215, #svg-root svg #_216, #svg-root svg #_217, #svg-root svg #_218, #svg-root svg #_219, #svg-root svg #_220, #svg-root svg #_221, #svg-root svg #_222, #svg-root svg #_223, #svg-root svg #_224, #svg-root svg #_231, #svg-root svg #_233, #svg-root svg #_235, #svg-root svg #_239, #svg-root svg #_247, #svg-root svg #_249, #svg-root svg #_251, #svg-root svg #_253 { fill:#978717 }
+    .mobile-map-key svg #_117, .mobile-map-key svg #_202, .mobile-map-key svg #_203, .mobile-map-key svg #_204, .mobile-map-key svg #_205, .mobile-map-key svg #_206, .mobile-map-key svg #_207, .mobile-map-key svg #_208, .mobile-map-key svg #_210, .mobile-map-key svg #_212, .mobile-map-key svg #_213, .mobile-map-key svg #_214, .mobile-map-key svg #_215, .mobile-map-key svg #_216, .mobile-map-key svg #_217, .mobile-map-key svg #_218, .mobile-map-key svg #_219, .mobile-map-key svg #_220, .mobile-map-key svg #_221, .mobile-map-key svg #_222, .mobile-map-key svg #_223, .mobile-map-key svg #_224, .mobile-map-key svg #_231, .mobile-map-key svg #_233, .mobile-map-key svg #_235, .mobile-map-key svg #_239, .mobile-map-key svg #_247, .mobile-map-key svg #_249, .mobile-map-key svg #_251, .mobile-map-key svg #_253 { fill:#978717 }
+    #svg-root svg #Map_Key { stroke:rgba(92,26,140,.5) !important; stroke-width:0.5px !important }
+    #svg-root svg #key *, #svg-root svg #key-2 * { stroke:rgba(92,26,140,.5) !important; }
 
-    /* ===== Label typography (shared) ===== */
-    .shape-label,
-    .label-text{
-      fill:#ffffff;
-      stroke:#000000;
-      stroke-width:1px;
-      paint-order: stroke fill;
-      font-family:"Space Grotesk","Arial",sans-serif;
-      font-weight:800;
-      letter-spacing:.02em;
-      pointer-events:none;
-      text-rendering:geometricPrecision;
+    .mobile-map-key {
+      display:none;
+      border:1px solid var(--panel-border);
+      border-radius:10px; box-shadow:var(--card-shadow); overflow:hidden; background:transparent;
+    }
+    .mobile-map-key svg { display:block; width:100%; height:auto; pointer-events:none }
+    .mobile-map-key svg #map_layer { filter:invert(1) }
+    .mobile-map-key svg #Map_Key { stroke:rgba(92,26,140,.5); stroke-width:0.5px }
+    .mobile-map-key svg #key *, .mobile-map-key svg #key-2 * { stroke:rgba(92,26,140,.5) !important; }
+
+    /* Label typography */
+    .shape-label, .label-text {
+      fill:#ffffff; stroke:#000000; stroke-width:1px; paint-order: stroke fill;
+      font-family:"Space Grotesk","Arial",sans-serif; font-weight:800;
+      letter-spacing:.02em; pointer-events:none; text-rendering:geometricPrecision;
       filter:drop-shadow(0 1.15px 1.45px rgba(0,0,0,.28));
     }
-    .shape-icon-overlay{
-      fill:#ffffff;
-      stroke:#000000;
-      stroke-width:2.75px;
-      paint-order: stroke fill;
-      stroke-linejoin:round;
-      stroke-linecap:round;
+    .shape-icon-overlay {
+      fill:#ffffff; stroke:#000000; stroke-width:2.75px;
+      paint-order: stroke fill; stroke-linejoin:round; stroke-linecap:round;
       shape-rendering:geometricPrecision;
-      filter:drop-shadow(0 1.15px 1.45px rgba(0,0,0,.28));
-      pointer-events:none;
+      filter:drop-shadow(0 1.15px 1.45px rgba(0,0,0,.28)); pointer-events:none;
     }
-    .shape-icon-overlay.merch-native{
-      stroke:none;
-      filter:drop-shadow(0 1.15px 1.45px rgba(0,0,0,.28));
-    }
-    .shape-icon-overlay.bunker-native{
-      stroke:#000;
-      stroke-width:1.5px;
-      filter:drop-shadow(0 1.15px 1.45px rgba(0,0,0,.28));
-    }
-    /* ===== Interaction & hover ===== */
-    .shape-interactive{ cursor:pointer; transition:filter 180ms ease, opacity 180ms ease }
-    /* Lighten on hover/focus instead of lowering opacity */
-    .shape-interactive.shape-hover{ opacity:1; filter:brightness(1.25) saturate(1.05) }
+    .shape-icon-overlay.merch-native { stroke:none; filter:drop-shadow(0 1.15px 1.45px rgba(0,0,0,.28)) }
+    .shape-icon-overlay.bunker-native { stroke:#000; stroke-width:1.5px; filter:drop-shadow(0 1.15px 1.45px rgba(0,0,0,.28)) }
+
+    /* Interaction */
+    .shape-interactive { cursor:pointer; transition:filter 180ms ease, opacity 180ms ease }
+    .shape-interactive.shape-hover { opacity:1; filter:brightness(1.28) saturate(1.08) }
     .shape-interactive:focus,
     .shape-interactive:active,
-    .shape-interactive:focus-visible{
-      outline:none;
-      box-shadow:none;
-      filter:none;
+    .shape-interactive:focus-visible { outline:none; box-shadow:none; filter:none }
+    * { -webkit-tap-highlight-color: transparent }
+    .shape-interactive:focus-visible { outline:2px solid var(--accent); outline-offset:2px }
+
+    #status { display:none }
+
+    a { color:var(--accent); text-decoration:underline }
+    a:hover { color:var(--accent-strong) }
+
+    /* Responsive */
+    @media (max-width:1280px) {
+      .layout-root { grid-template-columns:1fr }
+      .mobile-map-switcher { display:grid }
+      .mobile-map-key { display:block }
+      body { padding:8px 6px }
+      .booking-label { font-size:17px }
+      .booking-subhead { font-size:12px }
+      .booking-options h2, .results-panel h2 { font-size:15px }
+      .booking-swatch { font-size:14px }
+      .booking-chip { width:18px; height:10px }
+      .booking-row { padding:8px 8px }
+      .results-panel .results-group a,
+      .results-panel .results-group .nolink { font-size:16px; padding:10px 12px }
+      .results-panel .results-group h3 { font-size:17px }
+      .results-panel .results-group .result-title { font-size:16px }
+      .mobile-map-switcher button { font-size:15px; min-height:48px }
+      header.header-band h1 { font-size:26px }
+      header.header-band p { font-size:15px }
     }
-    *{ -webkit-tap-highlight-color: transparent; }
-    .shape-interactive:focus-visible{ outline:2px solid #d38a2d; outline-offset:2px }
-
-    /* Status/notes */
-    #status{ width:min(100%,var(--maxw)); margin:0 auto; padding:18px 24px; font-size:14px; color:var(--text-muted); background:var(--panel-bg); border:1px solid var(--panel-border); border-radius:22px; box-shadow:var(--card-shadow); backdrop-filter:blur(14px) }
-
-    a{ color:var(--accent); text-decoration:underline } a:hover{ color:var(--accent-strong) }
-
-	    @media (max-width:900px){
-	      body{ padding:10px 8px 14px; gap:10px }
-	      .legend{ padding:8px }
-	    }
-	    @media (max-width:640px){
-	      body{ padding:10px 6px 12px; gap:10px }
-	      .legend{ padding:6px }
-	      .legend-subhead{ padding:0 6px }
-	      .legend-row{ padding:6px 6px }
-	      header.header-band h1{ font-size:24px }
-	    }
-    @media (prefers-reduced-motion:reduce){
-      .legend-row{ transition:none }
-      #page-loader{ transition:none }
-      .page-loader-spinner{ animation:none }
+    @media (prefers-reduced-motion:reduce) {
+      .booking-row { transition:none }
+      #page-loader { transition:none }
+      .page-loader-spinner { animation:none }
     }
   </style>
 </head>
@@ -295,117 +344,132 @@
     <div class="page-loader-card">
       <div class="page-loader-spinner" aria-hidden="true"></div>
       <div class="page-loader-text">
-        <strong>Loading Map</strong>
-        <span>Preparing rooms and availability...</span>
+        <strong>Loading</strong>
+        <span>Building map and availability…</span>
       </div>
     </div>
   </div>
 
-	  <div class="map-top">
-	    <section class="legend panel" aria-label="Booth legend">
-	      <h2>Navigation Key<a class="key-jump" href="#notes"> </a></h2>
-	      <div class="legend-grid">
-	        <div class="legend-subhead" role="heading" aria-level="3">Hotel Rooms (for sleeping)</div>
-	        <!-- Sleep Rooms legend row -->
-	        <div class="legend-row" data-list-key="sleep" tabindex="0" role="button" aria-pressed="false">
-	          <div class="legend-label">Overnight Hotel Rooms <span class="legend-count" data-count-key="sleep"></span></div>
-	          <div class="legend-swatches">
-	            <div class="legend-swatch">
-	              <span class="legend-chip sleep-available"></span>Available
-	            </div>
-	            <div class="legend-swatch">
-	              <span class="legend-chip sleep-full"></span>Full
-	            </div>
-	          </div>
-	        </div>
-	        <div class="legend-subhead" role="heading" aria-level="3">Artist Booths</div>
-	        <div class="legend-row" data-list-key="small_deluxe" tabindex="0" role="button" aria-pressed="false">
-	          <div class="legend-label">Small Deluxe <span class="legend-count" data-count-key="small_deluxe"></span></div>
-	          <div class="legend-swatches">
-	            <div class="legend-swatch"><span class="legend-chip" style="background:#51b848"></span>Available</div>
-	            <div class="legend-swatch"><span class="legend-chip" style="background:linear-gradient(45deg,#51b848 var(--full-white-start),#ffffff)"></span>Full</div>
-	          </div>
-	        </div>
-	        <div class="legend-row" data-list-key="medium_deluxe" tabindex="0" role="button" aria-pressed="false">
-	          <div class="legend-label">Medium Deluxe <span class="legend-count" data-count-key="medium_deluxe"></span></div>
-	          <div class="legend-swatches">
-	            <div class="legend-swatch"><span class="legend-chip" style="background:#dd3ac6"></span>Available</div>
-	            <div class="legend-swatch"><span class="legend-chip" style="background:linear-gradient(45deg,#dd3ac6 var(--full-white-start),#ffffff)"></span>Full</div>
-	          </div>
-	        </div>
-	        <div class="legend-row" data-list-key="large_deluxe" tabindex="0" role="button" aria-pressed="false">
-	          <div class="legend-label">Large Deluxe <span class="legend-count" data-count-key="large_deluxe"></span></div>
-	          <div class="legend-swatches">
-	            <div class="legend-swatch"><span class="legend-chip" style="background:#8551c8"></span>Available</div>
-	            <div class="legend-swatch"><span class="legend-chip" style="background:linear-gradient(45deg,#8551c8 var(--full-white-start),#ffffff)"></span>Full</div>
-	          </div>
-	        </div>
-	        <div class="legend-row" data-list-key="ariumflex" tabindex="0" role="button" aria-pressed="false">
-	          <div class="legend-label">Arium/Flex Lounge <span class="legend-count" data-state="soldout">Sold Out</span></div>
-	          <div class="legend-swatches">
-	            <div class="legend-swatch"><span class="legend-chip" style="background:#3d7ef2"></span>Available</div>
-	            <div class="legend-swatch"><span class="legend-chip" style="background:linear-gradient(45deg,#3d7ef2 var(--full-white-start),#ffffff)"></span>Full</div>
-	          </div>
-	        </div>
-	        <div class="legend-row" data-list-key="dreamtent_artist" tabindex="0" role="button" aria-pressed="false">
-	          <div class="legend-label">Dream Tent <span class="legend-count" data-state="soldout">Sold Out</span></div>
-	          <div class="legend-swatches">
-	            <div class="legend-swatch"><span class="legend-chip" style="background:#00e5ff"></span>Available</div>
-	            <div class="legend-swatch"><span class="legend-chip" style="background:linear-gradient(45deg,#b8f6ff var(--full-white-start-dreamtent),#ffffff)"></span>Full</div>
-	          </div>
-	        </div>
-	        <div class="legend-subhead" role="heading" aria-level="3">Vendor</div>
-	        <div class="legend-row" data-list-key="vendor" tabindex="0" role="button" aria-pressed="false">
-	          <div class="legend-label">Vendor Booths</div>
-	          <div class="legend-swatches">
-	            <div class="legend-swatch"><span class="legend-chip" style="background:#e05600"></span>Available</div>
-	            <div class="legend-swatch"><span class="legend-chip" style="background:linear-gradient(45deg,#e05600 var(--full-white-start),#ffffff)"></span>Full</div>
-	          </div>
-	        </div>
-	        <div class="legend-subhead" role="heading" aria-level="3">Wayfinding</div>
-	        <div class="legend-row wayfinding" tabindex="0" role="button" aria-pressed="false">
-	          <div class="legend-label">Wayfinding</div>
-	          <div class="legend-swatches">
-	            <div class="legend-swatch"><span class="legend-chip" style="background:#c5862b"></span>Void Activations</div>
-	            <div class="legend-swatch"><span class="legend-chip" style="background:#3108eb"></span>Restrooms</div>
-	            <div class="legend-swatch"><span class="legend-chip" style="background:#fbe100"></span>Exits</div>
-	          </div>
-	        </div>
-	      </div>
-	    </section>
-    <section class="results-panel panel" id="notes" aria-label="Info panel">
-      <h2>Instructions</h2>
-      <p style="margin:0;color:var(--text-muted)">Click a shape on the map to open its booking page. Or click a row in the Key to see the full list for that group.</p>
-       <p style="margin:12px 0 0;color:var(--text-muted); font-size:13px;">
-        Sleeper room buyers remain private; occupant names are only shown for artist and vendor booths.
-      </p>
-      <br>
-      <h2>Coupon Code</h2>
-      <p style="margin:0;color:var(--text-muted)">NEED LODGING? We reserved the WHOLE Jupiter Original Motel side! Book through us for a killer deal and stay on-site for a tattooer summer camp style weekend. You can literally buy a hotel room on this page too! At checkout, enter <strong style="color:#a2d5fa">GETAROOM</strong> to take <strong>$80</strong> off any overnight sleeping room. One use per purchaser; cannot be combined with other offers.</p>
-     
-   </section>
-  </div>
+  <div class="layout-root">
+    <aside class="sidebar">
+      <header class="header-band" role="banner">
+        <h1>Void Tattoo Fest</h1>
+        <p>Bookable Map 2027</p>
+      </header>
 
-  <div class="map-table-wrap">
-    <table class="map-table" role="presentation">
-      <tr>
-        <td>
-          <div class="map-frame">
-	            <div id="svg-root" class="svg-layer"></div>
+      <div class="map-top">
+        <section class="booking-options panel" aria-label="Booking options">
+          <h2>Booking Options<a class="key-jump" href="#notes"> </a></h2>
+          <div class="booking-grid">
+            <div class="booking-subhead" role="heading" aria-level="3">Hotel Rooms (for sleeping)</div>
+            <div class="booking-row" data-list-key="sleep" tabindex="0" role="button" aria-pressed="false">
+              <div class="booking-label">Overnight Hotel Rooms <span class="booking-count" data-count-key="sleep"></span></div>
+              <div class="booking-swatches">
+                <div class="booking-swatch"><span class="booking-chip sleep-available"></span>Available</div>
+                <div class="booking-swatch"><span class="booking-chip sleep-full"></span>Full</div>
+              </div>
+            </div>
+
+            <div class="booking-subhead" role="heading" aria-level="3">Artist Booths</div>
+            <div class="booking-row" data-list-key="small_deluxe" tabindex="0" role="button" aria-pressed="false">
+              <div class="booking-label">Small Deluxe <span class="booking-count" data-count-key="small_deluxe"></span></div>
+              <div class="booking-swatches">
+                <div class="booking-swatch"><span class="booking-chip" style="background:#e84040"></span>Available</div>
+                <div class="booking-swatch"><span class="booking-chip" style="background:linear-gradient(45deg,#e84040 var(--full-white-start),#ffffff)"></span>Full</div>
+              </div>
+            </div>
+            <div class="booking-row" data-list-key="medium_deluxe" tabindex="0" role="button" aria-pressed="false">
+              <div class="booking-label">Medium Deluxe <span class="booking-count" data-count-key="medium_deluxe"></span></div>
+              <div class="booking-swatches">
+                <div class="booking-swatch"><span class="booking-chip" style="background:#30b8d4"></span>Available</div>
+                <div class="booking-swatch"><span class="booking-chip" style="background:linear-gradient(45deg,#30b8d4 var(--full-white-start),#ffffff)"></span>Full</div>
+              </div>
+            </div>
+            <div class="booking-row" data-list-key="large_deluxe" tabindex="0" role="button" aria-pressed="false">
+              <div class="booking-label">Large Deluxe <span class="booking-count" data-count-key="large_deluxe"></span></div>
+              <div class="booking-swatches">
+                <div class="booking-swatch"><span class="booking-chip" style="background:#e840a0"></span>Available</div>
+                <div class="booking-swatch"><span class="booking-chip" style="background:linear-gradient(45deg,#e840a0 var(--full-white-start),#ffffff)"></span>Full</div>
+              </div>
+            </div>
+            <div class="booking-row" data-list-key="ariumflex" tabindex="0" role="button" aria-pressed="false">
+              <div class="booking-label">Arium/Flex Lounge <span class="booking-count"></span></div>
+              <div class="booking-swatches">
+                <div class="booking-swatch"><span class="booking-chip" style="background:#7bc629"></span>Available</div>
+                <div class="booking-swatch"><span class="booking-chip" style="background:linear-gradient(45deg,#7bc629 var(--full-white-start),#ffffff)"></span>Full</div>
+              </div>
+            </div>
+            <div class="booking-row" data-list-key="dreamtent_artist" tabindex="0" role="button" aria-pressed="false">
+              <div class="booking-label">Dream Tent <span class="booking-count"></span></div>
+              <div class="booking-swatches">
+                <div class="booking-swatch"><span class="booking-chip" style="background:#ffe033"></span>Available</div>
+                <div class="booking-swatch"><span class="booking-chip" style="background:linear-gradient(45deg,#ffe033 var(--full-white-start-dreamtent),#ffffff)"></span>Full</div>
+              </div>
+            </div>
           </div>
-        </td>
-      </tr>
-    </table>
+        </section>
+
+        <section class="results-panel panel" id="notes" aria-label="Info panel">
+          <h2>How it works</h2>
+          <p style="margin:0;color:var(--text-muted)">Tap any colored room or booth on the map to open its booking page. Or tap a row in Booking Options to browse all spaces in that category.</p>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:12px;">Solid color = available. Fading to white = full. On mobile, use the floor buttons above the map to jump between sections of the venue. Sleeper room occupants are kept private.</p>
+          <br>
+          <h2>Coupon Code</h2>
+          <p style="margin:0;color:var(--text-muted)">NEED LODGING? We reserved the WHOLE Jupiter Original Motel side! Book through us for a killer deal and stay on-site for a tattooer summer camp style weekend. You can literally buy a hotel room on this page too! At checkout, enter <strong style="color:#a2d5fa">GETAROOM</strong> to take <strong>$80</strong> off any overnight sleeping room. One use per purchaser; cannot be combined with other offers.</p>
+        </section>
+      </div>
+    </aside>
+
+    <main class="map-main">
+      <nav class="mobile-map-switcher" aria-label="Mobile map floor selector">
+        <button type="button" data-map-view="next1" aria-pressed="true">NEXT 1F</button>
+        <button type="button" data-map-view="next2" aria-pressed="false">NEXT 2F</button>
+        <button type="button" data-map-view="og1" aria-pressed="false">OG 1F</button>
+        <button type="button" data-map-view="og2" aria-pressed="false">OG 2F</button>
+      </nav>
+
+      <button id="wtf-btn" type="button" aria-expanded="false">WTF?</button>
+      <div id="wtf-panel" role="region" aria-label="Floor information">
+        <span data-wtf="next1"><strong>Jupiter NEXT — Ground Floor</strong><br>
+        [Add your NEXT 1F description here.]</span>
+        <span data-wtf="next2"><strong>Jupiter NEXT — 2nd Floor</strong><br>
+        [Add your NEXT 2F description here.]</span>
+        <span data-wtf="og1"><strong>Jupiter Hotel Original — Ground Floor</strong><br>
+        [Add your OG 1F description here.]</span>
+        <span data-wtf="og2"><strong>Jupiter Hotel Original — 2nd Floor</strong><br>
+        [Add your OG 2F description here.]</span>
+      </div>
+
+      <div id="building-title" style="display:none; margin-top:8px; padding:6px 0 2px;
+        font:700 26px/1.2 'Space Grotesk','Segoe UI',Helvetica,Arial,sans-serif;
+        color:var(--text-primary); letter-spacing:.04em; text-align:center;">
+      </div>
+
+      <div class="map-table-wrap">
+        <table class="map-table" role="presentation">
+          <tr>
+            <td>
+              <div class="map-frame">
+                <div id="svg-root" class="svg-layer"></div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <section class="mobile-map-key" aria-label="Map key">
+        <div id="mobile-key-root"></div>
+      </section>
+    </main>
   </div>
 
-
-  <section class="legend" id="status">
+  <section class="booking-options" id="status">
     Loading interactive layer…
   </section>
-
   <script>
     (function () {
       const SVG_NS = "http://www.w3.org/2000/svg";
+      const KEY_VIEWBOX = { x: 276, y: 39, w: 132, h: 315 };
       // Shapes that should always keep their original SVG fill
       const PRESERVE_COLOR = new Set([
         "_9thst","arium","bunker","command","dreambox","dreamtentroof",
@@ -431,36 +495,50 @@
       };
       const FULL_FILL_BY_TYPE = {
         // Artist rooms
-        SDL: '#b9f2b3',   // Small Deluxe — Full
-        MDL: '#f599ec',   // Medium Deluxe — Full
-        LDL: '#b99df1',   // Large Deluxe — Full
-        XLDL: '#b99df1',  // Extra Large Deluxe (108) — Full (same family as Large)
-        SLEEP: '#ffffff', // Sleep Rooms — Occupied
+        SDL: '#17bfbf',   // Small Deluxe — Full
+        MDL: '#cf472b',   // Medium Deluxe — Full
+        LDL: '#17bf5f',   // Large Deluxe — Full
+        XLDL: '#17bf5f',  // Extra Large Deluxe (108) — Full (same family as Large)
+        SLEEP: '#978717', // Sleep Rooms — Occupied
         // Arium / Flex (indoor 10x10)
-        STD10IN: '#78b0ff',
+        STD10IN: '#8439d6',
         // Dream Tent artists (10x10)
-        STD10TENT: '#b8f6ff',
+        STD10TENT: '#001fcc',
         // Vendors
-        VND10TENT: '#ff9959',   // Dream Tent Vendors — Full
-        VND10OUT:  '#ff9959',   // Jupiter Original Vendors (outdoor) — Full
-        VND10IN:   '#ff9959',   // Jupiter NEXT Vendors (indoor) — Full
+        VND10TENT: '#009fdf',   // Dream Tent Vendors — Full
+        VND10OUT:  '#009fdf',   // Jupiter Original Vendors (outdoor) — Full
+        VND10IN:   '#009fdf',   // Jupiter NEXT Vendors (indoor) — Full
         // Street Fair
-        VND10STREET: '#f25f94'  // Street Fair — Full
+        VND10STREET: '#009fdf'  // Street Fair — Full
       };
 
       // Available (base) colors by booth_type (match legend "Available" chips)
       const AVAILABLE_FILL_BY_TYPE = {
-        SDL: '#51b848',
-        MDL: '#dd3ac6',
-        LDL: '#8551c8',
-        XLDL: '#8551c8',
-        SLEEP: '#288699',
-        STD10IN: '#3d7ef2',
-        STD10TENT: '#00e5ff',
-        VND10TENT: '#e05600',
-        VND10OUT: '#e05600',
-        VND10IN: '#e05600',
-        VND10STREET: '#af003f'
+        SDL: '#17bfbf',
+        MDL: '#cf472b',
+        LDL: '#17bf5f',
+        XLDL: '#17bf5f',
+        SLEEP: '#978717',
+        STD10IN: '#8439d6',
+        STD10TENT: '#001fcc',
+        VND10TENT: '#009fdf',
+        VND10OUT: '#009fdf',
+        VND10IN: '#009fdf',
+        VND10STREET: '#009fdf'
+      };
+
+      // Per-room type overrides — takes priority over JSON booth_type.
+      // Sleeper IDs here prevent those rooms from appearing in any studio/deluxe list.
+      const ROOM_TYPE_OVERRIDE = {
+        // Sleeper rooms
+        '117':'SLEEP','202':'SLEEP','203':'SLEEP','204':'SLEEP','205':'SLEEP',
+        '206':'SLEEP','207':'SLEEP','208':'SLEEP','210':'SLEEP','212':'SLEEP',
+        '213':'SLEEP','214':'SLEEP','215':'SLEEP','216':'SLEEP','217':'SLEEP',
+        '218':'SLEEP','219':'SLEEP','220':'SLEEP','221':'SLEEP','222':'SLEEP',
+        '223':'SLEEP','224':'SLEEP','231':'SLEEP','233':'SLEEP','235':'SLEEP',
+        '239':'SLEEP','247':'SLEEP','249':'SLEEP','251':'SLEEP','253':'SLEEP',
+        // JSON type mismatches
+        '108':'LDL','118':'SDL',
       };
 
       // Map booth_type codes to legend/list keys for category jumps
@@ -486,7 +564,7 @@
       };
 
       // Ensure a per-type "full" gradient (base color → white) exists in <defs>
-      function ensureFullGradient_(svgRoot, gradKey, baseColor) {
+      function ensureFullGradient_(svgRoot, gradKey, baseColor, endColor) {
         if (!svgRoot || !gradKey || !baseColor) return;
         const svg = svgRoot.ownerSVGElement || svgRoot;
         if (!svg) return;
@@ -516,7 +594,7 @@
 
         const stop2 = document.createElementNS(SVG_NS, 'stop');
         stop2.setAttribute('offset', '100%');
-        stop2.setAttribute('stop-color', '#ffffff');
+        stop2.setAttribute('stop-color', endColor || '#ffffff');
 
         grad.appendChild(stop1);
         grad.appendChild(stop2);
@@ -546,11 +624,11 @@
 
         const stop1 = document.createElementNS(SVG_NS, 'stop');
         stop1.setAttribute('offset', '12%');
-        stop1.setAttribute('stop-color', '#288699'); // sleep available
+        stop1.setAttribute('stop-color', '#978717'); // sleep available
 
         const stop2 = document.createElementNS(SVG_NS, 'stop');
         stop2.setAttribute('offset', '100%');
-        stop2.setAttribute('stop-color', '#ffffff'); // sleep secondary
+        stop2.setAttribute('stop-color', endColor || '#000000'); // sleep secondary (inverts to white on screen)
 
         grad.appendChild(stop1);
         grad.appendChild(stop2);
@@ -739,7 +817,7 @@
             ));
           if (hideInNav) continue;
 
-          const type = String(csv.booth_type || '').trim();
+          const type = ROOM_TYPE_OVERRIDE[id] || String(csv.booth_type || '').trim();
           if(!wantTypes.has(type)) continue;
 
           const building = String(csv.building_label || '').trim();
@@ -809,25 +887,10 @@
       }
 
       function updateLegendCounts_(mapData){
-        const data = mapData || window.__VOID_MAPDATA;
-        if (!data) return;
-        const nodes = document.querySelectorAll('.legend .legend-count[data-count-key]');
+        const nodes = document.querySelectorAll('.booking-options .booking-count');
         nodes.forEach(node => {
-          const k = String(node.getAttribute('data-count-key') || '').trim();
-          if (!k) return;
-          const res = computeLegendAvailability_(data, k);
-          if (!res || !Number.isFinite(res.total) || res.total <= 0){
-            node.textContent = '';
-            node.removeAttribute('data-state');
-            return;
-          }
-          if (res.remaining <= 0){
-            node.textContent = 'Sold Out';
-            node.setAttribute('data-state', 'soldout');
-            return;
-          }
-          node.textContent = `${res.remaining}/${res.total}`;
-          node.setAttribute('data-state', 'count');
+          node.textContent = '';
+          node.removeAttribute('data-state');
         });
       }
       window.updateLegendCounts = updateLegendCounts_;
@@ -854,11 +917,66 @@
       ];
 
       const svgHost = document.getElementById("svg-root");
+      const mobileKeyHost = document.getElementById("mobile-key-root");
+      const mapFrame = document.querySelector(".map-frame");
       const statusEl = document.getElementById("status");
       const notesPanel = document.querySelector('.results-panel');
       const pageLoader = document.getElementById("page-loader");
+      const mobileMapQuery = window.matchMedia("(max-width: 1280px)");
+      const mobileMapButtons = Array.from(document.querySelectorAll("[data-map-view]"));
+      const FULL_MAP_VIEWBOX = { x: 0, y: 0, w: 758.31, h: 612 };
+      const MOBILE_MAP_VIEWS = {
+        next1: { x: 0, y: 46, w: 274, h: 259 },
+        next2: { x: 0, y: 306, w: 274, h: 259 },
+        og1: { x: 405, y: 46, w: 353.31, h: 260 },
+        og2: { x: 405, y: 306, w: 353.31, h: 260 }
+      };
+      let activeMobileMapView = "next1";
       window.__LAST_LIST_KEY = null; // remember last legend key rendered
       let pageLoaderHidden_ = false;
+
+      function applyMapView_(){
+        const svg = window.__VOID_SVG;
+        if (!svg) return;
+        const isMobile = mobileMapQuery.matches;
+        const view = isMobile
+          ? (MOBILE_MAP_VIEWS[activeMobileMapView] || MOBILE_MAP_VIEWS.next1)
+          : FULL_MAP_VIEWBOX;
+
+        svg.setAttribute("viewBox", `${view.x} ${view.y} ${view.w} ${view.h}`);
+        if (mapFrame) mapFrame.style.aspectRatio = `${view.w} / ${view.h}`;
+        mobileMapButtons.forEach((button) => {
+          button.setAttribute("aria-pressed", String(isMobile && button.dataset.mapView === activeMobileMapView));
+        });
+      }
+
+      function renderMobileMapKey_(sourceSvg){
+        if (!mobileKeyHost || !sourceSvg) return;
+        const keySvg = sourceSvg.cloneNode(true);
+        keySvg.setAttribute("id", "mobile-key-svg");
+        keySvg.setAttribute("viewBox", `${KEY_VIEWBOX.x} ${KEY_VIEWBOX.y} ${KEY_VIEWBOX.w} ${KEY_VIEWBOX.h}`);
+        keySvg.setAttribute("aria-hidden", "true");
+        keySvg.style.aspectRatio = `${KEY_VIEWBOX.w} / ${KEY_VIEWBOX.h}`;
+        keySvg.querySelectorAll(".shape-interactive").forEach((node) => {
+          node.classList.remove("shape-interactive", "shape-hover");
+          node.removeAttribute("tabindex");
+          node.removeAttribute("role");
+        });
+        mobileKeyHost.replaceChildren(keySvg);
+      }
+
+      mobileMapButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          activeMobileMapView = button.dataset.mapView || "next1";
+          applyMapView_();
+        });
+      });
+
+      if (typeof mobileMapQuery.addEventListener === "function") {
+        mobileMapQuery.addEventListener("change", applyMapView_);
+      } else if (typeof mobileMapQuery.addListener === "function") {
+        mobileMapQuery.addListener(applyMapView_);
+      }
 
       function hidePageLoader_(){
         if (!pageLoader || pageLoaderHidden_) return;
@@ -898,9 +1016,9 @@
 	            if (!kSrc) return null;
 	            return `${group}::${String(kSrc).toLowerCase()}`;
 	          }
-	        },
+        },
         ariumflex: {
-          title: 'Arium/Flex Lounge - Sold Out',
+          title: 'Arium/Flex Lounge',
           boothTypes: ['STD10IN'],
           groupBy: null,
           restrictBuildings: ['Jupiter NEXT'],
@@ -923,7 +1041,7 @@
           rowComparator: defaultRowComparator
         },
         dreamtent_artist: {
-          title: 'Dream Tent - Sold Out',
+          title: 'Dream Tent',
           boothTypes: ['STD10TENT'],
           groupBy: null,
           restrictBuildings: ['Dream Tent'],
@@ -1324,7 +1442,7 @@ groupResolver: ({ booth, csv }) => {
               }
 
               const gradKey = boothType || 'default';
-              ensureFullGradient_(svgRoot, gradKey, baseColor);
+              ensureFullGradient_(svgRoot, gradKey, baseColor, ['STD10IN','STD10TENT','SDL','MDL','LDL','XLDL','VND10TENT','VND10OUT','VND10IN','VND10STREET'].includes(gradKey) ? '#000000' : undefined);
               try {
                 node.removeAttribute('fill');
                 node.style.fill = `url(#fullGrad-${gradKey})`;
@@ -1439,6 +1557,7 @@ groupResolver: ({ booth, csv }) => {
         svgHost.appendChild(frontSvg);
         // Expose front SVG for later refresh calls
         window.__VOID_SVG = frontSvg;
+        applyMapView_();
 
           // Ensure a top-most label layer inside the front SVG
           let labelLayer = frontSvg.querySelector('#label-layer');
@@ -1463,6 +1582,7 @@ groupResolver: ({ booth, csv }) => {
           addRenderedStaticMapLabels(frontSvg);
           // Custom multi-line labels for specific shapes (runs after auto-labels)
           addCustomOverlayLabels(frontSvg);
+          renderMobileMapKey_(frontSvg);
           // Overlay live occupants (colors + click disabling), with type-based full colors.
           // Wait for occupants to finish loading before exposing helpers so the Notes
           // list renders with fresh data immediately.
@@ -1964,21 +2084,21 @@ groupResolver: ({ booth, csv }) => {
           width: 18,
           height: 18,
           markup: `
-            <rect x="1.5" y="1.5" width="15" height="15" rx="0" ry="0" fill="#ffde17"></rect>
+            <rect x="1.5" y="1.5" width="15" height="15" rx="0" ry="0" fill="#e49212" stroke="white" stroke-width="1"></rect>
           `
         },
         blankSquarePink: {
           width: 18,
           height: 18,
           markup: `
-            <rect x="1.5" y="1.5" width="15" height="15" rx="0" ry="0" fill="#db5aa1"></rect>
+            <rect x="1.5" y="1.5" width="15" height="15" rx="0" ry="0" fill="#ff6020" stroke="white" stroke-width="1"></rect>
           `
         },
         blankSquareOrange: {
           width: 18,
           height: 18,
           markup: `
-            <rect x="1.5" y="1.5" width="15" height="15" rx="0" ry="0" fill="#f99c30"></rect>
+            <rect x="1.5" y="1.5" width="15" height="15" rx="0" ry="0" fill="#00cc88" stroke="white" stroke-width="1"></rect>
           `
         },
         foodTruck: {
@@ -2300,12 +2420,12 @@ groupResolver: ({ booth, csv }) => {
         }
 
         const entries = [
-          { key: 'jupiter_next_title', text: 'Jupiter Hotel Next', x: 137.43, y: 18.54, size: 20, anchor: 'middle' },
-          { key: 'jupiter_next_floor_1', text: '1st Floor', x: 137.43, y: 51, size: 9.5, anchor: 'middle' },
-          { key: 'jupiter_next_floor_2', text: '2nd Floor', x: 137.43, y: 311, size: 9.5, anchor: 'middle' },
-          { key: 'jupiter_og_title', text: 'Jupiter Hotel Original', x: 582.25, y: 18.54, size: 20, anchor: 'middle' },
-          { key: 'jupiter_og_floor_1', text: '1st Floor', x: 582.25, y: 51, size: 9.5, anchor: 'middle' },
-          { key: 'jupiter_og_floor_2', text: '2nd Floor', x: 582.25, y: 311, size: 9.5, anchor: 'middle' }
+          { key: 'jupiter_next_title',   text: 'Jupiter NEXT',           x: 137.43, y: 18.54, size: 20,  anchor: 'middle' },
+          { key: 'jupiter_next_floor_1', text: '1st Floor',              x: 137.43, y: 51,    size: 9.5, anchor: 'middle' },
+          { key: 'jupiter_next_floor_2', text: '2nd Floor - Convention', x: 137.43, y: 311,   size: 9.5, anchor: 'middle' },
+          { key: 'jupiter_og_title',     text: 'Jupiter Hotel Original', x: 582.25, y: 18.54, size: 20,  anchor: 'middle' },
+          { key: 'jupiter_og_floor_1',   text: '1st Floor - Convention', x: 582.25, y: 51,    size: 9.5, anchor: 'middle' },
+          { key: 'jupiter_og_floor_2',   text: '2nd Floor - Convention', x: 582.25, y: 311,   size: 9.5, anchor: 'middle' }
         ];
 
         entries.forEach(({ key, text: textValue, x, y, size, anchor }) => {
@@ -2680,10 +2800,10 @@ groupResolver: ({ booth, csv }) => {
 
       // Make legend rows clickable (and robust to clicks on inner elements)
       function wireLegendClicks(mapData){
-        const grid = document.querySelector('.legend .legend-grid');
+        const grid = document.querySelector('.booking-options .booking-grid');
         if(!grid) return;
         grid.addEventListener('click', (e)=>{
-          const row = e.target.closest('.legend-row[data-list-key]');
+          const row = e.target.closest('.booking-row[data-list-key]');
           if(!row) return;
           const key = row.getAttribute('data-list-key');
           renderResultsForKey(mapData, key);
@@ -2702,7 +2822,7 @@ groupResolver: ({ booth, csv }) => {
         });
         grid.addEventListener('keydown', (e)=>{
           if(!(e.key==='Enter' || e.key===' ')) return;
-          const row = e.target.closest('.legend-row[data-list-key]');
+          const row = e.target.closest('.booking-row[data-list-key]');
           if(!row) return;
           e.preventDefault();
           const key = row.getAttribute('data-list-key');
@@ -2720,12 +2840,12 @@ groupResolver: ({ booth, csv }) => {
             }
           } catch(_) {}
         });
-        document.querySelectorAll('.legend .legend-row[data-list-key]').forEach(row=>{
+        document.querySelectorAll('.booking-options .booking-row[data-list-key]').forEach(row=>{
           row.setAttribute('tabindex','0'); row.setAttribute('role','button'); row.setAttribute('aria-pressed','false');
         });
         // Key heading "jump" control
         (function wireKeyJump(){
-          const jump = document.querySelector('.legend h2 a.key-jump');
+          const jump = document.querySelector('.booking-options h2 a.key-jump');
           if (!jump) return;
           jump.addEventListener('click', function(ev){
             //ev.preventDefault();
@@ -2779,7 +2899,7 @@ groupResolver: ({ booth, csv }) => {
         if(count===0){
           const p = document.createElement('p');
           p.className = 'muted';
-          p.textContent = 'No items to display.';
+          p.textContent = 'Booking opens soon — check back here.';
           notesPanel.appendChild(p);
           return;
         }
@@ -2832,7 +2952,8 @@ groupResolver: ({ booth, csv }) => {
               String(csv.hide_in_nav).toLowerCase() === 'true'
             ));
           if (hideInNav) continue;
-          const type = String(csv.booth_type || '').trim();
+          const rawId = String(id).replace(/^_+/, '');
+          const type = ROOM_TYPE_OVERRIDE[rawId] || String(csv.booth_type || '').trim();
           if(!wantTypes.has(type)) continue;
           const building = String(csv.building_label || '').trim();
           if(restrict && !restrict.has(building)) continue;
@@ -2947,28 +3068,29 @@ groupResolver: ({ booth, csv }) => {
               const isFull = statusSummary ? !!statusSummary.isFull : ((cap > 0) ? (groups.length >= cap) : false);
 
               // Sleep Rooms: privacy — no occupant names/socials.
-              // Only show "### - Occupied" when feed/app marks the room as full.
-              // If there is no URL and the room is not full, hide it from the nav.
               if (isSleep) {
                 if (isFull) {
-                  // Occupied: no link; label "### - Occupied" using the room number.
                   const span = document.createElement('span');
                   span.className = 'nolink';
                   const labelRoom = spaceKey || textValue;
                   span.textContent = labelRoom + ' - Occupied';
                   li.appendChild(span);
-                  ul.appendChild(li);
                 } else if (r.url && r.url !== '-') {
-                  // Available + has URL → show as link
                   const a = document.createElement('a');
                   a.href = r.url;
                   a.target = '_blank';
                   a.rel = 'noopener';
                   a.textContent = textValue;
                   li.appendChild(a);
-                  ul.appendChild(li);
+                } else {
+                  const a = document.createElement('a');
+                  a.href = '#';
+                  a.className = 'no-url-link';
+                  a.addEventListener('click', e => e.preventDefault());
+                  a.textContent = spaceKey || textValue;
+                  li.appendChild(a);
                 }
-                // If not full and no URL, do not append li at all (hidden from nav)
+                ul.appendChild(li);
                 return;
               }
 
@@ -3023,10 +3145,17 @@ groupResolver: ({ booth, csv }) => {
                   return textValue + ' — ' + parts.join('; ');
                 };
 
-                if (isFull || !r.url || r.url === '-') {
+                if (!r.url || r.url === '-') {
+                  const a = document.createElement('a');
+                  a.href = '#';
+                  a.className = 'no-url-link';
+                  a.addEventListener('click', e => e.preventDefault());
+                  a.textContent = textValue;
+                  li.appendChild(a);
+                } else if (isFull) {
                   const span = document.createElement('span');
                   span.className = 'nolink';
-                  span.innerHTML = makeLine() + (isFull ? '' : (groups.length ? '' : '<span class="muted">(details coming soon)</span>'));
+                  span.innerHTML = makeLine();
                   li.appendChild(span);
                 } else {
                   // Not full: keep link, but append occupants after
@@ -3052,7 +3181,7 @@ groupResolver: ({ booth, csv }) => {
               // --- END CENTRALIZED LEGEND ROW LOGIC ---
             });
             section.appendChild(ul);
-            wrap.appendChild(section);
+            if (ul.children.length > 0) wrap.appendChild(section);
           });
         } else {
           const section = document.createElement('section');
@@ -3089,19 +3218,27 @@ groupResolver: ({ booth, csv }) => {
             const groups = statusSummary ? (statusSummary.groups || []) : (occKey ? occupantArrayForSpaceKey(occKey) : []);
             const isFull = statusSummary ? !!statusSummary.isFull : ((cap > 0) ? (groups.length >= cap) : false);
 
-            // Sleep Rooms: privacy — no occupant names/socials. Clickable ONLY when not full.
+            // Sleep Rooms: privacy — no occupant names/socials.
             if (isSleep) {
-              if (isFull || !r.url || r.url === '-') {
+              if (isFull) {
                 const span = document.createElement('span');
                 span.className = 'nolink';
-                span.textContent = isFull ? (textValue + ' — occupied') : textValue;
+                const labelRoom = spaceKey || textValue;
+                span.textContent = labelRoom + ' - Occupied';
                 li.appendChild(span);
-              } else {
+              } else if (r.url && r.url !== '-') {
                 const a = document.createElement('a');
                 a.href = r.url;
                 a.target = '_blank';
                 a.rel = 'noopener';
                 a.textContent = textValue;
+                li.appendChild(a);
+              } else {
+                const a = document.createElement('a');
+                a.href = '#';
+                a.className = 'no-url-link';
+                a.addEventListener('click', e => e.preventDefault());
+                a.textContent = spaceKey || textValue;
                 li.appendChild(a);
               }
               ul.appendChild(li);
@@ -3187,10 +3324,17 @@ groupResolver: ({ booth, csv }) => {
                 return textValue + ' — ' + parts.join('; ');
               };
 
-              if (isFull || !r.url || r.url === '-') {
+              if (!r.url || r.url === '-') {
+                const a = document.createElement('a');
+                a.href = '#';
+                a.className = 'no-url-link';
+                a.addEventListener('click', e => e.preventDefault());
+                a.textContent = textValue;
+                li.appendChild(a);
+              } else if (isFull) {
                 const span = document.createElement('span');
                 span.className = 'nolink';
-                span.innerHTML = makeLine() + (isFull ? '' : (groups.length ? '' : '<span class="muted">(details coming soon)</span>'));
+                span.innerHTML = makeLine();
                 li.appendChild(span);
               } else {
                 // Not full: keep link, but append occupants after
@@ -3216,13 +3360,13 @@ groupResolver: ({ booth, csv }) => {
             // --- END CENTRALIZED LEGEND ROW LOGIC ---
           });
           section.appendChild(ul);
-          wrap.appendChild(section);
+          if (ul.children.length > 0) wrap.appendChild(section);
         }
-        return { container: wrap, count: rowCount };
+        const renderedCount = wrap.querySelectorAll('li').length;
+        return { container: wrap, count: renderedCount };
       }
     })();
   </script>
-</body>
   <script>
   (function () {
     function sendHeight() {
@@ -3245,4 +3389,63 @@ groupResolver: ({ booth, csv }) => {
     mo.observe(document.documentElement, { childList:true, subtree:true, attributes:true, characterData:true });
   })();
   </script>
+
+  <script>
+  (function () {
+    var btn    = document.getElementById('wtf-btn');
+    var panel  = document.getElementById('wtf-panel');
+    var spans  = panel ? Array.from(panel.querySelectorAll('[data-wtf]')) : [];
+    var active = 'next1';
+
+    function showFloorContent() {
+      spans.forEach(function (s) {
+        s.style.display = (s.getAttribute('data-wtf') === active) ? '' : 'none';
+      });
+    }
+
+    function toggle() {
+      var open = panel.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) showFloorContent();
+    }
+
+    var bldgTitle = document.getElementById('building-title');
+    var BLDG_NAMES = {
+      next1: 'Jupiter Hotel NEXT',
+      next2: 'Jupiter Hotel NEXT',
+      og1:   'Jupiter Hotel Original',
+      og2:   'Jupiter Hotel Original'
+    };
+
+    function updateBldgTitle() {
+      if (bldgTitle) bldgTitle.textContent = BLDG_NAMES[active] || '';
+    }
+
+    if (btn) btn.addEventListener('click', toggle);
+
+    // Keep content in sync when floor buttons are tapped
+    document.querySelectorAll('[data-map-view]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        active = b.getAttribute('data-map-view');
+        if (panel.classList.contains('open')) showFloorContent();
+        updateBldgTitle();
+      });
+    });
+
+    // Show/hide with breakpoint
+    var mq = window.matchMedia('(max-width: 1280px)');
+    function onMQ(e) {
+      if (btn) btn.style.display = e.matches ? 'block' : 'none';
+      if (bldgTitle) bldgTitle.style.display = e.matches ? '' : 'none';
+      if (!e.matches && panel) {
+        panel.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+      if (e.matches) updateBldgTitle();
+    }
+    mq.addEventListener('change', onMQ);
+    onMQ(mq);
+  })();
+  </script>
+</body>
 </html>
