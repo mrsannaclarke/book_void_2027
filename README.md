@@ -1,3 +1,35 @@
+# VOID Fest Interactive Map v2
+
+Interactive map and assets for VOID Fest.
+
+Live demo
+ - https://mrsannaclarke.github.io/book_void_2027/
+
+Quick local preview
+- Open `index.html` in your browser, or run a simple server:
+
+```bash
+python3 -m http.server 8000
+# then open http://localhost:8000
+```
+
+Deployment
+- This repository is published with GitHub Pages (site is public).
+- To update the live site, commit and push changes to the `main` branch.
+
+Repository layout
+- `index.html` — entry point for the interactive map
+- `voidfest-map.*` — assets and images
+- `email_parser_script.gs` — Google Apps Script for email parsing
+
+Contributing
+- Open an issue or submit a pull request. Keep commits small and descriptive.
+
+Contact
+- GitHub: https://github.com/mrsannaclarke
+
+License
+- Add a license file if you want this project to be reused.
 # VOID Fest Interactive Map
 
 Clean project scaffold for the next iteration of the VOID Fest booking map.
