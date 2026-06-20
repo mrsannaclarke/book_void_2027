@@ -313,9 +313,46 @@
       border:1px solid var(--panel-border); border-radius:6px;
       background:var(--panel-bg);
       font:400 14px/1.6 "Space Grotesk","Segoe UI",Helvetica,Arial,sans-serif;
-      color:var(--text-secondary);
+      color:var(--text-primary);
     }
     #wtf-panel.open { display:block; }
+    .wtf-entry strong {
+      display:block;
+      margin:0 0 8px;
+      color:#e49212;
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+    .wtf-entry p {
+      margin:8px 0 0;
+      color:var(--text-primary);
+    }
+    .wtf-photo-grid {
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:6px;
+      margin:10px 0 12px;
+    }
+    .wtf-photo-grid img {
+      display:block;
+      width:100%;
+      aspect-ratio:4 / 3;
+      object-fit:cover;
+      border-radius:6px;
+      border:1px solid #ffffff;
+    }
+    .wtf-photo-grid img.crop-top { object-position:center top; }
+    .wtf-hero-photo {
+      display:block;
+      width:100%;
+      aspect-ratio:16 / 9;
+      object-fit:cover;
+      border-radius:6px;
+      border:1px solid #ffffff;
+      margin:0 0 12px;
+    }
 
     @media (max-width: 1280px) {
       [data-static-label="jupiter_next_title"],
@@ -530,12 +567,55 @@
 
       <button id="wtf-btn" type="button" aria-expanded="false">WTF?</button>
       <div id="wtf-panel" role="region" aria-label="Floor information">
-        <span data-wtf="next2"><strong>Jupiter NEXT — 2nd Floor</strong><br>
-        [Add your NEXT 2F description here.]</span>
-        <span data-wtf="og1"><strong>Jupiter Hotel Original — Ground Floor</strong><br>
-        [Add your OG 1F description here.]</span>
-        <span data-wtf="og2"><strong>Jupiter Hotel Original — 2nd Floor</strong><br>
-        [Add your OG 2F description here.]</span>
+        <span class="wtf-entry" data-wtf="next2">
+          <img class="wtf-hero-photo" src="assets/wtf-next2-bar.jpg" alt="Hey Love bar and restaurant">
+          <strong>Jupiter NEXT — 2nd Floor</strong>
+          <p>VOID Fest occupies the second floor of Jupiter NEXT: a ballroom-style event space with giant windows and high ceilings. The building has good temperature control and is fully accessible.</p>
+          <p>Most vendor booths are at the top of the stairs in the Flex Lounge, along with booths A1 and A2. The Arium holds tattoo booths A3-A13 in this building.</p>
+          <p>This floor also includes the Seminar Bunker and the Secret Garden patio space. Hey Love bar and restaurant is right downstairs.</p>
+          <div class="wtf-photo-grid" aria-label="Jupiter NEXT 2nd Floor detail photos">
+            <img src="assets/wtf-next2-building.jpg" alt="Jupiter NEXT building exterior">
+            <img src="assets/wtf-next2-vendors.jpg" alt="Vendor booths inside the event space">
+            <img src="assets/wtf-next2-tattoo.jpg" alt="Tattoo booth inside the event space">
+            <img src="assets/wtf-next2-void-033.jpg" alt="Artist booth inside Jupiter NEXT">
+            <img src="assets/wtf-next2-void-063.jpg" alt="Artist booth inside Jupiter NEXT">
+            <img src="assets/wtf-next2-void-068.jpg" alt="Artist booth inside Jupiter NEXT">
+            <img src="assets/wtf-next2-void-071.jpg" alt="Artist booth inside Jupiter NEXT">
+            <img src="assets/wtf-next2-void-155.jpg" alt="Artist booth inside Jupiter NEXT">
+          </div>
+        </span>
+        <span class="wtf-entry" data-wtf="og1">
+          <img class="wtf-hero-photo" src="assets/wtf-og1-void-158.jpg" alt="Tattoo booth on the Jupiter Original ground floor">
+          <strong>Jupiter Hotel Original — Ground Floor</strong>
+          <p>The Jupiter Original ground floor is the heart of the convention. It is large, lively, and has an indoor/outdoor feel that makes it different from a typical convention hall.</p>
+          <p>For the weekend, hotel rooms are emptied and transformed into private mini tattoo studios. Artists can decorate their rooms and doors to make the space feel fully their own.</p>
+          <p>At the center of the ground floor is the Dream Tent: a large tent set inside the horseshoe-shaped courtyard. This is where you'll find the stage, live music, entertainment, tattoo contests, vendors, and some pipe-and-drape artist booths.</p>
+          <p>The ground floor also includes the box office, Think Tank seminar space, food vendors, and Command Center for registration and event admin.</p>
+          <p>This area is fun and high-energy, but it can be loud and has less temperature control than Jupiter NEXT.</p>
+          <div class="wtf-photo-grid" aria-label="Jupiter Hotel Original ground floor detail photos">
+            <img src="assets/wtf-og1-mortal.jpg" alt="Tattoo booth inside a converted hotel room">
+            <img src="assets/wtf-og1-keycity.jpg" alt="Artists tattooing inside a converted hotel room">
+            <img src="assets/wtf-og1-judging.jpg" alt="Tattoo contest judging on the ground floor">
+            <img src="assets/wtf-og1-alexis.jpg" alt="Tattoo booth setup inside a hotel room">
+            <img src="assets/wtf-og1-void-006.jpg" alt="Ground floor festival activity">
+            <img src="assets/wtf-og1-void-008.jpg" alt="Dream Tent and courtyard activity">
+            <img src="assets/wtf-og1-food.jpg" alt="Food vendor in the Jupiter Original courtyard">
+            <img src="assets/wtf-og1-void-013.jpg" alt="Vendor booth inside the Dream Tent">
+          </div>
+        </span>
+        <span class="wtf-entry" data-wtf="og2">
+          <img class="wtf-hero-photo" src="assets/wtf-og2-void-166.jpg" alt="Second floor tattoo room">
+          <strong>Jupiter Hotel Original — 2nd Floor</strong>
+          <p>The Jupiter Original second floor is stairs-only. Booths wrap around the Dream Tent from the balcony level, with an indoor/outdoor feel and a clear view into the heart of the festival.</p>
+          <p>Artists in these rooms can decorate their studios, doors, and balcony railings. You can make the space feel fully your own for the weekend.</p>
+          <p>This area has less temperature control than Jupiter NEXT, and you can hear the stage from these booths. It is lively, close to the action, and best for artists who want to be part of the festival energy.</p>
+          <div class="wtf-photo-grid" aria-label="Jupiter Hotel Original second floor detail photos">
+            <img src="assets/wtf-og2-icon.jpg" alt="Tattoo booth inside a converted hotel room">
+            <img src="assets/wtf-og2-attendees.jpg" alt="Attendees around the Jupiter Original courtyard">
+            <img src="assets/wtf-og2-void-016.jpg" alt="Second floor booth around the Dream Tent">
+            <img class="crop-top" src="assets/wtf-og2-door.jpg" alt="Decorated hotel room door">
+          </div>
+        </span>
       </div>
 
       <div id="building-title" style="display:none; margin-top:8px; padding:6px 0 2px;

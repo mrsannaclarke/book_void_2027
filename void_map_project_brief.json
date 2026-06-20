@@ -91,7 +91,7 @@
           "voidfest-map-data.json",
           "favicon.png"
         ],
-        "visual_rendering_note": "The public page loads voidfest-map.svg without using CSS filter inversion. Map-layer fill colors in CSS, JS, SVG, and voidfest-map-data.json are normalized to the working palette. Overlay labels and SVG icon overlays remain direct white/black styling. The sidebar header uses a CSS-masked purple swirl asset at assets/swirlpurple-header.png. Booking Options and selected booking results panels can use optimized background photos with dark/purple overlays."
+        "visual_rendering_note": "The public page loads voidfest-map.svg without using CSS filter inversion. Map-layer fill colors in CSS, JS, SVG, and voidfest-map-data.json are normalized to the working palette. Overlay labels and SVG icon overlays remain direct white/black styling. The sidebar header uses a CSS-masked purple swirl asset at assets/swirlpurple-header.png. Booking Options and selected booking results panels can use optimized background photos with dark/purple overlays. The mobile WTF panel supports floor-specific full-color photo grids and short venue descriptions; Jupiter NEXT 2F, Jupiter Original 1F, and Jupiter Original 2F are populated."
       }
     ]
   },
